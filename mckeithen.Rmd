@@ -1,0 +1,210 @@
+---
+title: "mckeithen-repro"
+author: "Alissa McGill"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+---
+title: "HLMFinalProject"
+author: "Alissa McGill"
+date: "2025-12-03"
+output: pdf_document
+geometry: margin=0.50in
+options: width = 70
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r Load Libraries, message=FALSE}
+
+library(lme4)
+library(lmerTest) #gives us some p values
+library(haven) ## import ability to read sav (SPSS) files
+
+```
+
+```{r Load Data}
+
+# mck_data =  read.csv("Myfile")
+
+#create some dummy data for testing
+set.seed(123)
+mck_data <- data.frame(performance = rnorm(300),
+                        codeVersion = factor(rep(numnbers[1:2], each = 150)),
+                        experienceYears = double(rep(numbers[1:65], each = 100)),
+                        trial = integer(rep(numbers[1,5]), each = 100)))
+
+
+```
+
+
+```{r Hsbdata}
+
+#1)Create a model 
+mck_model_1 = lmer(ses ~ 1 +  (1 | school), data = hsb_data, REML=FALSE )
+
+summary(hsb_model_1)
+
+#pull the variance values from thr output
+lvl_1_variance = 0.4462
+lvl_2_variance = 0.1597 
+
+##ICC 
+ICC = lvl_2_variance / ( lvl_1_variance + lvl_2_variance )
+ICC
+
+# Question:How much variability in socioeconomic status (the variable “SES” [not CSES] in the database) 
+#is accounted for by the nesting of individuals within schools? What part of the output(s) did you use 
+#to answer this question?
+
+# Answer : The Interclass correlation (ICC) is the part of the output that tells us the variability that
+#is accounted for by the nesting of individuals within schools. This ICC tells us that 26% of the 
+#variability is explained by the grouping variable of "school".
+
+
+#2)Create a model with only fixed effect for female
+hsb_model_2 = lmer(ses ~ 1 + female +  (1 | school), data = hsb_data, REML=FALSE )
+
+summary(hsb_model_2)
+
+# Question: Does gender (“FEMALE”) predict socioeconomic status? Assuming that this variable
+#is coded so that 0 = male, and 1 = female, what is the direction of this effect? What part of 
+#the output(s) did you use to answer this question?
+
+#Answer: Yes, gender ("FEMALE") predicts socioeconomic status - the p value for the "female"
+#variable under fixed effects gives us a p-value of 6.37e-06 (0.000006). The estimate for the 
+#coefficient is -0.083 , which means that for females (female=1), socioeconomic status is lower 
+#then for non-females (female=0). 
+
+
+#3a)Create a model with fixed effect and random effect for female
+hsb_model_3 = lmer(ses ~ 1 + female +  (1 + female | school), data = hsb_data, REML=FALSE )
+
+summary(hsb_model_3)
+
+#Question: Does there appear to be systematic variability across schools in the effect of the gender?
+#What part of the output(s) did you use to answer this question? Which model appears most defensible 
+#given the observed data, the random effects model or the fixed effects only model?
+
+#b3) deviance test to figure out if we care about the random effect: 
+anova(hsb_model_1,hsb_model_2, hsb_model_3)
+
+#because our Chi square is significant for model 2 - this tells us the random effect added in
+#model 3 is NOT justified, 
+#the fixed effect added in model 2 IS justified. 
+#Choose model 2
+
+#4) Test for moderation of school size
+
+#create a new interaction term variable in the dataframe hsb
+hsb_data$schSizeXfemale = hsb_data$size  * hsb_data$female
+
+#create model with interaction term for school size and female (moderation)
+hsb_model_4 = lmer(ses ~ 1 + female + size + schSizeXfemale + (1 | school), data = hsb_data, REML=FALSE )
+
+summary(hsb_model_4)
+
+# Question:  Does school size appear to moderate the effect of FEMALE on SES? What part of the output(s) 
+#did you use to answer this question?
+
+#The School size x female interaction term (schSizeXfemale ) was not significant (p=0.324), so school
+#size does not moderate the effect of female on SES. 
+
+#5) Test for moderation of Sector
+
+#create a new interaction term variable in the dataframe hsb
+hsb_data$sectorXfemale = hsb_data$sector  * hsb_data$female
+
+#create model with interaction term for school size and female (moderation)
+hsb_model_5 = lmer(ses ~ 1 + female + size + sectorXfemale + (1 | school), data = hsb_data, REML=FALSE )
+
+summary(hsb_model_5)
+
+#Question : Does school SECTOR (0 = public; 1 = private) appear to moderate the effect of FEMALE 
+#on SES? What part of the output(s) did you use to answer this question?
+
+#The sector x female interaction term (sectorXfemale ) was just barely not significant (p=0.0569 ), 
+#so sector does not moderate the effect of female on SES. 
+
+```
+
+#Dataset 2 - HLM repeated
+1)	How much variability in OUTCOME can be attributed to differences between individuals? 
+What part of the output(s) did you use to answer this question?
+2)	Does the variable AGE [do not transform or recode age for this step] predict differences
+in OUTCOME? Assume that AGE is “years of age.” Please interpret the slope and the intercept.
+3)	Does there appear to be systematic variability across persons in the effect of AGE? What
+part of the output(s) did you use to answer this question? Which model appears most defensible
+given the observed data, the random effects model or the fixed effects only model?
+4)	Now, using the model that you chose in part 3, test the following: Does FEMALE appear to 
+moderate the effect of AGE on OUTCOME? What part of the output(s) did you use to answer this question?
+```{r HLM Repeated dataset}
+
+#1)Create a model with just the nesting of the individual
+rep_model_1 = lmer(outcome ~ 1 +  (1 | id), data = repeated_data, REML=FALSE )
+
+summary(rep_model_1)
+
+lvl_1_variance = 4.930
+lvl_2_variance = 3.567
+
+##ICC 
+ICC = lvl_2_variance / ( lvl_1_variance + lvl_2_variance )
+ICC
+
+# Question: How much variability in OUTCOME can be attributed to differences between 
+#individuals? What part of the output(s) did you use to answer this question?
+
+# 42% of the variance in outcome is explained by the individual. I calculated and used 
+#the ICC to determine this.
+
+#2)Create a model with only fixed effect for age
+rep_model_2 = lmer(outcome ~ 1 + age +  (1 | id), data = repeated_data, REML=FALSE )
+
+summary(rep_model_2)
+
+#Question : Does the variable AGE predict differences in OUTCOME?
+#Answer: Yes, Age predicts differences in OUTCOME. We can see in the fixed effects
+#table that p=<2e-16. ... which is significant 
+
+#Question:Please interpret the slope and the intercept.
+#Answer: The intercept is the value of outcome when the variable age=0. The
+#slope means that for every 1 point increase in age, the OUTCOME increases by 0.66.  
+
+
+#3a)Create a model with fixed effect and random effect for age
+rep_model_3 = lmer(outcome ~ 1 + age +  (1 + age | id), data = repeated_data, REML=FALSE )
+
+summary(rep_model_3)
+
+#b3) deviance test
+anova(rep_model_1,rep_model_2, rep_model_3)
+
+#Does there appear to be systematic variability across persons in the effect of AGE? What part
+#of the output(s) did you use to answer this question? #Which model appears most defensible given
+#the observed data, the random effects model or the fixed effects only model?
+
+# Similar to our previous question, because our Chi square is significant for model 2 (p=<2e-16) - 
+#this tells us the random effect added in model 3 is NOT justified, 
+#but the fixed effect added in model 2 IS justified. 
+#Choose model 2 again!
+
+
+#4) Test for moderation of Female
+
+#create a new interaction term variable in the dataframe repeated
+repeated_data$femaleXage = repeated_data$female  * repeated_data$age
+
+#create model with interaction term for school size and female (moderation)
+rep_model_4 = lmer(outcome ~ 1 + age + female + femaleXage + (1 | id), data = repeated_data, REML=FALSE )
+
+summary(rep_model_4)
+
+# Yes, we do see that female moderates in effect of age on OUTCOME. The interaction term 
+#(femaleXage) had a p value of p=0.0129, which is significant, showing that we do have moderation.    
+
