@@ -1,0 +1,189 @@
+---
+title: "CodeSimilarityCalculations"
+author: "Alissa McGill"
+date: "2026-05-27"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r Load all required packages, message=FALSE}
+
+# load libraries
+library(tidyr)
+library(tidyverse)
+library(dplyr)
+library(psych)
+library(ggplot2)
+library(readxl)
+library(uuid)
+library(Hmisc)
+library(lme4)
+library(stringdist)
+
+```
+
+```{r Load the data }
+
+
+mckData = read.csv("Prolific - McKeithen et al 1981 Reproduction_May 27, 2026_10.09.csv")
+
+```
+```{r stuff}
+
+javaCode = c("public static void main() {",
+             "int number1 = 20;",
+             "int number2 = 15;",
+             "System.out.print(compute(number1, number2));",
+             "}",
+             "public static int compute(int number1, int number2) {",
+             "int temp = number1;",
+             "while (temp != 0) {",
+             "if (number1 < number2) {",
+             "temp = number1;",
+             "number1 = number2;",
+             "number2 = temp;",
+             "}",
+             "temp = number1 % number2;",
+             "if (temp != 0) {",
+             "number1 = number2;",
+             "number2 = temp;",
+             "}",
+             "}",
+             "return number2;",
+             "}")
+
+javaScramble = c("return number2;",
+                 "public static void main() {",
+                 "number1 = number2;",
+                 "int number2 = 15;",
+                 "if (number1 < number2) {",
+                 "while (temp != 0) {",
+                 "}",
+                 "int temp = number1;",
+                 "temp = number1;",
+                 "}",
+                 "public static int compute(int number1, int number2) {",
+                 "number2 = temp;",
+                 "int number1 = 20;",
+                 "temp = number1 % number2;",
+                 "number1 = number2;",
+                "System.out.print(compute(number1, number2));",
+                "}",
+                "if (temp != 0) {",
+                "}",
+                "number2 = temp;",
+                "}")
+
+cCode = c("int main() {",
+         "int number1 = 20;",
+         "int number2 = 15;",
+         "cout << compute(number1, number2);",
+         "}",
+         "int compute(int number1, int number2) {",
+         "int temp = number1;",
+         "while (temp != 0) {",
+         "if (number1 < number2) {",
+         "temp = number1;",
+         "number1 = number2;",
+         "number2 = temp;",
+         "}",
+         "temp = number1 % number2;",
+         "if (temp != 0) {",
+         "number1 = number2;",
+         "number2 = temp;",
+         "}",
+         "}",
+         "return number2;",
+         "}")
+
+cScramble = c("return number2;",
+              "int main() {",
+              "number1 = number2;",
+              "int number2 = 15;",
+              "if (number1 < number2) {",
+              "while (temp != 0) {",
+              "}",
+              "int temp = number1;",
+              "temp = number1;",
+              "}",
+              "int compute(int number1, int number2) {",
+              "number2 = temp;",
+              "int number1 = 20;",
+              "temp = number1 % number2;",
+              "number1 = number2;",
+              "cout << compute(number1, number2);",
+              "}",
+              "if (temp != 0) {",
+              "}",
+              "number2 = temp;",
+              "}")
+             
+
+pythonCode = c("def main():",
+               "number1 = 20",
+               "number2 = 15",
+               "print(compute(number1, number2))",
+               "def compute(number1, number2):",
+               "temp = number1",
+               "while temp != 0:",
+               "if number1 < number2:",
+               "temp = number1",
+               "number1 = number2",
+               "number2 = temp",
+               "temp = number1 % number2",
+               "if temp != 0:",
+               "number1 = number2",
+               "number2 = temp",
+               "return number2")
+
+
+pythonScramble = c("return number2",
+                   "def main():",
+                   "number1 = number2",
+                   "number2 = 15",
+                   "if number1 < number2:",
+                   "while temp != 0:",
+                   "temp = number1",
+                   "temp = number1",
+                   "def compute(number1, number2):",
+                   "number2 = temp",
+                   "number1 = 20",
+                   "temp = number1 % number2",
+                   "number1 = number2",
+                   "print(compute(number1, number2))",
+                   "if temp != 0:",
+                   "number2 = temp")
+
+userCode = mckData[ 7, "X1_code.recall.control"]
+parts <- strsplit(userCode, split = "\n")
+userCodeVec = unlist(parts)
+
+
+userCodeVec[1]
+javaCode[1]
+
+levDis = stringdist(userCodeVec[1], javaCode[1], method = "lv")
+
+
+
+for(i in seq_along(javaCode))
+{
+
+  for(j in seq_along(userCodeVec))
+  {
+    ldArray = array(dim = i)
+    
+    ldArray[i] = stringdist(javaCode[i], userCodeVec[j] method = "lv")
+    
+    
+  }
+}
+
+
+
+
+
+
+
+```
