@@ -160,65 +160,77 @@ parts <- strsplit(userCode, split = "\n")
 userCodeVec = unlist(parts)
 
 
-userCodeVec[1]
-javaCode[1]
-
-levDis = stringdist(userCodeVec[1], javaCode[1], method = "lv")
 
 
-ldArray = array(dim = length(javaCode)) # array for inner loop
-mapping = array(dim = length(javaCode))
-ldList = array(dim = length(javaCode))
-normalLDList =array(dim = length(javaCode))
-matchedStimuli =array(0, dim = length(javaCode))
-matchedUserCode =array(0, dim = length(userCodeVec))
 
-#for each line in the java code
-for(i in seq_along(javaCode))
+##returns the normalized average levinscteisns
+calculate_levdist <- function(stimCode, userCode)
 {
-
-  # for each line in the user code
-  for(j in seq_along(userCodeVec))
-  {
-    if(matchedUserCode[j] == 0)
-    {
-      # compare the line of java code to the user line and store in array using LD 
-      #(smallest number means more similar)
-      ldArray[j] = stringdist(javaCode[i], userCodeVec[j], method = "lv")
-    }
-    else
-    {
-      #if we already used this line of code, we can never match again
-      ldArray[j] = Inf
-    }
-  }
-  #the user code line with the smallest LD
-
-    mapping[i] = which.min(ldArray)
-    ldList[i] = ldArray[mapping[i]]
-    max_len <- pmax(nchar(javaCode[i]), nchar(userCodeVec[j]))
-    normalLDList[i] = ldList[i] / max_len  
-    
-    matchedStimuli[i] = 1
-    matchedUserCode[i] = 1 
-  
  
+  ldArray = array(dim = length(stimCode)) # array for inner loop
+  mapping = array(dim = length(stimCode))
+  ldList = array(dim = length(stimCode))
+  normalLDList =array(dim = length(stimCode))
+  matchedStimuli =array(0, dim = length(stimCode))
+  matchedUserCode =array(0, dim = length(userCode))
+  
+  #for each line in the java code
+  for(i in seq_along(stimCode))
+  {
+  
+    # for each line in the user code
+    for(j in seq_along(userCode))
+    {
+      if(matchedUserCode[j] == 0)
+      {
+        # compare the line of java code to the user line and store in array using LD 
+        #(smallest number means more similar)
+        ldArray[j] = stringdist(stimCode[i], userCode[j], method = "lv")
+      }
+      else
+      {
+        #if we already used this line of code, set to infinity so it never is picked again
+        ldArray[j] = Inf
+      }
+    }
+    #the user code line with the smallest LD
+  
+      mapping[i] = which.min(ldArray)
+      ldList[i] = ldArray[mapping[i]]
+      max_len <- pmax(nchar(stimCode[i]), nchar(userCode[j]))
+      normalLDList[i] = ldList[i] / max_len  
+      
+      matchedStimuli[i] = 1
+      matchedUserCode[i] = 1 
+    
+   
+  }
+  print(mapping)
+  print(ldList)
+  print(normalLDList)
+  print(matchedStimuli)
+  print(matchedUserCode)
+  
+  missinglines = sum(matchedStimuli == 0 )
+  extralines = sum(matchedUserCode == 0 )
+  
+  print(missinglines)
+  print(extralines)
+  
+  errorlines = sum(extralines)
+  
+  if(errorlines > 0)
+  {
+    normalLDList = c(normalLDList, rep(1, errorlines)) 
+  }
+  #calculate the LD average
+  
+  LDAvg = mean(normalLDList)
+  print(LDAvg)
+  return(LDAvg) 
 }
-print(mapping)
-print(ldList)
-print(normalLDList)
-print(matchedStimuli)
-print(matchedUserCode)
 
-
-
-
-
-missinglines = sum(matchedStimuli == 0 )
-extralines = sum(matchedUserCode == 0 )
-
-print(missinglines)
-print(extralines)
+calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
 
 
 ```
