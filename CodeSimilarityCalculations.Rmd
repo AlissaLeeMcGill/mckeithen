@@ -166,24 +166,57 @@ javaCode[1]
 levDis = stringdist(userCodeVec[1], javaCode[1], method = "lv")
 
 
+ldArray = array(dim = length(javaCode)) # array for inner loop
+mapping = array(dim = length(javaCode))
+ldList = array(dim = length(javaCode))
+normalLDList =array(dim = length(javaCode))
+matchedStimuli =array(0, dim = length(javaCode))
+matchedUserCode =array(0, dim = length(userCodeVec))
 
+#for each line in the java code
 for(i in seq_along(javaCode))
 {
 
+  # for each line in the user code
   for(j in seq_along(userCodeVec))
   {
-    ldArray = array(dim = i)
-    
-    ldArray[i] = stringdist(javaCode[i], userCodeVec[j] method = "lv")
-    
+    print(javaCode[i])
+    print(userCodeVec[j])
+    # compare the line of java code to the user line and store in array using LD 
+    #(smallest number means more similar)
+    ldArray[j] = stringdist(javaCode[i], userCodeVec[j], method = "lv")
+    print(ldArray)
     
   }
+  print("end of inner loop")
+  #the user code line with the smallest LD
+  if(matchedStimuli[i] == 0 && matchedUserCode[i] ==0)
+  {
+     mapping[i] = which.min(ldArray)
+     ldList[i] = ldArray[mapping[i]]
+     max_len <- pmax(nchar(javaCode[i]), nchar(userCodeVec[j]))
+     normalLDList[i] = ldList[i] / max_len
+     
+     matchedStimuli[i] = 1
+     matchedUserCode[i] = 1 
+  }
+ 
 }
+print(mapping)
+print(ldList)
+print(normalLDList)
+print(matchedStimuli)
+print(matchedUserCode)
 
 
 
 
 
+missinglines = sum(matchedStimuli == 0 )
+extralines = sum(matchedUserCode == 0 )
+
+print(missinglines)
+print(extralines)
 
 
 ```
