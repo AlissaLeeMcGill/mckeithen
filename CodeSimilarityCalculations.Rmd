@@ -20,6 +20,7 @@ library(uuid)
 library(Hmisc)
 library(lme4)
 library(stringdist)
+library(TopKLists)
 
 ```
 
@@ -29,7 +30,8 @@ library(stringdist)
 mckData = read.csv("Prolific - McKeithen et al 1981 Reproduction_May 27, 2026_10.09.csv")
 
 ```
-```{r stuff}
+
+```{r Stimulus Code }
 
 javaCode = c("public static void main() {",
              "int number1 = 20;",
@@ -159,18 +161,32 @@ userCode = mckData[ 7, "X1_code.recall.control"]
 parts <- strsplit(userCode, split = "\n")
 userCodeVec = unlist(parts)
 
+```
+
+```{r Stimuli rank vectors }
+
+# this is what we compare to for the foot rule.
+# stimuli code is will be a vector with numbers from 1 to the max num of lines of code
+javaRank = c(1:length(javaCode))
+
+cRank = c(1:length(cCode))
+
+pythonRank = c(1:length(pythonCode))
 
 
+```
 
-
-##returns the normalized average levinscteisns
+```{r Formula to calculate Levenshtein distance }
+##returns a list with
+#[1]the normalized average Levenshtein distance
+#[2]mapping of the user Items to the stimuli Items
 calculate_levdist <- function(stimCode, userCode)
 {
  
   ldArray = array(dim = length(stimCode)) # array for inner loop
   mapping = array(dim = length(stimCode))
   ldList = array(dim = length(stimCode))
-  normalLDList =array(dim = length(stimCode))
+  normalLDList = array(dim = length(stimCode))
   matchedStimuli =array(0, dim = length(stimCode))
   matchedUserCode =array(0, dim = length(userCode))
   
@@ -226,11 +242,44 @@ calculate_levdist <- function(stimCode, userCode)
   #calculate the LD average
   
   LDAvg = mean(normalLDList)
-  print(LDAvg)
-  return(LDAvg) 
+  
+  output = list(LDAvg, mapping)
+
+  return(output) 
 }
 
-calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
+lev_val = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
+
+print(lev_val[1])
+
+print(lev_val[2])
+
+```
+
+```{r Formula to Calculate Spearman's Footrule for line order }
+
+
+print(javaRank)
+print(lev_val[2])
+
+class(javaRank)
+class(lev_val[2])
+
+lev_val_num = as.numeric(unlist(lev_val[2]))
+class(lev_val_num)
+
+TopKLists::Spearman(javaRank, lev_val_num, length(javaRank), length(lev_val_num), union(javaRank, lev_val_num))
+  
 
 
 ```
+
+```{r code }
+
+
+
+
+
+```
+
+

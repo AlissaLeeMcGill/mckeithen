@@ -1,0 +1,38 @@
+---
+title: "McK_CleaningScript"
+author: "Alissa McGill"
+date: "2026-06-04"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r Load all required packages, message=FALSE}
+
+# load libraries
+library(tidyr)
+library(tidyverse)
+library(dplyr)
+library(psych)
+library(ggplot2)
+library(readxl)
+library(uuid)
+library(Hmisc)
+library(stringdist)
+
+```
+
+```{r Load the data }
+
+
+mckData = read.csv("Prolific - McKeithen et al 1981 Reproduction_May 27, 2026_10.09.csv")
+
+```
+
+
+```{r Load the data }
+
+
+mckData = read.csv("Prolific - McKeithen et al 1981 Reproduction_May 27, 2026_10.09.csv")
+
+```
