@@ -13,12 +13,16 @@ editor_options:
 library(tidyr)
 library(tidyverse)
 library(dplyr)
+library(plyr)
 library(psych)
 library(ggplot2)
 library(readxl)
 library(uuid)
 library(Hmisc)
 library(stringdist)
+library(lavaan)
+
+
 
 ```
 
@@ -30,9 +34,101 @@ mckData = read.csv("Prolific - McKeithen et al 1981 Reproduction_May 27, 2026_10
 ```
 
 
-```{r Load the data }
+```{r clean the data }
 
 
-mckData = read.csv("Prolific - McKeithen et al 1981 Reproduction_May 27, 2026_10.09.csv")
+#remove columns we don't need
+mckData <- subset(mckData, select = -c(StartDate,EndDate, Status,IPAddress, ResponseId, RecipientLastName, RecipientFirstName, RecipientEmail, ExternalReference,
+                                       LocationLongitude, LocationLatitude, DistributionChannel, UserLanguage))
+
+mckData <- select(mckData,  -contains(c("First.Click","Last.Click","Click.Count")))
+
+#remove weird first and second rows that we don't need
+mckData <- mckData[-c(1,2),]
+
+#Add Id column
+mckData <- tibble::rowid_to_column(mckData, "ID")
+
+```
+
+```{r Convert text on scales to numbers }
+  
+
+  mckData[(mckData == "very much like me\n6")] = as.numeric(6)
+  mckData[(mckData == "not like me at all\n1")] = as.numeric(1)
+
+  mckData[(mckData == "Never True")] = as.numeric(1)
+  mckData[mckData == "Seldom True"] =  as.numeric(2)
+  mckData[mckData == "Sometimes True"] =  as.numeric(3)
+  mckData[mckData == "Often True"] =  as.numeric(4)
+  mckData[mckData == "Always True"] =  as.numeric(5)
+  
+  
+  mckData[(mckData == "Not anxious\n1")] = as.numeric(1)
+  mckData[(mckData == "Very Anxious\n10")] = as.numeric(10)
+  
+  mckData[(mckData == "strongly agree\n6")] = as.numeric(6)
+  mckData[(mckData == "strongly disagree\n1")] = as.numeric(1)
+  
+ 
+##################################### REMEMBER TO RE CODE THE GROWTH MINDSET ITEMS ##############################
+  
+  
+## reversed = (max+min) - original
+ # reversed = 6+1 - original 
+ # find them reverse coded Q's  
+  
+ 
+
+```
+
+```{r Composite Variable calculation function}
+
+calculate_composite_mean <-function(df, start_col, end_col, final_col_name){
+  
+  #find the first and last items 
+  start_column_index = which(colnames(mckData) == start_col)
+  end_column_index = which(colnames(mckData) == end_col)
+  
+  print(start_column_index)
+  print(end_column_index)
+
+  #grab the items in the range and put into a new dataframe to work with  
+  COMPOSITE_DF <- subset(mckData, select=c(1,start_column_index:end_column_index))
+  
+  # make sure all items in the dataframe are numeric
+  COMPOSITE_DF[] = lapply(COMPOSITE_DF, as.numeric)
+  
+  #flip to long format 
+  DF_LONG = gather(COMPOSITE_DF, COMP ,COMP_val, start_col:end_col)
+  
+  #calculate the mean
+  DF_LONG_aggregate = aggregate(COMP_val ~ ID, data = DF_LONG, FUN=mean)
+  
+  #rename to our specified final_col_name # see https://www.aj2duncan.com/blog/using-dplyr-rename-within-a-function/
+  #DF_LONG_aggregate= rename(DF_LONG_aggregate, {{final_col_name}} := COMP_val)
+  names(DF_LONG_aggregate)[names(DF_LONG_aggregate) == "COMP_val"] <- final_col_name
+  
+  df = left_join(df, DF_LONG_aggregate)
+  
+  return(df)
+  
+}
+  
+
+
+```
+
+```{r calculate composite scales per person}
+
+mckData = calculate_composite_mean(mckData,"CPSES_1","CPSES_16", "CPSES_COMP")
+
+mckData = calculate_composite_mean(mckData,"PAS.YILDIRIM.OZDENER_1","PAS.YILDIRIM.OZDENER_11", "PAS_COMP")
+
+mckData = calculate_composite_mean(mckData,"Math.Anxiety_2","Math.Anxiety_12", "MA_COMP")
+
+mckData = calculate_composite_mean(mckData,"Growth.Mindset_1","Growth.Mindset_7", "MIND_COMP")
+
+
 
 ```
