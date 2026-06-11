@@ -1,0 +1,3866 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,prolificID,age,LangChoice,Expertise,Experience months,1_Q38_First Click,1_Q38_Last Click,1_Q38_Page Submit,1_Q38_Click Count,1_Q39_First Click,1_Q39_Last Click,1_Q39_Page Submit,1_Q39_Click Count,1_code recall control,2_Q38_First Click,2_Q38_Last Click,2_Q38_Page Submit,2_Q38_Click Count,2_Q39_First Click,2_Q39_Last Click,2_Q39_Page Submit,2_Q39_Click Count,2_code recall control,3_Q38_First Click,3_Q38_Last Click,3_Q38_Page Submit,3_Q38_Click Count,3_Q39_First Click,3_Q39_Last Click,3_Q39_Page Submit,3_Q39_Click Count,3_code recall control,4_Q38_First Click,4_Q38_Last Click,4_Q38_Page Submit,4_Q38_Click Count,4_Q39_First Click,4_Q39_Last Click,4_Q39_Page Submit,4_Q39_Click Count,4_code recall control,5_Q38_First Click,5_Q38_Last Click,5_Q38_Page Submit,5_Q38_Click Count,5_Q39_First Click,5_Q39_Last Click,5_Q39_Page Submit,5_Q39_Click Count,5_code recall control,1_Q37_First Click,1_Q37_Last Click,1_Q37_Page Submit,1_Q37_Click Count,1_Q40_First Click,1_Q40_Last Click,1_Q40_Page Submit,1_Q40_Click Count,1_Code Recall Exp ,2_Q37_First Click,2_Q37_Last Click,2_Q37_Page Submit,2_Q37_Click Count,2_Q40_First Click,2_Q40_Last Click,2_Q40_Page Submit,2_Q40_Click Count,2_Code Recall Exp ,3_Q37_First Click,3_Q37_Last Click,3_Q37_Page Submit,3_Q37_Click Count,3_Q40_First Click,3_Q40_Last Click,3_Q40_Page Submit,3_Q40_Click Count,3_Code Recall Exp ,4_Q37_First Click,4_Q37_Last Click,4_Q37_Page Submit,4_Q37_Click Count,4_Q40_First Click,4_Q40_Last Click,4_Q40_Page Submit,4_Q40_Click Count,4_Code Recall Exp ,5_Q37_First Click,5_Q37_Last Click,5_Q37_Page Submit,5_Q37_Click Count,5_Q40_First Click,5_Q40_Last Click,5_Q40_Page Submit,5_Q40_Click Count,5_Code Recall Exp ,codeUnderstandFree,Q50,Q52,Q54,Q56,CPSES_1,CPSES_2,CPSES_3,CPSES_4,CPSES_5,CPSES_6,CPSES_7,CPSES_8,CPSES_9,CPSES_10,CPSES_11,CPSES_12,CPSES_13,CPSES_14,CPSES_15,CPSES_16,PAS-YILDIRIM&OZDENER_1,PAS-YILDIRIM&OZDENER_2,PAS-YILDIRIM&OZDENER_3,PAS-YILDIRIM&OZDENER_4,PAS-YILDIRIM&OZDENER_5,PAS-YILDIRIM&OZDENER_6,PAS-YILDIRIM&OZDENER_7,PAS-YILDIRIM&OZDENER_8,PAS-YILDIRIM&OZDENER_9,PAS-YILDIRIM&OZDENER_10,PAS-YILDIRIM&OZDENER_11,Math Anxiety_1,Math Anxiety_2,Math Anxiety_3,Math Anxiety_4,Math Anxiety_5,Math Anxiety_6,Math Anxiety_7,Math Anxiety_8,Math Anxiety_9,Math Anxiety_10,Math Anxiety_11,Math Anxiety_12,Math Anxiety_13,Growth Mindset_1,Growth Mindset_2,Growth Mindset_3,Growth Mindset_4,Growth Mindset_5,Growth Mindset_6,Growth Mindset_7,Primary Language,Primary Language_8_TEXT,Education,Education_4_TEXT,Education_5_TEXT,Education_6_TEXT,Current Title,Current Title_14_TEXT,gender,gender_4_TEXT,race/eth,race/eth_8_TEXT,GenAiFree,AnythingElseFree
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,Please enter your unique Prolific ID,You must be 18 years or older to participate in this study. How old are you (in years)?,Which of the following languages are you most familiar with?,How do you estimate your programming experience?,How many months have you been programming?,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"In the box below, write as much of the program as you can remember, putting each recalled line as close to its presented position as possible.
+
+You will be moved to the next page automatically when your time is up.",Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"In the box below, write as much of the program as you can remember, putting each recalled line as close to its presented position as possible.
+
+You will be moved to the next page automatically when your time is up.",Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"In the box below, write as much of the program as you can remember, putting each recalled line as close to its presented position as possible.
+
+You will be moved to the next page automatically when your time is up.",Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"In the box below, write as much of the program as you can remember, putting each recalled line as close to its presented position as possible.
+
+You will be moved to the next page automatically when your time is up.",Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"In the box below, write as much of the program as you can remember, putting each recalled line as close to its presented position as possible.
+
+You will be moved to the next page automatically when your time is up.",Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"In the box below, write as much of the program as you can remember, putting each recalled line as close to its presented position as possible.
+
+You will be moved to the next page automatically when your time is up.",Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"In the box below, write as much of the program as you can remember, putting each recalled line as close to its presented position as possible.
+
+You will be moved to the next page automatically when your time is up.",Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"In the box below, write as much of the program as you can remember, putting each recalled line as close to its presented position as possible.
+
+You will be moved to the next page automatically when your time is up.",Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"In the box below, write as much of the program as you can remember, putting each recalled line as close to its presented position as possible.
+
+You will be moved to the next page automatically when your time is up.",Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,Timing - First Click,Timing - Last Click,Timing - Page Submit,Timing - Click Count,"In the box below, write as much of the program as you can remember, putting each recalled line as close to its presented position as possible.
+
+You will be moved to the next page automatically when your time is up.","In the box below, please explain what you think the code you just saw was doing.",Which figure from those shown above completes the pattern?,Which one does not follow the pattern?,Which set is incompatible with the given set?,Which answer choice shows the opposite of the given process?,"For each statement below, indicate how well it describes you. - I can understand the basic logical structure of a program","For each statement below, indicate how well it describes you. - I can understand a conditional expression such as ‘‘if ... else ...’’","For each statement below, indicate how well it describes you. - I can predict the final result of a program with logical conditions.","For each statement below, indicate how well it describes you. - I can predict the result of a program when given its input values.","For each statement below, indicate how well it describes you. - I know programming work can be divided into sub-tasks for people.","For each statement below, indicate how well it describes you. - I can work with others while writing a program.","For each statement below, indicate how well it describes you. - I can make use of divisions to enhance programming efficiency.","For each statement below, indicate how well it describes you. - I can figure out program procedures without a sample.","For each statement below, indicate how well it describes you. - I don’t need others’ help to construct a program","For each statement below, indicate how well it describes you. - I can make use of programming to solve a problem.","For each statement below, indicate how well it describes you. - I can open and save a program in a program editor","For each statement below, indicate how well it describes you. - I can edit and revise a program in a program editor","For each statement below, indicate how well it describes you. - I can run and test a program in a program editor","For each statement below, indicate how well it describes you. - I can find the origin of an error while testing a program.","For each statement below, indicate how well it describes you. - I can fix an error while testing a program.","For each statement below, indicate how well it describes you. - I can learn more about programming via the debugging process",Please rate how often the following statements are true for you. - Believing that I cannot reach the level of my friends or colleagues who study programming or work as programmers makes me anxious.,Please rate how often the following statements are true for you. - The presence of peers or colleagues who work as programmers or study programming makes me nervous.,Please rate how often the following statements are true for you. - It makes me anxious when many of my peers or colleagues can write the code that I cannot write.,Please rate how often the following statements are true for you. - I feel tense when my friends or colleagues talk about programming topics that I don't understand.,Please rate how often the following statements are true for you. - I am concerned about not being able to write a program and being ridiculed by my peers or colleagues.,Please rate how often the following statements are true for you. - I think I do not understand programming well,Please rate how often the following statements are true for you. - I have doubts about creating the steps (algorithm) necessary for the solution while coding the program,Please rate how often the following statements are true for you. - I feel confused when the program lines become complicated.,Please rate how often the following statements are true for you. - I don't trust myself in writing programs,Please rate how often the following statements are true for you. - It scares me that there are too many topics to learn in the programming lesson.,Please rate how often the following statements are true for you. - Debugging programs is a major worry for me.,"On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - In general?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about doubling a recipe when cooking?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about reviewing a receipt to make sure you received the appropriate sale price?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about comparing the cost of flying to driving for an upcoming trip?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about figuring out an appropriate tip on a shared bill at a restaurant?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about keeping score while playing a game?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about splitting the shared costs from an event with friends?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about taking the math section of a college entrance exam, such as the SAT or the ACT?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about completing an unannounced pop quiz in a math class?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about receiving your final grade at the end of a math class?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about working on a math practice test with a group of peers?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about being given a set of problems to solve on the board in front of your classmates?","On a scale of 1 to 10, with 10 being the most anxious, how math anxious do you feel... - about helping someone with their math homework?",Please rate how strongly you agree with each statement - You have a certain amount of intelligence and you can’t really do much to change it.,Please rate how strongly you agree with each statement - Your intelligence is something about you that you can't change very much,"Please rate how strongly you agree with each statement - No matter who you are, you can significantly change your intelligence level","Please rate how strongly you agree with each statement - To be honest, you can’t really change how intelligent you are",Please rate how strongly you agree with each statement - You can always substantially change how intelligent you are,"Please rate how strongly you agree with each statement - You can learn new things, but you can’t change your basic intelligence","Please rate how strongly you agree with each statement - No matter how much intelligence you have , you can always change it quite a bit",What do you consider your primary programming language? - Selected Choice,What do you consider your primary programming language? - Other - Text,Which levels of education you have completed? - Selected Choice,Which levels of education you have completed? - Associates or technical degree. Please list the name of your degree(s) - Text,Which levels of education you have completed? - Bachelor’s degree. Please list the name of your degree(s) - Text,"Which levels of education you have completed? - Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s). - Text",Please select the job title that is closest to the one you currently hold. - Selected Choice,Please select the job title that is closest to the one you currently hold. - Other - Text,How do you describe yourself? - Selected Choice,How do you describe yourself? - Prefer to self-describe - Text,Choose one or more races that you consider yourself to be - Selected Choice,Choose one or more races that you consider yourself to be - Other - Text,Please share your opinions on the use of Generative AI in computer science classrooms or in the workplace. How does it affect programmers in a positive way or in a negative way?,Is there anything else you'd like to share with the experimenters about the tasks and survey you have just completed?
+"{""ImportId"":""startDate"",""timeZone"":""America/New_York""}","{""ImportId"":""endDate"",""timeZone"":""America/New_York""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/New_York""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID62_TEXT""}","{""ImportId"":""QID25_TEXT""}","{""ImportId"":""QID19""}","{""ImportId"":""QID24""}","{""ImportId"":""QID5_TEXT""}","{""ImportId"":""1_QID38_FIRST_CLICK""}","{""ImportId"":""1_QID38_LAST_CLICK""}","{""ImportId"":""1_QID38_PAGE_SUBMIT""}","{""ImportId"":""1_QID38_CLICK_COUNT""}","{""ImportId"":""1_QID39_FIRST_CLICK""}","{""ImportId"":""1_QID39_LAST_CLICK""}","{""ImportId"":""1_QID39_PAGE_SUBMIT""}","{""ImportId"":""1_QID39_CLICK_COUNT""}","{""ImportId"":""1_QID36_TEXT""}","{""ImportId"":""2_QID38_FIRST_CLICK""}","{""ImportId"":""2_QID38_LAST_CLICK""}","{""ImportId"":""2_QID38_PAGE_SUBMIT""}","{""ImportId"":""2_QID38_CLICK_COUNT""}","{""ImportId"":""2_QID39_FIRST_CLICK""}","{""ImportId"":""2_QID39_LAST_CLICK""}","{""ImportId"":""2_QID39_PAGE_SUBMIT""}","{""ImportId"":""2_QID39_CLICK_COUNT""}","{""ImportId"":""2_QID36_TEXT""}","{""ImportId"":""3_QID38_FIRST_CLICK""}","{""ImportId"":""3_QID38_LAST_CLICK""}","{""ImportId"":""3_QID38_PAGE_SUBMIT""}","{""ImportId"":""3_QID38_CLICK_COUNT""}","{""ImportId"":""3_QID39_FIRST_CLICK""}","{""ImportId"":""3_QID39_LAST_CLICK""}","{""ImportId"":""3_QID39_PAGE_SUBMIT""}","{""ImportId"":""3_QID39_CLICK_COUNT""}","{""ImportId"":""3_QID36_TEXT""}","{""ImportId"":""4_QID38_FIRST_CLICK""}","{""ImportId"":""4_QID38_LAST_CLICK""}","{""ImportId"":""4_QID38_PAGE_SUBMIT""}","{""ImportId"":""4_QID38_CLICK_COUNT""}","{""ImportId"":""4_QID39_FIRST_CLICK""}","{""ImportId"":""4_QID39_LAST_CLICK""}","{""ImportId"":""4_QID39_PAGE_SUBMIT""}","{""ImportId"":""4_QID39_CLICK_COUNT""}","{""ImportId"":""4_QID36_TEXT""}","{""ImportId"":""5_QID38_FIRST_CLICK""}","{""ImportId"":""5_QID38_LAST_CLICK""}","{""ImportId"":""5_QID38_PAGE_SUBMIT""}","{""ImportId"":""5_QID38_CLICK_COUNT""}","{""ImportId"":""5_QID39_FIRST_CLICK""}","{""ImportId"":""5_QID39_LAST_CLICK""}","{""ImportId"":""5_QID39_PAGE_SUBMIT""}","{""ImportId"":""5_QID39_CLICK_COUNT""}","{""ImportId"":""5_QID36_TEXT""}","{""ImportId"":""1_QID37_FIRST_CLICK""}","{""ImportId"":""1_QID37_LAST_CLICK""}","{""ImportId"":""1_QID37_PAGE_SUBMIT""}","{""ImportId"":""1_QID37_CLICK_COUNT""}","{""ImportId"":""1_QID40_FIRST_CLICK""}","{""ImportId"":""1_QID40_LAST_CLICK""}","{""ImportId"":""1_QID40_PAGE_SUBMIT""}","{""ImportId"":""1_QID40_CLICK_COUNT""}","{""ImportId"":""1_QID1_TEXT""}","{""ImportId"":""2_QID37_FIRST_CLICK""}","{""ImportId"":""2_QID37_LAST_CLICK""}","{""ImportId"":""2_QID37_PAGE_SUBMIT""}","{""ImportId"":""2_QID37_CLICK_COUNT""}","{""ImportId"":""2_QID40_FIRST_CLICK""}","{""ImportId"":""2_QID40_LAST_CLICK""}","{""ImportId"":""2_QID40_PAGE_SUBMIT""}","{""ImportId"":""2_QID40_CLICK_COUNT""}","{""ImportId"":""2_QID1_TEXT""}","{""ImportId"":""3_QID37_FIRST_CLICK""}","{""ImportId"":""3_QID37_LAST_CLICK""}","{""ImportId"":""3_QID37_PAGE_SUBMIT""}","{""ImportId"":""3_QID37_CLICK_COUNT""}","{""ImportId"":""3_QID40_FIRST_CLICK""}","{""ImportId"":""3_QID40_LAST_CLICK""}","{""ImportId"":""3_QID40_PAGE_SUBMIT""}","{""ImportId"":""3_QID40_CLICK_COUNT""}","{""ImportId"":""3_QID1_TEXT""}","{""ImportId"":""4_QID37_FIRST_CLICK""}","{""ImportId"":""4_QID37_LAST_CLICK""}","{""ImportId"":""4_QID37_PAGE_SUBMIT""}","{""ImportId"":""4_QID37_CLICK_COUNT""}","{""ImportId"":""4_QID40_FIRST_CLICK""}","{""ImportId"":""4_QID40_LAST_CLICK""}","{""ImportId"":""4_QID40_PAGE_SUBMIT""}","{""ImportId"":""4_QID40_CLICK_COUNT""}","{""ImportId"":""4_QID1_TEXT""}","{""ImportId"":""5_QID37_FIRST_CLICK""}","{""ImportId"":""5_QID37_LAST_CLICK""}","{""ImportId"":""5_QID37_PAGE_SUBMIT""}","{""ImportId"":""5_QID37_CLICK_COUNT""}","{""ImportId"":""5_QID40_FIRST_CLICK""}","{""ImportId"":""5_QID40_LAST_CLICK""}","{""ImportId"":""5_QID40_PAGE_SUBMIT""}","{""ImportId"":""5_QID40_CLICK_COUNT""}","{""ImportId"":""5_QID1_TEXT""}","{""ImportId"":""QID59_TEXT""}","{""ImportId"":""QID50""}","{""ImportId"":""QID52""}","{""ImportId"":""QID54""}","{""ImportId"":""QID56""}","{""ImportId"":""QID44_1""}","{""ImportId"":""QID44_2""}","{""ImportId"":""QID44_3""}","{""ImportId"":""QID44_4""}","{""ImportId"":""QID44_5""}","{""ImportId"":""QID44_6""}","{""ImportId"":""QID44_7""}","{""ImportId"":""QID44_8""}","{""ImportId"":""QID44_9""}","{""ImportId"":""QID44_10""}","{""ImportId"":""QID44_11""}","{""ImportId"":""QID44_12""}","{""ImportId"":""QID44_13""}","{""ImportId"":""QID44_14""}","{""ImportId"":""QID44_15""}","{""ImportId"":""QID44_16""}","{""ImportId"":""QID4_1""}","{""ImportId"":""QID4_2""}","{""ImportId"":""QID4_3""}","{""ImportId"":""QID4_4""}","{""ImportId"":""QID4_5""}","{""ImportId"":""QID4_6""}","{""ImportId"":""QID4_7""}","{""ImportId"":""QID4_8""}","{""ImportId"":""QID4_9""}","{""ImportId"":""QID4_10""}","{""ImportId"":""QID4_11""}","{""ImportId"":""QID9_1""}","{""ImportId"":""QID9_2""}","{""ImportId"":""QID9_3""}","{""ImportId"":""QID9_4""}","{""ImportId"":""QID9_5""}","{""ImportId"":""QID9_6""}","{""ImportId"":""QID9_7""}","{""ImportId"":""QID9_8""}","{""ImportId"":""QID9_9""}","{""ImportId"":""QID9_10""}","{""ImportId"":""QID9_11""}","{""ImportId"":""QID9_12""}","{""ImportId"":""QID9_13""}","{""ImportId"":""QID8_1""}","{""ImportId"":""QID8_2""}","{""ImportId"":""QID8_3""}","{""ImportId"":""QID8_4""}","{""ImportId"":""QID8_5""}","{""ImportId"":""QID8_6""}","{""ImportId"":""QID8_7""}","{""ImportId"":""QID6""}","{""ImportId"":""QID6_8_TEXT""}","{""ImportId"":""QID3""}","{""ImportId"":""QID3_4_TEXT""}","{""ImportId"":""QID3_5_TEXT""}","{""ImportId"":""QID3_6_TEXT""}","{""ImportId"":""QID11""}","{""ImportId"":""QID11_14_TEXT""}","{""ImportId"":""QID14""}","{""ImportId"":""QID14_4_TEXT""}","{""ImportId"":""QID26""}","{""ImportId"":""QID26_8_TEXT""}","{""ImportId"":""QID60_TEXT""}","{""ImportId"":""QID57_TEXT""}"
+2026-05-20 14:28:36,2026-05-20 15:00:23,IP Address,47.187.191.28,100,1907,True,2026-05-20 15:00:24,R_3j4VimAMg1LahZ7,,,,,33.0326,-96.7859,anonymous,EN,656f97b81b51c257c08d6e51,24,Java,Closer to the average or mid-level programmer,60,0,0,120.013,0,13.078,13.078,180.124,1,"public static void main(){
+int number1=20
+int number2=15
+System.out.print(compute(number1,number2));
+}
+public static int compute(int number1, int number2){
+int temp = number1;
+while(temp!=0){
+if(number1<number2){
+temp=number1;
+number1=number2;
+number2=temp;
+}
+temp=number1%number2;
+if(temp!=0){
+number1=number2;
+number2=temp;
+}
+}
+return number2;
+}",0,0,120.013,0,1.545,174.634,180.015,3,"public static void main(){
+int number1=20
+int number2=15
+System.out.print(compute(number1,number2));}
+public static int compute(int number1, int number2){
+int temp = number1;
+while(temp!=0){
+if(number1<number2){
+temp=number1;
+number1=number2;
+}}}",0,0,120.012,0,1.804,93.956,180.012,4,"public static void main(){
+int number1=20
+int number2=15
+System.out.print(compute(number1,number2));
+}
+public static int compute(int number1, int number2){
+int temp = number1;
+while(temp!=0){
+if(number1<number2){
+temp=number1;
+number1=number2;
+number2=temp;
+}
+temp=number1%number2;
+if(temp!=0){
+number1=number2;
+number2=temp;
+}
+}
+return number2;
+}",0,0,120.013,0,2.165,2.165,180.01,1,"public static void main(){
+int number1=20
+int number2=15
+System.out.print(compute(number1,number2));
+}
+public static int compute(int number1, int number2){
+int temp = number1;
+while(temp!=0){
+if(number1<number2){
+temp=number1;
+number1=number2;
+number2=temp;
+}
+temp=number1%number2;
+if(temp!=0){
+number1=number2;
+number2=temp;
+}
+}
+return number2;
+}",0,0,120.017,0,17.904,17.904,180.015,1,"public static void main(){
+int number1=20
+int number2=15
+System.out.print(compute(number1,number2));
+}
+public static int compute(int number1, int number2){
+int temp = number1;
+while(temp!=0){
+if(number1<number2){
+temp=number1;
+number1=number2;
+number2=temp;
+}
+temp=number1%number2;
+if(temp!=0){
+number1=number2;
+number2=temp;
+}
+}
+return number2;
+}",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,The code is a famous algorithm which is the Euclidean algorithm used to find the gcd of two numbers.,A,D,D,A,5,"very much like me
+6",5,5,"very much like me
+6",5,5,4,5,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Often True,Sometimes True,Often True,Often True,Sometimes True,Often True,Sometimes True,Sometimes True,Seldom True,Sometimes True,Seldom True,3,2,2,3,3,2,3,4,6,3,4,8,4,3,3,2,3,5,3,5,Java,,Bachelor’s degree. Please list the name of your degree(s),,Bachelor of Engineering in Computer Science,,Software Developer/Software Engineer,,Male,,Asian,,I think it increases the productivity of developers but I feel that using it in the long run it also increases the dependency of the developer on using AI to write code.,No
+2026-05-20 14:24:27,2026-05-20 15:17:20,IP Address,92.29.185.124,100,3173,True,2026-05-20 15:17:21,R_8gLcTMnXAlzRwVP,,,,,52.547,-1.9396,anonymous,EN,67aa54c162dc637de018fe18,43,Python,Closer to a senior programmer or software architect,55,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,120.01,0,12.355,112.137,180.008,8,"     return number2;
+ int main() { ... }
+  number1=number2;
+int number2= 15;
+   if (number1<number2)  {
+while 
+
+
+
+
+",0,0,65.803,0,2.779,2.779,180.109,1,"    return number2:
+int main(){
+               number1=number2:
+int number2=15:
+     if (number1<number2) {
+while (temp !=",0,0,120.007,0,8.929,8.929,180.017,1,"      return number2;
+int main() {
+              number1=number2
+    int number2=15;
+    if (number1< numb",0,0,120.117,0,5.495,110.284,180.015,9,"      return number2:
+int main() {
+number1=number2:
+int number2=15:
+if nume",0,0,120.016,0,13.045,96.578,180.014,8,"     return number2;
+
+ int main() { ... }
+ 
+     number1 = number2;
+
+int number2 = 15;
+
+     if (number1 < number2) { 
+while (temp != 0) {}
+ int temp = number1; 
+temp = number1;
+ }
+int compute(int number1, int number2) {
+   number2=temp;
+int number1=20;
+  temp
+","The code I  just saw doesn’t appear to be a functional program but rather a deliberately confusing snippet meant to test memory and reasoning. It mixes valid C++ syntax with invalid structure, such as starting with return number2; outside of any function, redeclaring variables multiple times, and defining a compute() function inside main(). Conceptually, it looks like it is trying to shuffle values between number1, number2, and temp, using conditionals, a modulus operation, and even a recursive call to compute() with cout. Overall, the snippet doesn’t compile or perform a meaningful task, but it seems designed to challenge recall by forcing one to notice unusual ordering, variable shadowing, and recursion rather than to execute a real computation.",A,D,A,B,"very much like me
+6","very much like me
+6",5,5,"very much like me
+6","very much like me
+6","very much like me
+6",5,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",5,"very much like me
+6",5,Never True,Never True,Seldom True,Seldom True,Never True,Never True,Seldom True,Seldom True,Never True,Sometimes True,Seldom True,2,"Not anxious
+1",2,3,2,"Not anxious
+1",2,6,5,4,3,6,2,"strongly disagree
+1",2,"strongly agree
+6","strongly disagree
+1","strongly agree
+6",2,"strongly agree
+6",Python,,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,Masters,Software Developer/Software Engineer,,Male,,Black or African American,,"Generative AI in computer science classrooms and workplaces can be both empowering and disruptive: it accelerates learning and productivity by providing instant feedback, automating repetitive coding tasks, and enabling rapid prototyping, but it also risks fostering over reliance, weakening fundamental skill development, and introducing errors or insecure code if outputs are not carefully reviewed; in classrooms it challenges traditional assessment methods, while in workplaces it shifts demand away from entry level coding toward oversight and integration, meaning its overall impact depends on whether it is used as a supportive tool to enhance human expertise or as a shortcut that undermines it.",
+2026-05-20 14:29:47,2026-05-20 15:23:12,IP Address,73.219.218.107,100,3205,True,2026-05-20 15:23:13,R_6KllduPI63gWY9z,,,,,41.3908,-73.4483,anonymous,EN,6638e8aa3d1f38846080806a,27,Python,Closer to a senior programmer or software architect,72,0,0,120.106,0,2.758,121.815,180.111,3,"def main():
+number1 = 20
+number2 = 15
+
+print(compute(number1, number2))
+
+def compute(number1, number2):
+temp = number1
+while temp != 0:
+    number1 = number2
+    number2 = temp
+temp = number1%number2
+if temp != 0L
+    number1 = number",0,0,120.008,0,12.047,12.047,180.111,1,"def main():
+  number1 = 20
+  number2 = 15
+  
+  print(compute(number1, number2)
+  
+  def compute(number1, number2):
+       temp = number1
+       while temp != 0:
+             if number1 < number2:
+                 temp = number1
+                 number1 = number2
+                 number2 = temp
+            temp = number1%number2
+            if temp != 0
+                 number1 = number2
+                 number2 = temp
+           return number2",0,0,120.112,0,1.691,1.691,180.01,1,"def main():
+   number1 = 20
+   number2 = 15
+   print(compute(number1, number2))
+def compute(number1, number2):
+   temp = number1
+   while temp != 0:
+      if number1 < number2:
+         temp = number1
+         number1 = number2
+         number2 = temp
+      temp = number1 % number2
+      if temp != 0:
+         number1 = number2
+         number2 = temp
+   return number2",0,0,120.11,0,4.348,4.348,180.008,1,"def main():
+number1 = 20
+number2 = 15
+print(compute(number1, number2))
+
+def compute(number1, number2)
+  temp =  number1
+  while temp!=0:
+    if number1 < number2:
+      temp=number1
+      number1 = number2
+      number2 = temp
+    temp = number1 % number2
+    if temp != 0:
+      number1 = number2
+      number2 = temp
+return number2",0,0,120.005,0,6.323,61.074,180.004,2,"def ,main():
+number1 = 20
+number2 = 15
+print(compute(number1, number2)
+
+def compute(number1, number2):
+    temp = number1
+    while temp!= 0:
+        if number1 < number2:
+           temp = number1
+           number1 = number2
+           number2 = temp
+       temp = number1 % number2
+       if temp != 0:
+           numb",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,It is basically trying to make temp to reach 0 from a certain number1 value,A,D,D,C,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","not like me at all
+1","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Sometimes True,Sometimes True,Sometimes True,Sometimes True,Seldom True,Seldom True,Seldom True,Seldom True,Sometimes True,Sometimes True,Sometimes True,6,6,6,6,6,6,6,6,6,6,6,6,6,"strongly disagree
+1","strongly disagree
+1","strongly disagree
+1","strongly disagree
+1","strongly disagree
+1","strongly disagree
+1","strongly disagree
+1",Python,,Bachelor’s degree. Please list the name of your degree(s),,Computer Engineering,,Software Developer/Software Engineer,,Male,,"Hispanic or Latino,White",,It is positive as an assistant tool to be used to assist you at work,no
+2026-05-20 15:11:44,2026-05-20 15:48:29,IP Address,72.88.206.250,100,2204,True,2026-05-20 15:48:30,R_5rMdHSeRl88TC1P,,,,,40.7082,-74.1891,anonymous,EN,6639047d6cee07457d9c13dc,67,Python,Closer to a senior programmer or software architect,200,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,71.902,91.362,120.017,2,3.386,84.741,180.047,5,"int compute(int number1, int number2) {
+
+    int temp;
+
+    while (temp != 0) {
+
+        temp = number1 % number2;
+        number1 = number2;
+
+        if (temp != 0) {
+            number2 = temp;
+        }
+    }
+
+    return number2;
+}
+
+int main() {
+
+    int number1 = 20;
+    int number2 = 15;
+
+    if (number1 < number2) {
+
+        int temp = number1;
+        temp = number1;
+    }
+
+    cout << compute(number1, number2);
+}",4.09,90.922,120.201,6,0.83,58.616,180.235,2,"int compute(int number1, int number2) {
+
+    int temp;
+
+    while (temp != 0) {
+
+        temp = number1 % number2;
+        number1 = number2;
+        number2 = temp;
+    }
+
+    return number2;
+}
+
+int main() {
+
+    int number1 = 20;
+    int number2 = 15;
+
+    if (number1 < number2) {
+
+        int temp = number1;
+        temp = number1;
+    }
+
+    cout << compute(number1, number2);
+}",12.075,119.221,120.032,7,52.676,153.34,180.075,9,"int compute(int number1, int number2) {
+
+    int temp;
+
+    while (temp != 0) {
+        temp = number1 % number2;
+        number1 = number2;
+    }
+
+    return number2;
+
+int main() {
+
+    int number1 = 20;
+    int number2 = 15;
+
+    if (number1 < number2) {
+
+        int temp = number1;
+        temp = number1;
+
+    }
+
+    cout << compute(number1, number2);
+
+    number2 = temp;
+}",3.151,7.535,120.18,2,1.585,8.891,180.198,3,"int compute(int number1, int number2) {
+
+    int temp;
+
+    while (temp != 0) {
+
+        temp = number1 % number2;
+        number1 = number2;
+        number2 = temp;
+    }
+
+    return number2;
+}
+
+int main() {
+
+    int number1 = 20;
+    int number2 = 15;
+
+    if (number1 < number2) {
+
+        int temp = number1;
+        temp = number1;
+    }
+
+    cout << compute(number1, number2);
+
+}",3.66,48.741,120.189,11,3.181,130.9,180.092,15,"int compute(int number1, int number2) {
+    int temp;
+
+    while (temp != 0) {
+        temp = number1 % number2;
+        number1 = number2;
+        number2 = temp;
+    }
+
+    return number2;
+}
+
+int main() {
+    int number1 = 20;
+    int number2 = 15;
+
+    if (number1 < number2) {
+        int temp = number1;
+        temp = number1;
+    }
+
+    cout << compute(number1, number2);
+}","The code was basically comparing two numbers using a loop and remainders until it found the final answer, then printed it out.",A,A,D,B,"very much like me
+6","very much like me
+6",5,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,"Not anxious
+1",2,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",4,"Not anxious
+1",3,"Not anxious
+1","Not anxious
+1","Not anxious
+1","strongly disagree
+1","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6",Python,,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,,Software Developer/Software Engineer,,Female,,Black or African American,,"It helps programmers by speeding up coding, debugging, and learning. The downside is that people can become too dependent on it and sometimes trust incorrect code without checking it.","The study went smoothly. "
+2026-05-20 16:19:11,2026-05-20 16:41:22,IP Address,31.51.76.223,100,1331,True,2026-05-20 16:41:23,R_2x0lmIxcTOsPpLz,,,,,52.9538,-1.1571,anonymous,EN,5f919274b5383b00096b0295,33,Python,Closer to the average or mid-level programmer,80,3.619,3.619,16.953,1,0.772,30.335,50.889,4,"def main():
+number1=20
+number2=15
+print(compute(number1,number2)
+def(compute(number1,number2):
+temp=number1
+while temp!=0
+if number1<number2:
+temp=number1
+number1=number2
+number2=temp
+temp=number1% number2
+if temp!=0:
+number1=number2
+number2=temp
+return number2",0,0,26.841,0,3.079,107.093,141.566,6,"def main():
+number1=20
+number2=15
+print(compute(number1,number2)
+temp=number1
+while temp!=0
+if number1>number2:
+temp=number1
+number1=number2
+number2=temp",0,0,18.422,0,0.778,116.098,118.727,3,"def main():
+number1=20
+number2=15
+print(compute(number1,number2)
+temp=number1
+while temp!=0
+if number1<number2:
+temp=number1
+number1=number2
+number2=temp
+temp=number1% number2
+if temp!=0:
+number1=number2
+number2=temp
+return number2",0,0,120.013,0,2.787,103.709,180.018,7,"def main():
+number1=20
+number2=15
+print(compute(number1,number2)
+def compute(number1,number2):
+while temp=0
+
+",0,0,17.572,0,1.086,19.405,30.588,6,"def main():
+number1=20
+number2=15
+print(compute(number1,number2)
+def compute(number1,number2):
+temp=number1
+while temp!=0
+if number1<number2:
+temp=number1
+number1=number2
+number2=temp
+temp=number1% number2
+if temp!=0:
+number1=number2
+number2=temp
+return number2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"there are 2 values number1 and number 2. Temp temporaryly keep the numbers and check while they are =0 or not and give conditions accordingly and print ",A,C,D,A,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",5,"very much like me
+6",5,2,5,5,5,"very much like me
+6",5,5,"very much like me
+6",Often True,Often True,Always True,Often True,Often True,Sometimes True,Sometimes True,Often True,Often True,Sometimes True,Sometimes True,4,2,4,3,4,4,4,3,2,5,4,5,4,4,3,4,2,5,4,3,Python,,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,msc and phd,Software Team Lead or Manager,,Female,,Middle Eastern or North African,,I think it is good if you use in a rigth way but it is challenging to define what the right way is. Student can learn via the AI feedback for their codes or anything they are not sure or struggle so it is like their best friend to help,
+2026-05-20 16:13:57,2026-05-20 16:44:15,IP Address,87.196.82.32,100,1817,True,2026-05-20 16:44:16,R_8qk5vls3EGzva2f,,,,,38.7057,-9.1359,anonymous,EN,5d5575339025920017fd271f,24,Python,Closer to the average or mid-level programmer,50,0.826,0.826,120.939,1,67.228,98.236,183.956,12,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+             temp = number1
+              number1 = number2
+             number2 = temp
+
+        temp = number1 % number2
+
+          if temp != 0:
+             number1 = number2
+             number2 = temp
+
+    return number2",4.317,97.3,120.031,13,3.831,115.364,180.037,4,"def main():
+     number1 = 20
+     number2 = 15
+     compute(number1, number2)
+
+def compute(number1, number2):
+     temp = number1
+     while temp != 0:
+          if number2 > number1:
+                temp = number2
+                number2 = number1
+           if temp !=
+",3.692,80.657,81.498,2,0.917,19.776,83.346,15,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+
+def compute(number1, number2):
+     temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+             number1 = number2
+             number2 = temp
+
+        temp = number1 % number2
+
+        if temp != 0:
+             number1 = number2
+             number2 = temp
+
+    return number2",0.348,118.467,120.019,7,2.906,179.935,180.117,37,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+
+def compute(number1, number2):
+    temp = number1
+      while temp != 0:
+         if number1 < number2:
+            temp = number2
+            number2 = number1
+            number1 = temp
+
+        temp = number1 / number2
+
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+
+    r eturn number2",1.701,60.306,61.203,3,0.704,79.262,79.993,25,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+       temp = number1 % number2
+
+        if temp != 0:
+
+              number1 = number2
+              number2 = temp
+   
+    return number2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,It gets the greatest commin diviser between number 1 and 2,A,A,D,B,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Often True,Often True,Always True,Always True,Often True,Often True,Often True,Often True,Sometimes True,Often True,Seldom True,4,5,7,7,6,6,9,"Very Anxious
+10",8,8,8,8,4,4,3,3,3,3,3,3,Python,,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,,Other,Data Scientist,Male,,White,,"I think it can have both positive and negative impacts, depends on how you use and if you have a good basis or not",
+2026-05-20 16:54:11,2026-05-20 17:24:38,IP Address,177.37.234.3,100,1827,True,2026-05-20 17:24:39,R_31YEY1l9QwFNzS3,,,,,-8.0009,-34.8687,anonymous,EN,660ab9e08c0887009e1f435a,31,Python,Closer to the average or mid-level programmer,72,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.601,99.024,102.024,13,0.8,54.59,55.137,2,"If temp != 0:
+   number 1 = number2;
+else
+   Number2=temp",0.902,15.557,18.975,3,0.802,36.977,37.648,13,"Return number2;
+
+Int main {
+Number1=number2
+Int number2=15
+If (number1<number2){
+}
+While (temp != 0){
+
+}
+If (temp!=0){
+}
+Number2 = temp
+}",2.446,22.599,23.5,5,5.601,104.263,109.678,19,"Return number2;
+Return number2;
+
+Int main {
+Number1=number2
+While (temp != 0){
+
+}
+
+Number2 = temp 
+}",1.319,11.426,15.95,3,0.501,48.644,49.088,11,"Return number2;
+
+Int main {
+Number1=number2
+Int number1=15
+While (temp != 0){
+
+}
+If (temp!=){
+}
+Number2 = temp
+}",4.182,66.299,67.248,4,0.691,35.09,35.496,5,"Int main {
+Number2 = temp 
+Return number2
+}","Nothing. Just ballshit. Firstly, it won't run because there is so many logic erros. In final, number2=temp. And return number2. If it was work, probably just would return temp value, inside number2",A,D,D,C,5,"very much like me
+6",5,5,5,5,4,5,3,4,5,"very much like me
+6","very much like me
+6",4,5,4,Often True,Often True,Always True,Always True,Often True,Often True,Often True,Always True,Always True,Always True,Sometimes True,9,"Not anxious
+1",3,6,"Not anxious
+1",6,"Not anxious
+1","Very Anxious
+10",7,"Very Anxious
+10",8,9,5,2,"strongly disagree
+1",5,"strongly disagree
+1","strongly agree
+6",3,"strongly agree
+6",Python,,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,Computer Science,Other,"Data Scientist ",Male,,Hispanic or Latino,,In négative way if you don't study or analyze what AI propose. You MUST to review,
+2026-05-20 16:23:24,2026-05-20 17:38:04,IP Address,99.83.60.91,100,4480,True,2026-05-20 17:38:05,R_1FrogZXtuolV3ca,,,,,38.269,-85.4934,anonymous,EN,66ad6f2765f2ef7122225388,62,Python,Closer to a senior programmer or software architect,240,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2.487,13.187,29.796,3,0.765,115.506,180.012,4,"return number2;
+int main (){
+   number1 = number2;
+  number2 = 15;
+
+   if (number1<number2) {
+      while(temp !=0) {}
+
+     int number1 = temp;
+         number1 = temp;
+}
+}
+
+int compute(int number1, int number2){
+     number2 = number1;
+    number1 = 20;
+
+}
+
+if(temp !=0) {
+  number2 = temp;
+
+}",7.282,114.785,120.133,9,1.391,1.391,180.013,1,"return number2;
+int main() {
+number1 = number2;
+int number2 = 0;
+if(number1 == number2) {
+temp1 = number2;
+}
+temp1 = number1;
+number2 = temp1;
+}
+
+int compute(temp1, number2)
+{
+
+while(){
+}
+}
+
+if(temp1=number2){
+
+}",5.644,100.152,120.029,5,1.171,17.044,180.02,3,"return number2;
+int main() {
+ number1 = number2;
+  if(number1 == number2){
+     while(number2==0){
+  }
+    int temp = number1;
+         temp = number1;
+  }
+}
+
+int compute(int number1, int number2)
+{
+    int temp = number2;
+    
+    cout << number1 + number2;
+}
+
+if()
+{
+}",1.639,119.52,120.021,22,0.864,0.864,180.017,1,"return number2;
+int main() {
+   number2 = number1;
+number1 = 15;
+   if(number1 < number2) {
+      while(temp!=0)
+      {
+         number2 = temp;
+       }
+}
+}
+
+int compute(int number1, int number2)
+{
+  number2 = temp;
+  int number1 = 20;
+  if (number1 < number2){
+       temp = number2;
+      cout << compute(number1, number2);
+}
+}
+
+if(temp == number2)
+{
+}
+}",3.29,51.918,52.979,6,0.605,0.605,180.02,1,"return number2
+int main() {
+   number2 = number1;
+   number1 = 15;
+   if(number1 < number2){
+     while(temp!=0) {}
+}
+   temp = number1;
+}
+}
+
+int compute(number1, number2){
+   number1 = temp;
+   number2 = 20;
+
+   temp = number1 % number2
+
+
+}
+
+if(temp < number2){
+ number2 = temp;
+}","If the code was entering from the top as I believe it was, it would simply return the value of 2.  I think that's how python would execute it. If it were java of a C type language it might hit the main function first, but that return at the top of the code, I think, would return a compile error.",A,D,D,C,"very much like me
+6","very much like me
+6",5,5,"very much like me
+6","very much like me
+6",4,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Seldom True,Seldom True,Sometimes True,Sometimes True,Seldom True,Sometimes True,Sometimes True,Sometimes True,Seldom True,Sometimes True,Never True,5,4,3,3,2,2,3,6,6,7,3,7,3,2,2,4,2,4,3,4,C#,,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,MA Computer Science,Application Developer,,Male,,White,,"I think AI probably should be more at the 400/500 level with some early intro classes.  I think students should be given the core understanding of learning the basics of coding like I did.  Then later add AI.  I think AI may benefit in some ways but from what I am reading it seems to be a nightmare the way it's being handled (ie. management that doesn't know how to code, tells the coders to use AI at a level that makes no sense.  Then management cuts labor expecting those that are left to do the work of ten coders with AI. )  Management truly is the problem in many work situations, not just software development.",
+2026-05-20 17:44:24,2026-05-20 18:13:07,IP Address,203.97.232.54,100,1722,True,2026-05-20 18:13:07,R_4SDKZ63nHxeVwhI,,,,,-43.4954,172.6242,anonymous,EN,6889228646f6720dc62d58ed,28,Python,Closer to a senior programmer or software architect,108,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.481,42.852,49.874,2,0.601,89.834,96.847,15,"Return Number2;
+Int main() {
+ number 1 = number2;
+ Int number2 = 15;
+If (number1 < number) {
+While (temp!=0){
+}
+Int temp = number1;
+Temp = number1;
+} 
+Int compute(int number 1, int number2) {
+} 
+} ",1.377,17.257,45.283,5,0.586,124.037,127.096,14,"Return Number2;
+Int main() {
+ Int number 1 = number2;
+ Int number2 = 15;
+If (number1 < number) {
+While (temp!=0){
+}
+} 
+} ",1.277,5.424,40.446,2,0.687,54.211,56.278,5,"Return Number2;
+Int main() {
+ number 1 = number2;
+ Int number2 = 15;
+If (number1 < number) {
+While (temp!=0){
+}
+Int temp = number1;
+Temp = number1;
+} 
+Int compute(int number 1, int number2) {
+Number2=temp;
+Number1=20;
+Int num = number1 % number2;
+} 
+} ",1.522,85.511,85.97,6,1.867,95.446,105.624,8,"Return number2;
+Int main(){
+Number1 = number2;
+Number2 = 15;
+While temp >0 {
+Temp = nunber1
+} 
+} ",1.141,1.141,18.944,1,0.661,133.168,133.6,35,"return number2;
+int main() {
+ number 1 = number2;
+ int number2 = 15;
+If (number1 < number2) {
+while (temp!=0){
+}
+Int temp = number1;
+} 
+Int compute(int number 1, int number2) {
+Number1=number2;
+Number2=20;
+Temp = number1 % number2;
+COut >> (number1, number) 
+} 
+} ","It was trying to calculate and output a temperature. But it had redundant lines of code and redundant loops. ",A,D,D,A,5,"very much like me
+6",4,3,4,5,3,4,5,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Often True,Often True,Always True,Seldom True,Seldom True,Seldom True,Sometimes True,Often True,Seldom True,Sometimes True,Never True,6,6,2,7,2,8,6,7,9,6,6,6,7,"strongly agree
+6",4,3,4,3,5,3,C#,,Bachelor’s degree. Please list the name of your degree(s),,Bachelor of software engineering with honours,,Software Developer/Software Engineer,,Male,,White,,"It is a way to get instant feedback on programs. However, it removes the problem solving aspect when solving problems, as often what it spits out is taken as the best solution. Developers won't use documentation and instead just depend on ai without understanding what it's writing. ",
+2026-05-20 17:51:09,2026-05-20 18:15:55,IP Address,76.151.223.37,100,1485,True,2026-05-20 18:15:55,R_7cl8MO1i78GubAZ,,,,,39.2891,-76.5583,anonymous,EN,5e5074ea55087a0cc7dbc163,24,Python,Closer to someone in their first programming job (Entry-Level),54,0,0,44.552,0,0.609,0.609,100.276,1,"def main():
+ number1 = 20
+ number2 = 15
+ print(compute(number1, number2))
+def compute(number1, number2):
+ temp = number1
+ while temp != 0:
+  if number1 < number2:
+   temp = number1
+   number1 = number2
+   number2 = temp
+  temp = number1 % number2
+  if temp != 0:
+   number1 = number2
+   number2 = temp
+ return number2",0,0,120.107,0,2.454,52.238,156.789,4,"def main():
+ number1 = 15
+ number2 = 20
+ print(compute(number1, number2))
+def compute(number1, number2)
+ temp = number1
+ while temp != 0:
+  if number1 < number2:
+   temp = number1
+   number1 = number2
+   number2 = temp
+  temp = number1 % number2
+  if temp != 0:
+   
+ return number2",0,0,25.232,0,0.468,0.468,91.831,1,"def main():
+ number1 = 20
+ number2 = 15
+ print(compute(number1, number2)
+def compute(number1, number2):
+ temp = number1
+ while temp != 0:
+  if number1 < number2:
+   temp = number1
+   number1 = number2
+   number2 = temp
+  temp = number1 % number2
+  if temp != 0:
+   number1 = number2
+   number2 = temp
+ return number2",0,0,24.189,0,0.525,0.525,89.969,1,"def main():
+ number1 = 20
+ number2 = 15
+ print(compute(number1, number2))
+def compute(number1, number2):
+ temp = number1
+ while temp != 0:
+  if number1 < number2:
+   temp = number1
+   number1 = number2
+   number2 = temp
+  temp = number1 % number2
+  if temp != 0:
+   number1 = number2
+   number2 = temp
+ return number2",0,0,34.441,0,0.915,134.7,139.574,5,"def main():
+ number1 = 20
+ number2 = 15
+ print(compute(number1, number2))
+def compute(number1, number2):
+ temp = number1
+ while temp != 0:
+  if number1 < number2:
+   temp = number1
+   number1 = number2
+   number2 = temp
+  temp = number1 % number2
+  if temp != 0:
+   number2 = number1
+   number1 = temp
+ return number2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,It searches for a number that can divide both numbers and leave no rest,A,C,D,A,5,5,4,4,5,5,5,4,3,5,"very much like me
+6","very much like me
+6",4,5,5,5,Often True,Often True,Always True,Often True,Sometimes True,Sometimes True,Sometimes True,Seldom True,Seldom True,Never True,Seldom True,3,"Not anxious
+1",2,"Not anxious
+1",4,2,3,6,7,8,2,6,4,3,3,3,3,2,3,4,Python,,Bachelor’s degree. Please list the name of your degree(s),,Computer Science,,Software Developer/Software Engineer,,Male,,White,,I think the use of some AI is really beneficial for efficiency and speed but an over reliance on it causes atrophy of skills. Especially only using AI for everything causes problems that also include clutter in code.,
+2026-05-20 20:37:34,2026-05-20 21:18:55,IP Address,76.235.130.62,100,2481,True,2026-05-20 21:18:56,R_7ttxGAOYduYY6DV,,,,,36.6808,-121.6164,anonymous,EN,68890f115f4e98fa14943557,39,C++,Closer to the average or mid-level programmer,60,0,0,120.108,0,2.41,178.627,180.007,3,"    int main() {
+        int number1 = 20;
+        int number2 = 15;
+        cout << compute(int number1, int number2) {
+    {
+     int compute(int number1, int number2) {
+         int temp = number1;
+         While(temp != 0) {
+              if (number1 < number2) {
+                  temp = number2;
+                  number1 = number2;",0,0,17.435,0,0.829,83.132,176.994,5,"    int main() {
+        int number1 = 20;
+        int number2 = 15;
+        cout << compute(number1, number2) {
+    {
+     int compute(int number1, int number2) {
+         int temp = number1;
+         While(temp != 0) {
+              if (number1 < number2) {
+                  temp = number1;
+                  number1 = number2;
+                  number2 = temp;
+               {
+                temp = number1 % number2;
+                if (temp != 0) {
+                    number1 = number2;
+                    number2 = temp;
+                }
+          }
+          return number2;
+    }",0,0,120.008,0,9.024,161.623,180.108,2,"int main(){
+ int number1 = 20;
+ int number2 = 15;
+ cout << compute(int number1, int number2) {
+}
+int compute(int number1, int number2) {
+ int temp = number1;
+ while(temp != 0) {
+   if(number1 < number2) {
+",0,0,36.403,0,1.024,174.49,175.855,10,"    int main() {
+        int number1 = 20;
+        int number2 = 15;
+        cout << compute(int number1, int number2) {
+    {
+     int compute(int number1, int number2) {
+         int temp = number1;
+         While(temp != 0) {
+              if (number1 < number2) {
+                  temp = number2;
+                  number1 = number2;
+                  number2 = temp;
+               {
+                temp = number1 % number2;
+                if (temp != 0) {
+                    number1 = number2;
+                    number2 = temp;
+                }
+          }
+          return number2;
+     }",0,0,28.648,0,0.667,179.683,180.004,3,"    int main() {
+        int number1 = 20;
+        int number2 = 15;
+        cout << compute(number1, number2);
+    }
+         int compute(int number1, int number2) {
+         while(temp != 0) {
+              if(number1 < number2) {
+                  temp = number1;
+                  number1 = number2;
+                  number2 = temp;
+              }
+              temp = number1 % number2;",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Finding the greatest common divisor,A,D,D,C,"very much like me
+6","very much like me
+6",5,5,5,"very much like me
+6","very much like me
+6",5,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",5,5,"very much like me
+6",Seldom True,Never True,Seldom True,Never True,Seldom True,Never True,Never True,Never True,Never True,Never True,Never True,2,2,2,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",2,2,2,"Not anxious
+1",2,2,"strongly disagree
+1","strongly disagree
+1","strongly agree
+6","strongly disagree
+1",2,2,5,JavaScript,,"High school diploma or GED,Associates or technical degree. Please list the name of your degree(s),Bachelor’s degree. Please list the name of your degree(s)",Language abd Rationality,Computer Science,,Front End Developer/Engineer,,Female,,Other,Indigenous (Mayan),"I think it can be a great resource and tool but it shouldn't be used as a main guide to your work. For coding it makes a lot of ""spaghetti code"" at the moment. It is not very efficient and it can lead to slower runtimes and a disaster to test.",Not really
+2026-05-20 20:59:21,2026-05-20 21:29:26,IP Address,23.245.217.122,100,1804,True,2026-05-20 21:29:27,R_1mqFDp3znhh9o50,,,,,40.1117,-82.9728,anonymous,EN,6883a1dc2b9ac1af1ef98eeb,30,Python,Closer to the average or mid-level programmer,48,0,0,120.009,0,1.722,73.655,180.073,7,"def main():
+  number1 = 15
+  number2 = 20
+  print(compute(number1,number2))
+def compute():
+  temp = number1
+  if number1 < number2:
+    temp = number1
+    number1 = number2
+    number2 = temp
+  temp = number1 % number2
+  return number2 ",0,0,120.027,0,0.745,0.745,94.93,1,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1,number2)
+def compute():
+  temp = number1
+  while temp != 0: 
+    if number1 < number2:
+      temp = number1
+      number1 = number2
+      number2 = temp
+    temp = number1 % number2
+    if temp != 0:
+      number1 = number2
+      number2 = temp
+  return number2 ",0,0,120.04,0,1.605,1.605,121.761,1,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1,number2)
+def compute():
+  temp = number1
+  while temp != 0:
+    if number1 < number2:
+      temp = number1
+      number1 = number2 
+      number2 = temp
+    temp = number1 % number2
+    if temp != 0:
+      number1 = number2
+      number2 = temp
+    return number2 ",0,0,120.109,0,1.049,1.049,118.001,1,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1,number2)
+def compute()
+  temp = number1
+  while temp != 0:
+    if number1 < number2:
+      temp = number1
+      number1 = number2
+      number2 = temp
+    temp = number1 % number2
+    if temp != 0:
+      number1 = number2
+      number2 = temp
+  return number2",0,0,120.132,0,1.106,1.106,180.031,1,"def main():
+  number1=20
+  number2=15
+  print(compute(number1,number2)
+def compute():
+  temp=number2
+  if number1 < number2:
+    temp = number1
+    number1 = number2
+    number2 = temp
+  temp = number2 % number1
+  if temp = 0:
+    number2 = number1
+    number1 = temp
+  print number2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"This code is computing the greatest common denominator, the euclidean algorithm",A,D,D,C,4,"very much like me
+6",5,5,"very much like me
+6",5,5,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",5,5,5,5,Seldom True,Sometimes True,Sometimes True,Sometimes True,Sometimes True,Seldom True,Seldom True,Seldom True,Never True,Never True,Never True,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",2,2,5,3,5,2,5,Python,,Bachelor’s degree. Please list the name of your degree(s),,Computer Science & Engineering,,Software Team Lead or Manager,,Female,,"Asian,White",,"I think it affects programmers positively in that it allows us to produce at a much greater rate and it's aware of aa variety of topics, whereas we might only be aware of the ones we have professional or educational experience in. It affects us negatively in that it causes our skills to atrophy. Largely I think it's a net positive. ","No, thank you for picking me for this survey! Have a great day"
+2026-05-20 21:17:23,2026-05-20 21:58:27,IP Address,203.81.243.15,100,2463,True,2026-05-20 21:58:28,R_9PgwRsyO4OcNUvQ,,,,,28.6542,77.2373,anonymous,EN,65fda4aa45ba55e983e2a2d9,32,Java,Closer to a senior programmer or software architect,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5.838,5.838,89.459,1,0.9,149.876,180.012,4,"return number2;
+public static void main(){
+number1=number2;
+int number2=15;
+if(number1<number2){
+while (temp!=0){
+}
+int temp=number1;
+temp=number1;
+}
+public static int compute(int number1, int number2){
+number2=temp;
+int number1=20;
+temp=number",6.081,67.592,120.091,7,1.869,96.117,180.017,5,"return number2;
+public static void main(){
+number1=number2;
+int number2=15;
+if(number1<number2){
+while(temp!=0){
+}
+int temp=number1;
+temp=number1;
+}
+public static int compute(int number1,int number2){
+number2=temp;",0,0,120.012,0,19.978,170.488,180.115,4,"return number2;
+public static void main(){
+number1=number2;
+int number2=15;
+if(number1<number2){
+while(temp!=0){
+}
+int temp=number1;
+temp=number1;
+}
+public static int compute(int number1, int number2){
+number2=temp",4.392,112.159,120.008,10,23.802,156.445,180.02,5,"return number2;
+public static void main(){
+number1=number2;
+int number2=15;
+if (number1<number2){
+while(temp!=0){}",38.673,38.673,120.187,1,29.233,164.873,180.016,5,"return number2;
+public static void mian(){
+number1=number2;
+int number2=15;
+if(number1<number2){
+while(temp!=0){
+}
+int temp=number1;
+temp=number1;
+}
+public static int compute(int number1, int number2){
+number2=temp;",code is finding the greatest common divisor of two numbers.,A,D,D,B,"very much like me
+6","very much like me
+6","very much like me
+6",5,5,4,5,"very much like me
+6",5,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Seldom True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,"Not anxious
+1",5,6,"Not anxious
+1",3,"Not anxious
+1","Not anxious
+1",2,5,7,2,2,2,3,4,4,"strongly disagree
+1",4,5,4,Java,,Associates or technical degree. Please list the name of your degree(s),BCA,,,Software Developer/Software Engineer,,Male,,Asian,,In a postive way generative AI can quickly solve the problem and saves time. In a negative ways a program will be fully dependable on AI if used regularlly.,
+2026-05-20 21:42:07,2026-05-20 22:13:27,IP Address,75.158.217.184,100,1879,True,2026-05-20 22:13:27,R_5zGtaWahoNZTHbQ,,,,,53.6367,-113.4684,anonymous,EN,5ee890fabb763018d1ad774e,27,Python,Closer to the average or mid-level programmer,72,10.36,14.618,15.927,2,0.449,94.865,106.083,3,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 > number2:
+            temp = number1, 
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number 2",6.502,6.502,15.901,1,0.509,18.182,134.578,4,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number2",2.133,29.525,120.029,4,0.858,85.127,180.009,4,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute(number1, number2):
+    while temp != 0:
+        temp = number1
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+        return temp",0,0,28.008,0,8.401,95.655,106.767,7,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number2",0,0,62.302,0,0.515,168.852,176.913,21,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,It finds the greatest common divisor,A,D,D,C,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Always True,Often True,Often True,Often True,Always True,Seldom True,Seldom True,Often True,Never True,Never True,Never True,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","strongly disagree
+1","strongly disagree
+1","strongly agree
+6","strongly disagree
+1",4,"strongly disagree
+1","strongly agree
+6",JavaScript,,Bachelor’s degree. Please list the name of your degree(s),,"Bachelor of Science, Major in Comp. Sci, Minor in Mathematics",,Full Stack Developer/Engineer,,Male,,Asian,,It definitely affects programmers negatively in that people will become too reliant on AI and don't learn themselves. They won't be able to catch mistakes or debug when AI inevitably messes something up no matter how big or small. AI is also good if we don't let it be the driver. Programmers still need to use AI as a assistive tool instead of replacing themselves with AI,
+2026-05-21 02:18:51,2026-05-21 02:52:19,IP Address,88.97.221.235,100,2007,True,2026-05-21 02:52:19,R_2loARyOW5R1rUWc,,,,,51.5055,-2.5157,anonymous,EN,5f4275b5981d7745acd1f912,28,Python,Closer to the average or mid-level programmer,72,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,80.675,0,1.065,162.399,163.305,13,"    return number 2;
+int main() {
+        number1 = number2;
+    number2 = 15;
+      if (number1 < number2) {
+    while temp != 0 {
+}
+    temp = number1;
+    }
+    int compute(int number1, int number2) {
+            number2 = temp;
+        number1 = 20;
+            temp = number1 % number2;
+        cout << compute(number1, number2)
+    }
+         temp = number2;
+      }",0,0,120.008,0,2.173,179.895,180.103,16,"return number 2;
+int main() {
+    number1 = number2;
+    int number2 = 15;
+    if number1 < number2 {
+        while temp != 0 {
+        }
+    }
+    
+}",0,0,19.838,0,0.882,117.892,166.385,10,"    return number 2;
+int main() {
+        number1 = number2;
+    int number2 = 15;
+        if (number1 < number2) {
+    while (temp != 0) {
+}
+    int temp = number1;
+    }
+    int compute(int number1, int number2) {
+            number2 = temp;
+        int number1 = 20;
+        temp = number1 % number2
+        cout << compute(number1, number2)
+}",0,0,120.014,0,2.554,102.678,180.012,5,"    return number 2;
+int main() {
+        number1 = number2;
+    int number2 = 15;
+        if number1 < number2 {
+            while temp != 0 {
+        }
+        int temp = number1
+        }
+    int compute(int number1, int number2) {
+
+    }
+}",0,0,120.003,0,2.371,129.119,180.003,8,"    return number2;
+int main() {
+        number1 = number2;
+    int number2 = 15;
+    if number1 < number2 {
+    while temp != 0 {
+    }
+    int temp = number1
+    }
+    int compute(int number 1, int number 2) {
+            number2 = temp
+         number1 = 20
+    }
+}",Calculates how many times one number goes into another and returns the remainder,A,D,D,B,4,"very much like me
+6",4,4,5,5,4,4,3,4,"very much like me
+6","very much like me
+6","very much like me
+6",5,5,"very much like me
+6",Sometimes True,Never True,Seldom True,Sometimes True,Seldom True,Seldom True,Seldom True,Sometimes True,Seldom True,Seldom True,Seldom True,3,"Not anxious
+1","Not anxious
+1",2,"Not anxious
+1","Not anxious
+1","Not anxious
+1",2,2,4,"Not anxious
+1",4,"Not anxious
+1",2,2,2,2,5,3,5,Python,,Bachelor’s degree. Please list the name of your degree(s),,Mathematics,,Software Developer/Software Engineer,,Female,,Asian,,"Positively: it has made us quicker and more knowledgeable in ways because it can do research quicker.
+Negatively: it can be time consuming trying to get the agent to understand context",
+2026-05-21 04:20:22,2026-05-21 04:52:47,IP Address,81.111.254.18,100,1945,True,2026-05-21 04:52:48,R_2J1WEI3G17WqKrA,,,,,53.7457,-2.477,anonymous,EN,68892827bc7da25e4a9ba9bf,30,Java,Closer to the average or mid-level programmer,36,0,0,120.115,0,1.408,115.559,124.449,5,"public static void main(){
+int number1 = 20;
+int number2 = 15;
+System.out.print(compute(number1, number2));
+}
+public static int compute(int number1, int number2) {
+int temp = number1;
+while (temp != 0) {
+ ",0,0,79.702,0,0.401,174.362,176.007,4,"public static void main(){
+  int number1 = 20;
+  int number2 = 15;
+  System.out.print(compute(number1, number2));
+}
+public static int compute(int number1, int number2){
+  int temp = number1;
+  while (temp != 0){
+     if (number1 < number2){
+       temp = number1;
+       number1 = number2;
+       number2 = temp;
+    }
+    temp = number1 % number2;
+    if (temp != 0){
+      number 1 = number2;
+      number2 = temp;
+    }
+  }
+  return number2;
+}",0,0,114.477,0,0.442,156.375,180.109,3,"public static void main() {
+  int number1 = 20;
+  int number2 = 15;
+  System.out.print(compute(number1, number2);
+}
+public static int compute(int number1, int number2){
+  int temp = number1;
+  while(temp != 0){
+    if (number1 < number2) {
+      temp = number1;
+      number1 = number2;
+      number2 = temp;
+    }
+     temp = number1 % number2;
+     if (temp != 0) {
+       number1 = number2;
+       number2 = temp;
+     }
+ }
+
+return number2;
+}",0,0,120.005,0,2.69,173.264,180.008,18,"public static void main(){
+  int number1 = 20;
+  int number2 = 15;
+  System.out.print(compute(number1, number2);
+}
+public static int compute(int number1, int number2){
+  int temp = number1;
+  while (temp != 0){
+    if (number1 < number2){
+      temp = number1;
+      number1 = number2;
+      number2 = temp;
+   }
+    temp = number1 % number2;
+    if (temp != 0) {
+      number1 = number2;
+       number2 = temp;
+    }
+   }
+return number2;
+}",0,0,120.011,0,0.707,130.393,134.177,3,"public static void main(){
+int number1 = 20;
+int number2 = 15;
+System.out.print(compute(number1, number2);
+}
+public static int compute(int number1, int number2){
+int temp = number1;
+while (temp != 0){
+if (number1 < number2){
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+temp = number1 % number2;",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"The code I saw was working out the greatest common divisor of two numbers; in the example, it was provided 20 and 15. Once it has this, it will then print this to the console. ",A,D,D,B,5,5,5,4,4,5,5,4,4,5,"very much like me
+6","very much like me
+6","very much like me
+6",5,5,"very much like me
+6",Sometimes True,Never True,Seldom True,Sometimes True,Sometimes True,Seldom True,Seldom True,Sometimes True,Seldom True,Seldom True,Seldom True,3,2,"Not anxious
+1","Not anxious
+1",2,"Not anxious
+1","Not anxious
+1",3,2,4,2,2,3,"strongly disagree
+1","strongly disagree
+1",5,"strongly disagree
+1",5,2,5,JavaScript,,Bachelor’s degree. Please list the name of your degree(s),,Bsc Computer Games Development,,Software Developer/Software Engineer,,Male,,White,,"I believe that when used correctly, Generative AI can have a positive impact in a workplace, it can provide great boilerplate code, which can speed up development in some instances. However, I feel that the rise of 'vibe-coding' can be detrimental, as these people won't understand most of the code an AI provides, and, in turn, won't be able to work out why it won't work if it doesn't. ",
+2026-05-21 05:32:48,2026-05-21 06:31:48,IP Address,87.74.198.102,100,3539,True,2026-05-21 06:31:49,R_8s6lVWHrzJXA8sQ,,,,,51.4933,-0.1141,anonymous,EN,5ec854fd44972a32c8a890db,40,C++,Closer to someone in their first programming job (Entry-Level),30,0,0,120.022,0,1.606,1.606,180.144,1,"int number1 = 15;
+int number2 = 20;
+
+int main() {
+cout << compute(number1, number2);
+}
+
+int computer(int number1, int number2) {
+int temp = number1;
+while(temp != 0) {
+if (number1 < number2) {
+number1 = number2;
+number2 = temp;
+}
+if (temp != 0) {
+
+}
+}
+return number2;
+}",0,0,120.02,0,6.804,102.689,180.038,3,"int number1;
+int number2;
+int temp;
+
+void main() {
+   cout << compute(number1, number2);
+}
+
+int compute(int number1, int number2) {
+   while (number1 < number2) {
+      temp = number 1;
+      number1 = number 2;
+   }
+}",0,0,120.007,0,1.606,1.606,180.142,1,"int main() {
+int number1 = 20;
+int number2 = 15;
+cout << compute(number1, number 2);
+}
+
+int compute(int number1, int number2) {
+int temp = number1;
+while (temp != 0) {
+if (number1 < number 2) {
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+temp = number1 % number2;
+if (temp != 0) {
+number1 = number2;
+number2 = temp;
+}
+}
+return number2;
+}",0,0,120.117,0,1.91,104.905,180.044,4,"int number1 = 15;
+int number2 = 20;
+
+int main() {
+cout << compute(number1, number2);
+return 0;
+}
+
+int compute(int number1, int number2) {
+int temp;
+while (number1 != 0) {
+if (number1 < number2) {
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+}
+return number2;
+}",0,0,120.02,0,2.304,62.054,180.118,6,"int main(number1, number2) {
+cout << compute(number1, number2);
+}
+
+int compute(int number1, int number2) {
+int temp = number1;
+while (temp != 0) {
+number1 = number2;
+number2 = temp;
+temp = number1 % number2;
+
+}
+return number2;
+}
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,swapping the values of number1 and number2 variables based on two conditions.,A,D,B,C,"very much like me
+6","very much like me
+6",4,3,"very much like me
+6","very much like me
+6",3,4,2,5,"very much like me
+6","very much like me
+6","very much like me
+6",4,4,5,Often True,Sometimes True,Always True,Often True,Sometimes True,Always True,Often True,Always True,Often True,Often True,Sometimes True,5,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",3,"Not anxious
+1","Very Anxious
+10","Very Anxious
+10","Very Anxious
+10",9,"Very Anxious
+10",5,3,3,3,2,4,3,4,C++,,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,PhD,Other,Educator,Male,,White,,"It helps you get started (helpful if you are not familiar with the syntax), but it can make mistakes, which you may spend a long time fixing. Positive thing is that you may spend more time thinking about the algorithm, which will help you write a clearer prompt and, hence, receive better code. Negative think is that some people may decide to just completely delegate coding to the AI and not even bother looking into the code, if they see that the code is doing something similar to what they wanted it to do.","It's hard to write computer code in a survey box, as I'm used to issues being highlighted in the IDE, and things like brackets being automatically closed for me. It was also awkward not to see my code indented. "
+2026-05-21 06:31:01,2026-05-21 06:56:41,IP Address,86.90.38.244,100,1539,True,2026-05-21 06:56:42,R_2ymE5pI2fIN6GXh,,,,,52.3509,4.6521,anonymous,EN,5e2191a2727e0446c780b2e3,32,C++,Closer to the average or mid-level programmer,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,71.099,0,4.018,13.372,165.91,2,"return nmbr2;
+int main(){
+nmbr1=nmbr2;
+int nmbr2=15;
+if(nmbr1<nmbr2){while(temp != 0)}
+}
+
+int temp=nmbr1;
+
+int cmpt(int nmbr1, int nmbr2){
+nmbr2=temp
+}",5.967,5.967,120.013,1,21.291,21.291,134.698,1,"return number2;
+int main(){
+number1 = number2;
+int number2=15;
+if(number1<number2){
+while(temp1=0){}
+int temp=number1;
+temp =number1;
+int compute(int number1, int number2){
+number2=temp;
+int number1=20;
+}
+}
+}",0,0,53.666,0,2.867,22.866,42.248,4,"return number2;
+int main() {
+numberl = number2;
+int number2 = 15;
+if (numberl < number2) (
+while (temp != 0) {
+int temp = numberl;
+temp = numberl;
+int compute(int numberl, int number2) {
+number2 = temp;
+int numberl = 20;
+temp = numberl % number2;
+numberl = number2;
+cout compute(numberl, number2);
+if (temp != 0) {}
+}
+number2 = temp;
+}",0,0,120.114,0,45.203,45.203,180.019,1,"return number2;
+int main(){
+number2=number1;
+int number2=15;
+
+if(number1<number2){
+while (temp !=0){
+}
+}
+
+
+}",0,0,22.396,0,16.851,30.909,99.948,3,"return number2;
+int main() {
+numberl = number2;
+int number2 = 15;
+if (numberl < number2) (
+while (temp 1= 0) {
+int temp = numberl;
+temp = numberl;
+int compute(int numberl, int number2) {
+number2 = temp;
+int numberl = 20;
+temp = numberl % number2;
+numberl = number2;
+cout compute(numberl, number2);
+if (temp 1= 0) (
+number2 = temp;","The code is incorrect but it is trying to do greatest common divisor of the two numbers. ",A,C,D,C,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",4,5,4,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",5,Seldom True,Seldom True,Seldom True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,3,3,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",6,6,7,5,7,2,2,2,2,2,4,3,4,Other,PowerShell,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,"MBA, MA",Systems Engineer,,Male,,White,,"It speeds up the things, it is like sewing with hands vs with the machine ",N/A
+2026-05-21 07:49:02,2026-05-21 08:19:22,IP Address,216.218.77.74,100,1820,True,2026-05-21 08:19:23,R_3ZWG6ip7aWnnvJn,,,,,33.6677,-79.8306,anonymous,EN,691de59e3f1a40f37d2864af,36,Python,Closer to the average or mid-level programmer,39,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,120.013,0,2.521,28.416,104.135,3,"return number_2
+
+def ??:
+  number_1 = number_2
+  while (number_1 < number_2):
+    number_2 = number_1
+
+  def ???:
+    number_1 = number_2
+    if (temp != 0):
+        number_1 % number_2",82.903,82.903,120.108,1,1.593,1.593,168.766,1,"return number_2
+def main():
+    number_1 = number_2
+    number_2 = 15
+    while number_1 < number_2:
+      if temp != 0:
+        temp = number_1 % number_2
+    
+     def compute(number_1, number_2):
+        number_1 = temp
+        if temp != 0:
+           temp = number_2
+           number_1 = number_2
+        compute(number_1, number_2)",0,0,120.006,0,1.605,106.806,147.282,2,"return number_2
+def main():
+   number_1 = number_2
+   number_2 = 15
+   if number_1 < number_2:
+      while temp != 0:
+        temp = number_2
+        temp = number_2
+ 
+    def compute(number_1, number_2):
+        temp = number_2
+        number_2 = 20
+        if temp != 0:
+           temp = number_1 % number_2
+           number_2 = 15
+
+       compute(number_1, number_2)
+
+       if temp != 0:",0,0,120.012,0,1.796,1.796,141.185,1,"return number_2
+def main():
+  number_1 = number_2
+  number_2 = 15
+  while (number_1 < number_2):
+     temp = number_2
+     temp = number_2
+  
+   def compute(number_1, number_2):
+     temp = number_1
+     if (temp != 0):
+        temp = number_1 % number_2
+     ??",0,0,120.107,0,2.133,82.636,86.57,2,"return number_2
+def main():
+  number_1 = number_2
+  number_2 = 15
+  while (number_1 < number_2):
+    temp = number_1
+    temp = number_1
+
+def compute(arg1, arg2):
+  ??","I think that it was trying to calculate temperature although I wasn't able to figure out exactly how it was coming up with the answer. This is due to frequent mutation on the number variables, which was a little confusing for me.",A,C,D,A,5,"very much like me
+6",4,5,"very much like me
+6","very much like me
+6",5,3,3,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",5,5,"very much like me
+6",Sometimes True,Sometimes True,Often True,Always True,Often True,Seldom True,Sometimes True,Sometimes True,Seldom True,Seldom True,Seldom True,6,8,4,2,"Not anxious
+1","Not anxious
+1","Not anxious
+1",8,8,8,4,6,5,"strongly disagree
+1","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6",Python,,"Some college, but no degree",,,,Software Developer/Software Engineer,,Male,,Black or African American,,"Personally, I think it's affected me negatively and I choose to limit my usage of it. It's great for learning topics on the fly but I think it makes me outsource my thought process.",
+2026-05-21 09:17:55,2026-05-21 09:45:23,IP Address,143.58.223.39,100,1648,True,2026-05-21 09:45:24,R_2HhNcO2gFyE0GuP,,,,,52.4867,-1.8989,anonymous,EN,66129ba63bdad6d8137dd832,23,Python,Closer to the average or mid-level programmer,36,0,0,17.167,0,0.83,101.824,136.127,7,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number2
+",6.034,14.374,15.958,2,0.476,115.995,126.268,5,"def main()
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+
+def compute(number1, number2)
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1        
+            number1 = number2
+            number2 = temp
+         temp = number1 % number2
+         if temp != 0:
+             number1 = number2
+             number2 = temp
+    return number2",21.416,21.733,50.108,2,0.456,158.589,177.063,9,"def main()
+    num1 = 20
+    num2 = 15
+    print(compute(num1, num2))
+
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number2
+   
+",0,0,114.216,0,1.394,175.546,180.107,8,"def main():
+    num1 = 20
+    num2 =15
+
+
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+        return number2
+     ",7.489,8.813,18.58,3,0.446,128.148,128.797,15,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+
+def compute(number1, number2):
+temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Iteratively computing a remainder between two numbers and then using this remainder later again to compute more. I think something like highest common factor (gcd),A,D,D,C,5,5,4,2,5,5,2,2,3,5,"very much like me
+6","very much like me
+6","very much like me
+6",5,5,5,Sometimes True,Seldom True,Seldom True,Seldom True,Sometimes True,Seldom True,Seldom True,Sometimes True,Sometimes True,Often True,Sometimes True,2,4,"Not anxious
+1","Not anxious
+1",2,"Not anxious
+1","Not anxious
+1",2,3,8,4,8,2,2,2,3,4,2,5,3,Python,,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,MSc,Other,Researcher,Male,,Asian,,,
+2026-05-21 12:01:36,2026-05-21 12:40:26,IP Address,90.197.105.193,100,2330,True,2026-05-21 12:40:27,R_2yV37RtxGQYoU0N,,,,,51.9417,-0.2845,anonymous,EN,6817c3453346ea1e8fd9af10,55,Python,Closer to a senior programmer or software architect,420,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,120.118,0,3.498,67.643,180.12,2,"intv number 2 = 0
+main{
+number 2 = 15
+if (number 1 < number 2){
+where temp < 0
+temp = 20
+",0,0,120.109,0,3.5,3.5,180.186,1,"return number 2;
+main{
+ number 1 = number 2;
+number2 = 15
+}
+compute{
+}
+temp = ",0,0,120.009,0,2.008,90.166,180.117,3,"retrun nuimber2
+main(){
+int number 1 = 15
+
+while(temp !=0){
+int number 1 = 15;
+number1 = 15;
+}
+
+compute(number1,number2){
+cout <= compute}
+
+if( temp != 0){
+temp = number2}",0,0,120.015,0,6.702,6.702,180.01,1,"int number 2 = 0
+main{
+number = 15
+if number 1 < number 2){
+ifwhiule number > 0{
+compute(number1,number2){
+cout<<compute()
+}
+temp = ",0,0,120.021,0,40.234,169.018,180.117,2,"int number 2 = 0
+mi
+
+
+int ciompute(int number1, int number 2){
+number 2 = number 1;
+int number 1 = 20;
+number 2 = number1%number2;
+cout << compute(number1,number2)
+}",its taking 2 numbers and calculating a factorial of some sort,A,D,D,C,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Sometimes True,Sometimes True,Often True,Sometimes True,Always True,Seldom True,Seldom True,Often True,Seldom True,Often True,Seldom True,5,"Not anxious
+1",2,"Not anxious
+1",5,8,8,3,7,"Very Anxious
+10",7,"Very Anxious
+10",2,2,"strongly disagree
+1","strongly agree
+6",2,"strongly agree
+6",2,"strongly agree
+6",C#,,Bachelor’s degree. Please list the name of your degree(s),,"Electronic and electrical engineering ",,Full Stack Developer/Engineer,,Male,,White,,"It will remove the lower level work where new programmers come from but help work on big monolithic code ","Im neurodivergent and never remember code i read it live and evolve it as i go. . and that formatting was painful. "
+2026-05-21 19:38:45,2026-05-21 20:19:24,IP Address,24.112.204.109,100,2438,True,2026-05-21 20:19:24,R_1TAXtvfR0HlU4q6,,,,,40.6265,-80.0559,anonymous,EN,5c22f28d70d93a0001201738,60,Java,Closer to a senior programmer or software architect,511,0,0,120.01,0,1.131,173.506,180.02,7,"public static void
+{
+number1  := 15;
+number2 := 20;
+printoutput(compute number1, number2);
+}
+
+temp int := number1 ;
+while number2> number1
+{
+if te,p > 0
+number1 := number2;
+number2 := temp;
+
+}
+)
+
+
+}
+}
+
+return number2;
+}",0,0,120.019,0,1.101,3.668,180.004,2,"static void main[]
+{
+system.output.print(compute(number1,number2)
+temp int number1;
+when temp<>0
+{
+if number1 > number2
+(
+number1 := number2;
+number2 := temp;
+
+
+
+}
+return number2;
+
+}
+",0,0,120.013,0,2.475,177.801,180.01,2,"public
+{
+number1  := 15;
+number2 := 20;
+while number1<>0 do
+{
+temp := number1 ;
+number2 := number1;
+
+}
+)
+
+
+
+return number2;
+}",0.508,5.936,120.009,6,0.994,97.108,180.009,9,"public static void main[]
+{
+number1  := 15;
+number2 := 20;
+system.output.print(compute number1, number2);
+}
+
+temp int := number1 ;
+while temp != 0 number2> number1
+{
+if number2> number1
+{
+number1 := number2;
+number2 := temp;
+temp := number1;
+}
+if temp != 0 
+{
+number2 := number1;
+}
+}
+return number2;
+}",0,0,120.119,0,0.955,175.093,180.006,6,"public static void main[]
+{
+number1  := 15;
+number2 := 20;
+system.print.output(compute number1, number2);
+}
+
+temp int := number1 ;
+when temp != 0
+{
+if number1> number2
+{
+number1 := number2;
+number2 := temp;
+temp := number1;
+}
+if temp != 0
+{
+
+}
+}
+
+}
+}
+
+return number2;
+}",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,It was replacing the value of a variable as it navigated a decrementing loop.,A,D,D,A,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",2,3,2,"Not anxious
+1",3,"Not anxious
+1",5,5,2,5,2,5,2,Java,,Bachelor’s degree. Please list the name of your degree(s),,Computer Science,,Software Architect,,Male,,White,,,
+2026-05-22 05:13:35,2026-05-22 06:03:52,IP Address,202.38.180.177,100,3017,True,2026-05-22 06:03:53,R_9AhaueNki4OXQyZ,,,,,12.9753,77.591,anonymous,EN,663325904e8e46cf433becd0,46,C++,Closer to someone in their first programming job (Entry-Level),6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,120.012,0,6.947,6.947,180.112,1,"      return number2;
+int main[] {
+      number1=number2;
+    int number2=15;
+         if (number1<number2) {
+         while (temp!=0) {
+     }
+      int temp=number1;
+       temp=number1;
+   }
+i",0,0,120.012,0,9.451,156.883,180.011,6,"return number2;
+int main []{
+       int number 1 = number 2
+       if number1 > number2
+       temp != 0;
+   }
+",0,0,120.012,0,7.319,7.319,180.113,1,"    return number 2;
+int main[] {
+           number1 = number2;
+        int number2 = 15;
+              if (number1<number2)}
+              while (temp!=0){
+",0,0,120.112,0,2.587,165.823,180.011,8,"      return number2;
+int main[] {
+         number1=number2;
+    int number2=15;
+         if (number1<number2) {
+         while (temp!=0) {
+     }
+      int temp=number1;
+          temp=number1;
+   }
+ int compute(int number1, int number2) {
+          number2=temp;
+        int number1=20;
+           temp=number1%number2;
+              number1=number2;
+}
+       if (temp!=0) {
+}
+     number2=temp;
+}",0,0,120.113,0,4.021,93.672,180.011,11,"      return number2;
+int main[] {
+         number1=number2;
+    int number2=15;
+         if (number1<number2) {
+         while (temp!=0) {
+     }
+      int temp=number1;
+          temp=number1;
+   }
+ int compute(int number1, int number2) {
+          number2=temp;
+        int number1=20;
+           temp=numbwe1%number2",I think it is trying to find the common divisor but the code seems scrambled or does not have the right flow.,A,C,D,C,"very much like me
+6","very much like me
+6","very much like me
+6",5,5,5,4,"very much like me
+6",3,5,5,4,4,5,5,5,Never True,Never True,Never True,Seldom True,Never True,Never True,Seldom True,Seldom True,Never True,Never True,Never True,3,5,3,2,5,3,4,5,6,6,3,5,4,4,3,3,2,4,3,4,C++,,Bachelor’s degree. Please list the name of your degree(s),,BSc,,Software Developer/Software Engineer,,Female,,Asian,,"AI could an excellent learning aid and tool as it could speed up the learning process. It could help with logical testing of programs, checking for syntax, and such.
+It could though also have negative impacts as it could be used to cheat on the learning priocess.",No. Thank you for the opportunity. It was an interesting exercise to try and remember code with out logical flow and rewrite it.
+2026-05-22 06:30:58,2026-05-22 06:43:56,IP Address,31.49.29.18,100,777,True,2026-05-22 06:43:56,R_2bHMRdhUMR8KZBT,,,,,51.1385,-2.7168,anonymous,EN,6888f9158ab561d6bbcf7466,32,Java,Closer to a senior programmer or software architect,135,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,42.937,0,0.683,0.683,71.912,1,"return number2;
+public static void main() {
+    number1 = number2;
+    int number2 = 20;
+
+   System.out.PrintLn(computer(number1, number2));
+}
+
+public static int compute(number1, number2) {
+    
+}",6.18,7.324,16.011,5,1.071,2.911,16.199,2,"return number2;
+public static void main() {
+    number1 = number2;
+    number2 = 15;
+    int temp = number1 % number2;
+    System.out.print(compute(number1, number2));
+    while(temp < 0)
+{}
+if(temp ....
+}",0,0,19.161,0,0.736,7.129,19.385,5,"return number2;
+public static void main() {
+    number1 = number2;
+    number2 = 15;
+    int temp = number1 % number2;
+    System.out.print(compute(number1, number2));
+    while(temp < 0)
+{}
+}
+public static int compute(int number1, int number2) 
+{
+}",0,0,23.179,0,0.461,75.644,76.058,2,"return number2;
+public static void main() {
+    number1 = number2;
+    number2 = 15;
+    int temp = number1 % number2;
+    System.out.print(compute(number1, number2));
+    while(temp < 0)
+{}
+}",25.881,25.881,30.375,1,0.49,2.605,16.05,2,"return number2;
+public static void main() {
+    number1 = number2;
+    number2 = 15;
+    if(number1 < temp) {
+    int temp = number1 % number2;
+    System.out.print(compute(number1, number2));
+    while(temp < 0)
+{}
+}
+public static int compute(int number1, int number2) 
+{
+}","It won't compile so technically nothing, but it was working out the difference between 2 integers I believe. It's hard to determine with the syntax issues.",A,D,D,C,"very much like me
+6","very much like me
+6",5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Never True,Never True,Never True,Never True,Never True,Never True,Seldom True,Never True,Never True,Never True,Never True,3,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",4,3,3,"Not anxious
+1",6,4,"strongly disagree
+1","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6",C#,,Bachelor’s degree. Please list the name of your degree(s),,BSc Computer Science,,Software Developer/Software Engineer,,Male,,White,,"Experienced software engineers are able to use it to skip crud work, tasks that are repetitive or hold little long term value such as one time scripts or refactoring work that isn't overly impactful.
+
+The core issue is with lesser experienced engineers, juniors specifically, offloading the thinking and decision making/learning to AI instead of struggling towards a solution. That inherently limits the abilities of future engineers, but companies are actively pushing for it as a skillset. It's a catch-22.",
+2026-05-22 07:07:53,2026-05-22 07:38:18,IP Address,198.84.192.60,100,1824,True,2026-05-22 07:38:19,R_1KUi3vHhM9liJQB,,,,,43.4765,-80.5789,anonymous,EN,6887c8adcd44faa087e4dae6,50,C++,Closer to a senior programmer or software architect,120,0,0,32.677,0,60.26,60.955,180.103,2,"int main() {
+int number1 = 20;
+int number2 = 15;
+cout << compute(number1, number2);
+}
+
+int compute(int number1, int number2) {
+int temp = number1;
+while (temp != 0) {
+if (number1 < number2) {
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+temp = number1 % number2;
+if (temp != 0) {
+number1 = number2;
+number2 = temp;
+}
+}
+return number2;
+}",0,0,34.204,0,24.605,24.605,120.713,1,"int main() {
+    int number1 = 20;
+    int number2 = 15;
+    cout << compute(number1, number2);
+}
+int compute(int number1, int number2) {
+    int temp = number1;
+    while (temp != 0) {
+        if (number1 < number2) {
+            temp = number1;
+            number1 = number2;
+            number2 = temp;
+        }
+        temp = number1 % number2;
+        if (temp != 0) {
+            number1 = number2;
+            number2 = temp;
+        }
+    }
+    return number2;
+}",0,0,52.033,0,20.878,21.347,103.322,2,"int main() {
+int number1 = 20;
+int number2 = 15;
+cout << compute(number1, number2);
+}
+
+int compute(int number1, int number2) {
+int temp = number1;
+while (temp != 0) {
+if (number1 < number2) {
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+temp = number1 % number2;
+if (temp != 0) {
+number1 = number2;
+number2 = temp;
+}
+}
+return number2;
+}",0,0,48.922,0,29.457,29.726,157.067,2,"int main() {
+int number1 = 20;
+int number2 = 15;
+cout << compute(number1, number2);
+}
+
+int compute(int number1, int number2) {
+int temp = number1;
+while (temp != 0) {
+if (number1 < number2) {
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+temp = number1 % number2;
+if (temp != 0) {
+number1 = number2;
+number2 = temp;
+}
+}
+return number2;
+}",0,0,22.253,0,20.843,20.843,59.891,1,"int main() {
+    int number1 = 20;
+    int number2 = 15;
+    cout << compute(number1, number2);
+}
+int compute(int number1, int number2) {
+    int temp = number1;
+    while (temp != 0) {
+        if (number1 < number2) {
+            temp = number1;
+            number1 = number2;
+            number2 = temp;
+        }
+        temp = number1 % number2;
+        if (temp != 0) {
+            number1 = number2;
+            number2 = temp;
+        }
+    }
+    return number2;
+}",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"This code is implementing the Euclidean algorithm to find the Greatest Common Divisor (GCD) of two numbers, which are 20 and 15 in the main function. It repeatedly takes the remainder of the two numbers and swaps them until the remainder becomes zero, and then it returns the last non-zero remainder as the GCD.",A,D,D,C,5,5,5,5,5,"very much like me
+6",5,5,4,5,5,"very much like me
+6","very much like me
+6",5,5,"very much like me
+6",Never True,Seldom True,Sometimes True,Always True,Never True,Never True,Never True,Sometimes True,Never True,Seldom True,Never True,5,6,6,6,6,3,6,7,7,7,6,6,7,3,4,4,4,4,4,5,C++,,Bachelor’s degree. Please list the name of your degree(s),,Software Engineering,,Software Developer/Software Engineer,,Male,,Middle Eastern or North African,,0-2 hours,The tasks were well structured and provided a good balance between cognitive pattern recognition and practical code analysis. The survey was comprehensive.
+2026-05-22 10:30:15,2026-05-22 11:18:28,IP Address,143.58.243.49,100,2892,True,2026-05-22 11:18:28,R_2fAFWwgQSKV85gU,,,,,51.4971,-0.0482,anonymous,EN,6777cf651ad3b30bacbe85ba,27,Python,Closer to the average or mid-level programmer,72,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.471,54.76,120.023,15,0.802,180.093,180.118,24,"return number2;
+int main() {
+   number2=15
+   int number1=number2
+
+   if (number1 < number2){
+      while {
+}
+     temp =15
+}
+int compute (int number1, number2){
+   number2=temp
+   int number1=15
+
+   if (temp >0){
+
+} 
+   cout << number1 + number2
+  } 
+} ",2.154,101.591,120.028,21,0.801,180.001,180.154,15,"return number2;
+
+int main() {
+   number2 = 15
+  
+   if (number1 < number2){
+}
+   while (temp!=0){
+      int temp = number1 - number2;
+            temp =number1-number2;
+}
+}
+int compute(int number1, int number2){
+    number2 =temp
+     int number1 = 15
+
+    while () {
+
+
+     cout << compute(number1, number2) ",0.952,109.486,120.018,19,1.045,103.762,180.113,10,"return number2;
+int main (){
+  number1=15
+  int number2=20
+
+    if (number1 < number2){
+       while (temp!=0){
+} 
+        int temp =number1-number2
+               temp = number1-number2
+} 
+} 
+int compute(int number1, int number2) {
+    number2 = temp
+    number1 = 20
+
+ if...
+     number1%number2
+
+
+
+    co
+",1.378,108.365,120.123,35,1.131,175.24,180.014,28,"return number2;
+int main {
+    number1 = number2
+  int number2 = 15
+    if () {
+  while (number1 > number2) {
+
+  temp
+  
+  }
+int compute(int number1, int number2) {
+   number2 = 20
+   int number1 = number2
+} 
+
+   if (temp){
+
+",1.533,106.528,120.029,19,2.805,179.386,180.164,26,"return 2;
+function main {
+  int number 1=number2;
+
+
+}
+function compute {int number1, int number2}:
+    number2 =20;
+    int number1=number2
+
+
+   count << number1 + number2
+
+}
+}","Honestly not very much idea. there are two numbers, and it sets them to 20 and 15 and then there's also temp which I couldn't make sense of, but it's a counter or tracker or something for temperature? 
+
+then the code takes the modulo of number 2 and number 1 and then does that recursively for some reason and then if the output is more than 2  then it returns the second number?",A,D,D,D,5,5,5,4,5,5,3,2,5,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Often True,Sometimes True,Often True,Seldom True,Often True,Often True,Often True,Often True,Sometimes True,Seldom True,Seldom True,8,2,"Not anxious
+1",2,"Not anxious
+1",3,"Not anxious
+1",5,5,8,5,"Very Anxious
+10",6,3,4,2,4,2,4,2,Python,,"Bachelor’s degree. Please list the name of your degree(s),Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,Computer Science 😭,"Studying MSc AI (on track for a distinction..) ",Software Developer/Software Engineer,,Female,,Asian,,"I think there is an overreliance on GenAI for coding. It's unfortunate and unavoidable. Most people don't want to use it but it creates a huge problem since ""everyone else is using it"" and makes people think they will fall behind if they don't use it to be quick too.
+
+Personally I try not to use GenAI or AI outputs too much and I always understand the code or amend it before shopping or pushing. I would never push code I don't understand. Even if it takes me slightly  longer.
+
+However, GenAI has abstracted away the boring tedious jobs like writing menial unit tests, writing documentation, and can help with debugging.
+
+I think it can be really helpful as an assistant but only if you know what to ask and where to look. Similar to Stack Overflow and Google back in the day.... Everyone has Google but not everyone knows how to use it well... 
+
+Also as a junior-mid-level engineer sometimes you don't want to ask stupid questions and having GenAI and Copilot can help you understand complicated code without asking seniors who are usually super busy (or risk embarrassing yourself).
+
+But in my opinion it's isolating junior engineers/snr engs and society in general because people shouldn't be afraid of asking stupid questions it's how we learn. As I'm rising up in seniority I personally would much rather a junior ask me than ask chatgpt or gemini, even if I'm busy.
+
+Also middle managers and csuite don't understand that AI can't replace engineers yet.. maybe super junior engineers but if you do that then the whole pipeline gets messed up. Who are going to be your senior engineers in 5-10 years if you replaced all your junior engineers with AI?
+
+AI generated code honestly creates more headaches than anything too. The code it writes is usually too verbose and too convoluted to understand, and then people will use AI to debug AI 🤦🏻‍♀️","I would be interested in finding out the results of the survey and research. As well as the goal and hypothesis.
+
+Thanks"
+2026-05-23 02:40:23,2026-05-23 03:03:49,IP Address,95.249.226.160,100,1405,True,2026-05-23 03:03:49,R_8SfM8ZyQgRSEis1,,,,,43.8141,10.672,anonymous,EN,67194d1ba278571e0e4b6f87,26,Python,Closer to someone in their first programming job (Entry-Level),160,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.165,29.818,30.6,12,0.619,149.183,149.978,21,"Return number2
+Int main{
+Number1=number2
+Number2 = 15
+If (number1 < number2){
+ While (temp != 0){}
+Temp = number1 + number2
+}
+}
+
+Int compute(number1, number2){
+Number2 = temp
+Number1 = 20
+
+If(number1 < number2)
+Cout<< number1, number2
+}",1.496,49.451,49.963,10,0.504,112.348,139.694,13,"Return number2
+
+Int main(){
+Number1=number2
+Number2= 15
+}
+
+Int compute(number1,number2){
+Number2 = number1
+Number1 = 20
+Temp = number1 % number2
+
+}",1.029,14.219,17.901,5,1.233,114.609,115.107,7,"Return number2
+Int main(){
+number2 = number1
+Number1 = 15
+}
+
+INT COMPUTE(N1,N2){
+Number 1 = number2
+Number2 = 20
+If(number1 < number2)
+Cout<< n1,n2
+}",1.867,15.872,53.003,5,1.102,154.396,180.181,18,"Return number2;
+Int main(){
+Number1=number2
+Number2= 15
+If(number1 < number2)
+While(temp < 0){}
+
+}
+
+Int compute(number1,number2){
+Number2=temp
+Number1= 20
+Temp = number1%number2
+If(number2 < 0)
+Cout << number1, number2
+
+}",1.087,118.037,120.073,12,3.562,134.781,137.302,15,"Return number 2
+Int main(){
+Number1=number2
+}
+Int compute(number1,number2){
+number1=temp
+Temp= number1%number2
+
+If(temp!=0)
+Cout<< (number1,number2)
+}",Idk the code was not syntax valid,A,C,D,C,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",4,5,4,5,5,5,"very much like me
+6",Often True,Often True,Often True,Often True,Often True,Often True,Often True,Always True,Seldom True,Seldom True,Seldom True,2,4,2,3,2,3,3,2,2,4,3,3,4,2,5,5,5,4,5,2,Python,,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,,Software Developer/Software Engineer,,Male,,Hispanic or Latino,,"Faster code write, but bad code organization",
+2026-05-23 06:28:02,2026-05-23 07:00:54,IP Address,82.37.203.133,100,1972,True,2026-05-23 07:00:55,R_8qppJ0HumMj25R7,,,,,51.4769,-2.5534,anonymous,EN,6880ea4cbbee9d1686606bab,40,Python,Closer to a senior programmer or software architect,240,0,0,82.5,0,0.689,39.415,180.119,7,"
+
+def compute(number1, number2)
+    temp = number2
+    while temp != 0:
+        If number2 > number1:
+            temp = number2
+            number2 = number1
+            number1 = temp
+
+        temp = number1 % number2
+        if temp != 0
+            number2= temp
+            number1 = number2
+
+    return number2",0,0,102.27,0,0.878,55.52,180.011,4,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2)
+
+def compute(number1, number2)
+    temp = number1
+    while(number1 != 0):
+        temp = number1
+        number2 = number1
+        number1 = temp
+
+        temp = number2 % number1
+        number1 = temp
+        if number1 != 0:
+            temp = number2
+            number2 = number1
+            number1 = temp",0,0,111.228,0,0.379,8.593,116.165,3,"def main():
+ print(compute(20, 15))
+
+def compute(num1, num2):
+ temp = num2
+ while temp != 0:
+  if num2 > num1:
+   num1, num2 = num2, num1
+  
+  temp = num1 % num2
+
+  if temp != 0:
+    temp = num2
+    num1, num2 = num2, num1
+
+ return num2",0,0,29.162,0,1.522,104.159,144.467,2,"def main():
+ number1 = 20
+ number2 = 15
+ print(compute(number1, number2)
+
+def compute(number1, number2):
+ temp = number2
+ while temp != 0:
+  if number2 > number1:
+   temp = number2
+   number2 = number1
+   number1 = temp
+
+  temp = number1 % number2
+  if temp != 0
+   temp = number2
+   number2 = number1
+   number1 = temp
+
+  return number2",0,0,88.302,0,0.512,80.322,137.374,2,"def main():
+ print(compute(20, 15))
+
+def compute(num1, num2):
+ temp = num1
+ while temp != 0:
+  num2, num1 = sorted([num1, num2])
+  temp = num1 % num2
+
+  if temp != 0:
+   num1, num2 = num2, num1
+
+  return num2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,finding the smallest denominator,A,D,D,C,5,"very much like me
+6",5,5,"very much like me
+6","very much like me
+6",5,5,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",5,5,"very much like me
+6",Sometimes True,Seldom True,Never True,Seldom True,Never True,Seldom True,Seldom True,Sometimes True,Seldom True,Seldom True,Seldom True,9,5,5,3,6,6,5,7,7,8,8,9,7,4,4,3,4,3,3,3,Python,,Bachelor’s degree. Please list the name of your degree(s),,computer science,,Software Developer/Software Engineer,,Male,,White,,"positive, productivity is boosted, engineers have no less work but can complete the work they have to a higher and more ambitious standard.",
+2026-05-23 13:52:09,2026-05-23 14:20:26,IP Address,63.143.202.0,100,1697,True,2026-05-23 14:20:26,R_5h8NwbyQphSByQp,,,,,35.3596,-82.4266,anonymous,EN,62f6a5e7bd056277be777c68,22,Java,Closer to the average or mid-level programmer,48,0,0,120.104,0,5.891,5.891,95.113,1,"public static void main(){
+int number1 = 20;
+int number2 = 15;
+System.out.print(compute(number1, number2));
+}
+
+public static int compute(int number1, int number2){
+int temp = number1;
+while(temp != 0){
+if(number1 < number2){
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+
+temp = number1 % number2;
+
+if(temp != 0){
+ number1 = number2;
+number2 = temp;
+}
+}
+return number2;
+}",0,0,120.003,0,1.774,1.774,131.629,1,"public static void main(){
+int number1 = 20;
+int number2 = 15;
+System.out.print(compute(number1, number2));
+}
+
+public static int compute(int number1, int number2){
+int temp = number1;
+while(number1 !== 0){
+if(number1 < number2){
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+
+temp = number1 % number2;
+
+if(temp !== 0){
+number2 = number1;
+number1 = temp;
+}
+}
+
+return number2;
+}
+",0,0,120.006,0,3.559,3.559,97.931,1,"public static void main(){
+int number1 = 20;
+int number2 = 15;
+System.out.print(compute(int number1, int number2);
+}
+
+public static int compute(int number1, int number2){
+int temp = number1;
+while(temp != 0){
+if(number1 < number2){
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+
+temp = number1 % number2;
+
+if(temp != 0){
+number1 = number2;
+number2 = temp;
+}
+}
+return number2;
+}",0,0,120.011,0,11.139,58.734,126.617,4,"public static void main(){
+int number1 = 20;
+int number2 = 15;
+System.out.print(compute(number1, number2));
+}
+
+public static int compute(int number1, int number2){
+int temp = number1;
+while(temp != 0){
+if(number1 < number2){
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+
+temp = number1 % number2;
+if(temp != 0){
+number1 = number2;
+number2 = temp;
+}
+
+
+}
+return number2;
+}",0,0,120.104,0,1.19,128.721,180.006,19,"public static void main(){
+int num1 = 20;
+int num2 = 15;
+System.out.println(compute(num1, num2));
+}
+
+public static void computer(int num1, int num2){
+int temp = num1;
+while(num1 !== 0){
+    if(num1 < num2){
+       num1 = temp
+       temp = num1;
+       num2 = num1;
+    }
+
+    temp = num1 % num2;
+
+    if(num1 > num2){
+        num1 = num2;
+        num2 = temp;
+    }
+}
+
+return num2;
+}",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"I think the main function called a compute function that found the lowest number that wasn't mod-able. As in if you pass 20 and 15, eventually you would get back 5 because the other is 0. ",A,D,D,A,5,"very much like me
+6",5,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Seldom True,Seldom True,Seldom True,Seldom True,Seldom True,Seldom True,Seldom True,Seldom True,Seldom True,Seldom True,Seldom True,2,2,"Not anxious
+1",2,2,2,2,7,4,4,2,5,2,2,2,2,2,5,2,5,TypeScript,,Bachelor’s degree. Please list the name of your degree(s),,BsC in Computer Science,,Software Developer/Software Engineer,,Male,,White,,It effects programmers positively as it can make their jobs easier. It impacts it negatively because you can become lazy and start to not care about the quality that it produces. It also threatens some engineers jobs.,No
+2026-05-24 15:05:18,2026-05-24 15:28:23,IP Address,75.0.200.144,100,1384,True,2026-05-24 15:28:23,R_7Xk561TSilt7h3r,,,,,38.3048,-85.5865,anonymous,EN,6883b538e7ccd3069937fe49,33,Python,Closer to the average or mid-level programmer,60,0,0,23.422,0,1.481,103.98,108.358,3,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1, number2))
+def compute(number1, number2):
+  temp = number1
+  while temp != 0:
+    if number1 < number2:
+      temp = number1
+      number1 = number2
+      number2 = temp
+    temp=number1%number2
+    if temp!= 0:
+      number1 = number2
+      number2 = temp
+    return number2",0,0,19.668,0,0.707,0.707,82.076,1,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1, number2))
+def compute(number1, number2):
+  temp = number1
+  while temp!= 0:
+    if number1 < number2:
+      temp=number1
+      number1 = number2
+      number2 = temp
+    temp=number1%number2
+    if temp!=0:
+      number1 = number2
+      number2 = temp
+    return number2",0,0,120.009,0,1.213,1.213,105.171,1,"def main():
+  number1 = 20
+  number2 = 15
+  compute(number1, number2)
+def compute(number1, number2):
+  temp = number 1
+  while temp !=0:
+    temp = number 1
+    number1 = number2
+    number2 = temp
+  temp = number1%number2
+",27.799,27.799,59.957,1,0.956,0.956,104.535,1,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1, number2))
+def compute(number1, number2):
+  temp = number1
+  while temp != 0:
+    if number1 < number 2:
+      temp = number1
+      number1 = number2
+      number2 = temp
+    temp=number1%number2
+    if temp != 0:
+      number1 = number 2
+    return number2",0,0,17.711,0,0.959,96.376,99.891,9,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1, number2))
+def compute(number1, number2):
+  temp = number1
+  while temp!=0:
+    if number1 < number2:
+      temp = number1
+      number1 = number2
+      number2 = temp
+    temp = number1%number2
+    if temp!= 0:
+      number1 = number2
+      number2 = temp
+    return number2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"Computing the remainder of number1 divided by number 2, but checking that number1 is larger than number 2",A,D,D,C,5,"very much like me
+6",5,5,5,"very much like me
+6",5,4,5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",5,5,"very much like me
+6",Sometimes True,Seldom True,Sometimes True,Sometimes True,Seldom True,Seldom True,Seldom True,Seldom True,Never True,Never True,Seldom True,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",2,3,3,4,2,4,2,Python,,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,PhD,Other,,Male,,White,,I think it is negative in that it decreases students' use of critical thinking to understand the logical steps of programming. It can be great for efficiency.,
+2026-05-25 07:41:39,2026-05-25 07:58:05,IP Address,198.182.177.5,100,986,True,2026-05-25 07:58:06,R_1Kg7CarDUjLy3fH,,,,,34.0389,-84.3826,anonymous,EN,5aedb8ce49bb4c0001079640,30,Python,Closer to someone in their first programming job (Entry-Level),36,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4.518,4.518,18.263,1,0.976,59.18,84.573,6,"return number2;
+int main() {
+int number1;
+number2 = 15;
+if (number1 < number2) {
+while(temp!=0) {
+temp = number1;
+number1 = 20'}}",0,0,120.109,0,2.039,2.039,35.799,1,"return number2;
+int main() {number2;
+if number2 = 15;
+",12.829,12.829,20.132,1,0.891,48.515,49.809,2,"return number2;
+int main() {
+number1 = number2;
+int number2 = 15;
+if(number1 < number2) {
+while(temp!=0) {
+}",26.798,26.798,47.701,1,0.509,0.509,52.025,1,"return number2;
+int main() {
+number1 = number2;
+int number2 = 15;
+if (number1 < number2) {
+while(temp!=0) {
+temp = number1
+int temp = number1};
+",0.854,52.487,56.638,5,0.63,0.63,25.65,1,"return number2;
+int main(){
+number1=number2;
+int number2 = 15;
+if(number1 < number 2);
+",It was computing the difference of two numbers as long as the first number was less than the second number and the temp value was not equal to 0,A,D,D,C,5,"very much like me
+6",5,5,"very much like me
+6","very much like me
+6","very much like me
+6",4,4,5,"very much like me
+6","very much like me
+6","very much like me
+6",4,4,"very much like me
+6",Seldom True,Seldom True,Seldom True,Seldom True,Never True,Sometimes True,Sometimes True,Sometimes True,Sometimes True,Seldom True,Sometimes True,3,"Not anxious
+1","Not anxious
+1","Not anxious
+1",3,3,3,4,5,5,3,5,4,"strongly disagree
+1","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6",Other,R,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,MBA,Other,Data Scientist,Female,,Asian,,I think it has a positive impact because it makes it much easier to debug or optimize code,I normally code in SQL and R. I tried to memorize each section at a time in the memory task
+2026-05-25 12:13:45,2026-05-25 13:10:56,IP Address,188.37.14.25,100,3430,True,2026-05-25 13:10:56,R_8TXG125VfBfdbyM,,,,,38.7219,-9.1398,anonymous,EN,5f4cd2a2a673208eda3a3f0a,24,Python,Closer to someone in their first programming job (Entry-Level),60,0,0,80.585,0,0.835,23.889,180.006,2,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number2",0,0,66.815,0,1.113,178.954,180.007,7,"def main():
+    numer1= 20
+    number2 = 15
+    compute(number1, number2)
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        number1 = number2
+        number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+        return number2",0,0,35.844,0,0.756,154.522,180.008,9,"def main():
+    number1=20
+    number2=15
+    print(compute(number1, number2))
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+        return number2",0,0,38.596,0,0.51,0.51,180.005,1,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+        return number2",0,0,33.776,0,0.623,79.516,180.006,3,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"The code was trying to get the module (%) of 2 numbers, if n1 was bigger than n2 would change, and then if the module didn't result at 0, then it would make the bigger number be the second, and the smaller number be the module of before, and repeats the process until module is 0, to then return the smaller number found.
+But in practice I'm not sure what it was doing, probably some mathematical thing on which the algorithm i'm not familiar with",A,D,D,C,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",3,4,4,4,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Never True,Never True,Never True,Never True,Never True,Never True,Never True,Sometimes True,Seldom True,Never True,Never True,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",2,2,2,"Not anxious
+1",2,"Not anxious
+1","strongly disagree
+1","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6",Python,,"Some high school or less,High school diploma or GED,Bachelor’s degree. Please list the name of your degree(s),Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,Computer Science,MS in Computer Science,Other,AI engineer,Male,,White,,"Always depends on how it's used. Generative AI on CS should be a tool. A tool for learning, for helping to learn, and occasionally to fill boilerplate code that you already know what would be. It should (in my opinion) be used by teachers to help prepare classes, make them more interesting, appealing, interactive, etc..
+And by students should only be used the same way you would interact with a teacher -> to get guidance and support, a teacher would never make the whole exercise for you.
+In the workplace should be used for automation of repetitive, and highly predictable tasks, still with human supervision and maintainence once in a while.
+It should not (in my opinion) be overused for important tasks with full autonomy, and only be used as a tool to help cover edge cases and warn about security problems when necessary.
+But to answer your question, the way it is being used (and it's by design) it's affecting negatively most of programmers, because they replace learning by ""the AI does it for me"", which creates a dependency on it, lowers overall skilled programmers, and that's (I think) what most AI companies want.","How do you know ""how I think"" on the multiple choice questions that looked like IQ questions, if you didn't ask me at any point what was my reasoning for giving such answers?"
+2026-05-26 09:55:18,2026-05-26 10:49:03,IP Address,73.30.97.36,100,3224,True,2026-05-26 10:49:04,R_1XpSR7tBDZxDWdb,,,,,39.9218,-75.268,anonymous,EN,64551d250ef342507eb0edf9,29,Python,Closer to the average or mid-level programmer,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,26.355,0,0.73,0.73,17.074,1,while (temp! =0),0,0,16.88,0,1.734,1.734,41.823,1,int number 2 = 15,0,0,28.89,0,9.028,9.028,17.538,1,temp = number1%number2,0,0,34.554,0,4.333,20.17,40.087,2,int temp = number1,13.769,21.099,96.595,2,13.264,39.713,53.71,4,"if [temp!]0
+number2= temp",running,C,C,C,B,5,3,3,3,5,5,3,2,2,3,3,4,3,3,4,4,Never True,Never True,Never True,Never True,Never True,Sometimes True,Never True,Never True,Never True,Seldom True,Seldom True,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","strongly disagree
+1","strongly disagree
+1",5,"strongly disagree
+1",5,"strongly disagree
+1",5,Python,,Bachelor’s degree. Please list the name of your degree(s),,computer science,,Back End Developer/Engineer,,Male,,Black or African American,,"It is positive in the way that it shows programmers what not to do when learning how to program, relying on generative ai for programming will cause massive errors in code",
+2026-05-26 15:00:07,2026-05-26 15:30:49,IP Address,166.196.89.100,100,1842,True,2026-05-26 15:30:50,R_6v17HSUcE07xOgQ,,,,,35.7798,-78.6654,anonymous,EN,65076c797ee85f5947193819,25,Python,Closer to the average or mid-level programmer,36,3.166,87.307,87.786,4,5.294,177.973,180.011,54,"number1 = 20 
+number2 = 15 
+print compute(number1,number2)
+def compute(number1, number 2)
+if number1 < number 2 
+   temp = number 1 
+   number1 = number2 
+   number 2 = temp
+
+
+",2.047,48.509,49.27,5,0.593,92.865,106.053,6,"def main(): 
+number1=20
+number2=20
+print(compute(number1,number2))
+def compute(): 
+temp = number1
+while temp !=0:
+if number1 < number2
+",1.19,58.95,120.01,6,1.28,121.717,180.012,3,"def main(): 
+ number1 = 20 
+ number2 = 15 
+ print(compute(number1, number2))
+def compute(number1, number2): 
+ temp = number1
+ while temp 
+",1.292,112.045,112.657,5,1.392,95.332,180.009,3,"def main(): 
+number1=20
+number2=15
+print(compute(number1,number2))
+def compute(): 
+ temp = number1
+while temp !=0:
+if n
+",1.526,85.55,108.923,3,1.521,111.608,180.01,3,"def main(): 
+number1=20
+number2=15
+print(compute(number1,number2)
+",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"The code was checking to see if the temp was not 0 and then found the remainder of the two numbers ",A,D,D,A,5,"very much like me
+6",5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Seldom True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,4,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",4,5,7,6,7,5,"strongly disagree
+1","strongly disagree
+1","strongly disagree
+1","strongly disagree
+1","strongly agree
+6",2,5,TypeScript,,Bachelor’s degree. Please list the name of your degree(s),,BS Computer Science,,Software Developer/Software Engineer,,Female,,Hispanic or Latino,,It’s easy to find the answer you need but it doesn’t allow for brain stimulation,
+2026-05-26 15:55:11,2026-05-26 16:15:13,IP Address,137.220.67.164,100,1202,True,2026-05-26 16:15:14,R_8UPJVFRlaqMX4iZ,,,,,51.5088,-0.093,anonymous,EN,63ea4d64095b3286433ed52e,36,Python,Closer to someone still in school or learning to program,18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,19.887,0,0.736,0.736,40.431,1,"return number2;
+int number {}{
+number1=number2{};
+ifnumber2 < number1;
+number temp < 0!;",4.118,4.118,45.525,1,1.137,1.137,21.314,1,"int number2,
+ int number{}2,
+number =2",0,0,25.457,0,0.623,5.799,59.019,2,"return number2;
+int number {} {
+number1:number2;
+if temp number 1=0",0,0,29.651,0,1.222,65.394,67.332,5,"return number2;
+int number2
+number2=number1{};
+ifnumber2 < number1;
+number temp < 0!;
+iftempnumber 1;2 }",0,0,22.45,0,1.375,20.827,22.318,2,"return number2;
+int number {}
+number1=number2","I'm not really sure, I think it was to do with measuring temperature",A,A,D,D,2,4,3,2,4,5,3,2,2,4,"very much like me
+6",3,3,3,4,4,Sometimes True,Sometimes True,Often True,Often True,Sometimes True,Often True,Often True,Always True,Sometimes True,Sometimes True,Often True,2,2,2,2,2,2,3,4,4,4,4,7,5,2,4,4,2,4,2,4,Other,Powershell,Bachelor’s degree. Please list the name of your degree(s),,History,,Systems Engineer,,Male,,White,,"It has a place, but more to debug code rather than to write for you - gen AI runs the risk of programming becoming a lost skill as it does the work for you.",I am not a particularly proficient programmer and my memory is not great - hopefully my answers are helpful regardless!
+2026-05-19 21:19:28,2026-05-19 21:24:33,IP Address,173.90.4.100,31,304,False,2026-05-26 21:24:33,R_3Oi76j4VuyKS8QV,,,,,41.0754,-81.4662,anonymous,EN,,28,C++,Closer to the average or mid-level programmer,58,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40.8,45.521,56.09,2,2.801,31.985,180.13,3,"Return int 
+Public int main() {
+Int number1 ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-05-19 21:27:21,2026-05-19 21:53:12,IP Address,173.90.4.100,97,1551,False,2026-05-26 21:53:13,R_1P78L6vCdbqLktM,,,,,41.0754,-81.4662,anonymous,EN,,28,C++,Closer to the average or mid-level programmer,58,0,0,32.68,0,0.586,0.586,124.147,1,"int main(){
+int number1 = 20;
+int number2 = 15;
+cout << Compute(number1, number2);
+}
+int compute(number1, number 2){
+int temp = number1;
+While(temp != 0) {
+if(number1 << number2) {
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+}
+temp = number1 % number2;
+while(temp != 0) {
+number1 = number2;
+number2 = temp;
+}
+}
+return number2;
+}",0,0,120.108,0,1.096,1.096,118.398,1,"int main(){
+int number1 = 20;
+int number2 = 15;
+cout << Compute(number1, number2);
+}
+int compute(number1, number2){
+int temp = number1;
+while(temp != 0) {
+if(number1 < number 2){
+temp = number1;
+number1 = number2;
+number2 = temp;
+}
+}
+temp = number1 % number2;
+}",0,0,120.013,0,1.701,170.134,180.004,5,"int main() {
+int number1 = 20;
+int number2 = 15;
+cout << Compute(number1, number2);
+}
+int computer(int number1, int number2){
+int temp = number1;
+while(temp != 0) {
+temp = number1 % number 2;
+number1 = 
+}
+}",0,0,30.862,0,0.578,127.508,130.932,2,"int main(){
+int number1 = 20;
+int number2 = 15;
+cout << Compute(number1, number2);
+}
+int compute(number1, number2){
+int temp = number1;
+while(temp != 0) {
+if(number1 < number2) {
+number1 = temp;
+number1 = number2;
+number2 = temp;
+}
+temp = number1 % number2;
+while(temp != 0){
+number1 = number2;
+number2 = temp;
+}
+}
+return number2;
+}",0,0,38.776,0,0.576,0.576,109.653,1,"int main() {
+int number1 = 20;
+int number2 = 15;
+cout << Compute(number1, number2);
+}
+int Compute(int number1, int number2){
+int temp = number1;
+While(temp != 0) {
+if(number1 < number2){
+number1 = temp;
+number1 = number2;
+number2 = temp;
+}
+temp = number1 % number2;
+While(temp != 0) {
+number1 = number2;
+number2 = temp;
+}
+}
+Return number2;
+}",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Trying to find the common modular number for 20 and 15,A,D,D,C,4,5,4,5,4,"very much like me
+6",5,3,3,4,"very much like me
+6","very much like me
+6",5,5,4,5,Often True,Sometimes True,Seldom True,Sometimes True,Often True,Sometimes True,Sometimes True,Sometimes True,Often True,Seldom True,Seldom True,7,3,4,6,3,7,3,8,8,8,3,9,5,"strongly disagree
+1","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6",C#,,Bachelor’s degree. Please list the name of your degree(s),,Computer Arts & Sciences,,Software Team Lead or Manager,,Male,,White,,I think Generative AI can be harmful if introduced or used too soon as in my experience it seems that people become too reliant on it to complete any of their tasks rather than being comfortable with working on the issue themselves.,Including a timer on the first section might be helpful to understand how much time we have before moving us along.
+2026-05-20 14:28:16,2026-05-20 14:43:12,IP Address,86.137.109.177,33,896,False,2026-05-27 14:43:16,R_2zzItaqJTlhOtBl,,,,,52.4099,-1.8141,anonymous,EN,6883a8504728f57551e8c82b,42,Python,Closer to someone in their first programming job (Entry-Level),36,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,81.028,0,0,0,114.604,0,"return number2;
+int main() {
+    number1 = number2;
+    int number2 = 15;
+    if (number1 < number2) {
+        while (temp != 0) {
+        }
+        int temp = number1;
+            temp = number1;
+    }
+    int compute(int number1, int number2) {
+        number2 = temp;
+        int number1 = 20;
+            number1 = number2;
+        cout << compute(number1, number2);
+    }
+        if (temp != 0) {
+            number2 = temp;
+        }
+}",,,,,,,,,,0,0,91.529,0,0,0,180.125,0,"int compute(int number1, int number2){
+    int temp = number1;
+
+    while(temp != 0){
+        temp = number1 % number2;
+        number1 = number2;
+
+        if(temp != 0){
+            number2 = temp;
+        }
+    }
+
+    return number2;
+}
+
+int main(){
+    int number1 = 20;
+    int number2 = 15;
+
+    if(number1 < number2){
+        int temp = number1;
+        number1 = number2;
+        number2 = temp;",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-05-20 14:21:30,2026-05-20 15:01:14,IP Address,176.223.33.179,49,2383,False,2026-05-27 15:01:19,R_23DMkNu1aox9nkL,,,,,38.6821,-9.162,anonymous,EN,5f8310cc97a96f4484b0dbdc,24,C++,Closer to someone in their first programming job (Entry-Level),40,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14.415,15.36,120.107,2,7.764,143.943,180.18,5,"number 1= number 2
+int number 2 = 15
+number1 = 20
+
+cout <compute (number1. number2)",0,0,239.723,0,0,0,299.355,0,,13.15,13.15,155.265,1,0.779,83.679,262.254,5,"return number2
+int main
+number 1=number 2
+number 1 = 15
+if number1<number2
+
+while temp
+
+number2=20
+",0,0,239.741,0,0,0,299.798,0,,1.584,1.584,148.133,1,0.938,0.938,297.944,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-05-20 21:44:04,2026-05-20 21:45:55,IP Address,69.248.150.51,33,111,False,2026-05-27 21:45:57,R_6f7kGgacqXXQWYM,,,,,39.7476,-75.3105,anonymous,EN,68890c84a7ce5cd6b451f6aa,39,C++,Closer to a senior programmer or software architect,115,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-05-21 04:36:15,2026-05-21 04:38:15,IP Address,109.158.190.185,15,120,False,2026-05-28 04:38:20,R_8eaXhuUkaB3hXih,,,,,51.5943,-0.2491,anonymous,EN,680dc9d524604b69fbc41814,62,Python,Closer to a senior programmer or software architect,480,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-05-21 12:46:59,2026-05-21 12:49:35,IP Address,104.185.106.67,44,156,False,2026-05-28 12:49:42,R_5K11A2fMYPbOXAO,,,,,42.4248,-83.1951,anonymous,EN,6698e52c91b31d66a9335c46,26,Python,Closer to someone in their first programming job (Entry-Level),36,0,0,54.754,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-05-21 19:56:42,2026-05-21 19:57:23,IP Address,107.77.197.228,10,41,False,2026-05-28 19:57:24,R_1fCvciEnSjM8pdV,,,,,32.9305,-97.0739,anonymous,EN,61bb396840db417c1a138e3d,43,Python,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-05-22 19:55:05,2026-05-22 19:59:34,IP Address,31.205.85.181,33,268,False,2026-05-29 19:59:38,R_8KDRpVd3qdrnDQ2,,,,,51.6327,-3.9449,anonymous,EN,67744eda78a1f56fb706592c,44,Python,Closer to someone still in school or learning to program,60,0,0,120.015,0,3.555,12.025,55.431,2,"def main:
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute:
+
+
+return",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-05-31 03:25:32,2026-05-31 04:03:41,IP Address,81.146.6.26,100,2288,True,2026-05-31 04:03:41,R_2LoLMWFyPdPv6ct,,,,,51.5834,-0.0755,anonymous,EN,63d04d54715f377d4ee643d8,35,Python,Closer to a senior programmer or software architect,150,0,0,120.021,0,2.061,171.412,180.228,7,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute():
+    temp = number1
+    while temp != 0 :
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+       temp = number1 % number2
+
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+        return number2",0,0,120.13,0,1.095,171.557,180.082,12,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute():
+    temp = number1
+    while temp !=0:
+        if number1 < number2:
+            number2 = temp
+            number1 = number2
+            temp = number2 % number1
+        if temp != 0:
+            temp = number1
+            number2 = temp
+    return number2",0,0,120.133,0,1.806,175.469,180.116,9,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number 2))
+def compute():
+    temp = number1
+    while temp != 0:
+         if number1 < number 2:
+             temp = number1
+             number2 = temp
+             number1 = number2
+        temp = number1 % number2
+        if temp != 0:
+            number2 = temp
+            temp = number1
+        return number2",9.373,9.373,120.199,1,1.194,159.065,180.02,8,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute():
+    temp = number1
+   while temp != 0
+       number2 = temp
+       number1 = number2
+       temp = number1 % number2
+  return number2",0,0,120.123,0,2.085,172.899,180.121,7,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def main():
+    temp = number1
+    while temp !=0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+       temp = number2 % number1
+       if temp != 0:
+           number2 = temp
+           temp = number1
+      return number2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"I actually didn't have time to fully understand what the code was doing since I was too focused on trying to remember. I just made a note to remember some of the steps, such as ensuring that number1 was always before than number2 before the modulo and always returning number2",A,D,D,C,4,"very much like me
+6",5,3,5,"very much like me
+6",5,5,"very much like me
+6",5,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Sometimes True,Sometimes True,Sometimes True,Often True,Sometimes True,Sometimes True,Seldom True,Seldom True,Sometimes True,Sometimes True,Seldom True,8,4,"Not anxious
+1","Not anxious
+1",3,4,3,4,"Not anxious
+1","Not anxious
+1","Not anxious
+1",3,"Not anxious
+1",5,5,5,5,2,5,2,Other,Go,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,,DevOps Engineer,,Male,,Asian,,"If used properly, it can improve their efficiency and help them to learn too. But if you just ask the AI to write the code for you and copy paste it, the code will probably have errors and you won't learn anything]
+",
+2026-05-24 13:22:38,2026-05-24 13:24:34,IP Address,173.95.160.132,33,115,False,2026-05-31 13:24:37,R_3ol6GkQCpvI3OjD,,,,,35.7178,-78.8428,anonymous,EN,674cd7aa7a66f0af6840794d,29,Python,Closer to a senior programmer or software architect,120,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-05-24 18:09:15,2026-05-24 18:09:51,IP Address,70.62.149.86,15,36,False,2026-05-31 18:09:58,R_78zB4X9QukQE49L,,,,,41.5066,-81.6111,anonymous,EN,59d6c710cfaf7400016113a1,34,Python,Closer to someone still in school or learning to program,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-06-02 11:42:41,2026-06-02 12:18:16,IP Address,84.68.228.194,100,2134,True,2026-06-02 12:18:16,R_2L61CPCB8TKkUbD,,,,,55.9495,-3.1983,anonymous,EN,68892626185fec0f0ef5a624,38,Python,Closer to the average or mid-level programmer,240,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,118.614,118.614,120.003,1,1.069,1.069,180.103,1,"    return number2;
+int main() {
+    number1 = number2;
+int number2 = 15;
+if (number1 < number2){
+    while(temp !=0){
+}
+}
+}
+int compute(number1, int number2){
+int temp = number2;
+   while(temp < number1){
+}
+cout << compute(number1, number2)
+}",6.351,10.953,120.205,2,5.837,5.837,180.004,1,"    return number2;
+int main() {
+    number1 = number 2;
+int number2 =5;
+if (number1 < numbver2){
+      while(temp1 !< 0){
+}
+}
+}
+int compute(int num,ber1, int number2){
+int temp = number1;
+cout << compute(number1, number2)
+}",0,0,120.02,0,1.429,1.429,180.104,1,"    return number2;
+int main() {
+    number1 = number2;
+  int number1 = 15;
+if(number1){
+}
+return number1
+}
+Int compute(int number1, int number2){
+    number1 = number 2
+}",0,0,120.136,0,9.276,94.888,180.104,5,"    return number2;
+int main(){
+    number1 =number2;
+int number2 = 15;
+  if(number1 < number2){
+while(temp != 0){
+
+}
+}
+}
+
+int compute(int number1, int number1){
+int temp = number1 * number2
+}",0,0,120.005,0,1.762,172.685,180.004,5,"return number1
+int main() {
+  number1 = number2
+}
+int compute(int number1, int number2) {
+  int temp = 1
+}","Absolutely nothing. It was a mess. Not sure it would even compile. The formatting was horrendous and hard to read. ",A,D,D,C,"very much like me
+6","very much like me
+6",4,4,"very much like me
+6",5,5,4,4,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Sometimes True,Seldom True,Sometimes True,Sometimes True,Sometimes True,Never True,Sometimes True,Sometimes True,Seldom True,Often True,Seldom True,2,3,7,2,3,3,2,3,2,"Very Anxious
+10",3,6,2,2,2,4,3,3,2,4,Python,,Bachelor’s degree. Please list the name of your degree(s),,Computer Science,,DevOps Engineer,,Male,,Asian,,"Not sure if it would be great in the class room but at work I use it everyday. I do worry that I'm relying on it more and more, but as ever in this industry it's adapt or die.
+",The copy the program one is one of the most boring things I've done.
+2026-06-03 05:34:20,2026-06-03 06:24:24,IP Address,118.148.157.138,100,3004,True,2026-06-03 06:24:25,R_9vZQBw9vfY5AcTv,,,,,-37.7837,175.2824,anonymous,EN,650b9dab197926f037eb4531,58,Python,Closer to the average or mid-level programmer,19,0,0,120.116,0,2.297,178.481,180.111,2,"def main():
+number1 = 20
+number2 = 15
+print(compute(number1, number2):
+temp = number1
+while temp !=0:
+if number1 < number2:
+temp = number1
+number1 = number2
+number2 = temp
+if temp !=0
+number1 = number2
+number2 = temp
+return number2",95.673,95.673,120.012,1,3.47,175.495,180.014,3,"def main():
+number1 = 20
+number2 = 15
+print(compute(number1, number2)):
+def compute (number1, number2):
+temp = number1
+while temp !=0:
+if number1 <number2:
+temp = number1
+number1 = number2
+number2 = temp
+temp = number1 % number2
+if temp !=0:
+number1 = number2
+number2 = temp
+return number2",6.349,81.749,120.01,3,4.588,125.672,180.114,6,"def main()
+number1 = 20
+number2 = 15
+print(compute(number1, number2)):
+temp = number1
+while temp !=0:
+if number1 < number2:
+temp = number1
+number1 = number 2
+number2 = temp
+temp = number1 % number2
+if temp !",0.391,66.509,120.011,3,13.832,84.9,180.013,11,"def main():
+number1 = 20
+number2  =15
+print(compute(number1, number2))
+def compute(number1, number2):
+temp = number1;
+do while temp !=0
+if number1 > number",0,0,120.014,0,2.371,129.215,180.014,9,"def main():
+number1 = 20
+number2 = 15
+print(compute(number1, number2))
+def compute(number1, number2):
+while temp != 0:
+if number1 < number2:
+temp = number",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,the code should calculate the greatest common divisor (GCD) of the given two numbers (20 and 15)using the Euclidean algorithm,A,D,D,C,5,"very much like me
+6",5,5,"very much like me
+6","very much like me
+6",5,4,5,5,5,5,5,4,4,"very much like me
+6",Seldom True,Sometimes True,Sometimes True,Sometimes True,Seldom True,Seldom True,Seldom True,Often True,Seldom True,Often True,Sometimes True,"Not anxious
+1","Not anxious
+1",2,"Not anxious
+1",2,3,"Not anxious
+1",2,2,4,"Not anxious
+1",4,2,4,4,2,5,2,5,2,JavaScript,,Bachelor’s degree. Please list the name of your degree(s),,Bachelor's of Science majoring Information systems,,Software Developer/Software Engineer,,Male,,"Black or African American,Middle Eastern or North African",,I think Generative AI is a game changer as it will significantly affect the way we learn and work. I think it will make programming more accessible to many people who would've otherwise think programming is not their cup of tea!,No. Thanks for the opportunity to take part in your study. Good luck
+2026-05-28 10:25:49,2026-05-28 10:27:02,IP Address,90.243.131.45,33,72,False,2026-06-04 10:27:03,R_8d5Cd7FXZOtsRbZ,,,,,51.4036,-0.7618,anonymous,EN,5eb126c5f13db7000855c7b7,30,Python,Closer to the average or mid-level programmer,48,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-05-28 16:10:41,2026-05-28 16:12:08,IP Address,195.231.47.183,10,87,False,2026-06-04 16:12:11,R_8HozLsYKWvZosiq,,,,,43.1479,12.1097,anonymous,EN,5f32397f6eeae117b7b66456,50,Java,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2026-06-05 08:00:49,2026-06-05 08:24:47,IP Address,86.140.59.227,100,1438,True,2026-06-05 08:24:48,R_8lsHFB5pNNJAjVZ,,,,,52.1752,-2.2028,anonymous,EN,6888f9cda7d9b73a7b912114,33,Python,Closer to someone still in school or learning to program,12,22.643,22.643,38.494,1,0.981,157.983,180.003,9,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1,number2))
+def compute([number1,number2]):
+  temp = number1
+  while temp != 0:
+    if number1 < number2:
+      temp = number1
+      number1 = number2
+      number2 = temp
+    temp = number1 % number2
+    if temp != 0:
+      number1 = number2
+      number2 = temp
+   return number2",11.326,29.396,32.08,5,0.512,89.804,180.002,2,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1,number2))
+def compute(number1,number2):
+  temp = number1
+  while temp != 0:
+    if number1 < number2:
+      temp = number1
+      number1 = number2
+      number2 = temp
+    temp = number1 % number2
+    if temp != 0:
+      temp = number1
+      number1 = number2
+    return number2",114.912,114.912,120.003,1,0.818,166.997,180.108,4,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1,number2))
+
+def compute([number1,number2]):
+  temp = number1
+  while(temp != 0)
+    if (number1 > number2)
+      temp = 1
+      number1 = 1
+      number2 = 1
+    else 
+      temp = 2
+     
+    endif
+  endwhile",26.689,26.689,27.882,1,0.461,120.478,127.078,2,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1,number2))
+def compute():
+  temp = number1
+  while temp != 0:
+    if number1 < number2:
+      temp = number1
+      number1 = number2
+      number2 = temp
+    temp = number1 % number2
+    if temp != 0:
+      number1 = number2
+      number2 = temp
+    return number2",7.264,14.37,17.119,2,0.419,117.274,118.061,2,"def main():
+  number1 = 20
+  number2 = 15
+  print(compute(number1,number2))
+def compute():
+  temp  = number1
+  while temp != 0:
+    if number1 < number2:
+      temp = number1
+      number1 = number2
+      number2 = temp
+    temp = number1 % number2
+    if temp != 0:
+      number1 = number2
+      number2 = temp
+    return number2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,I think the code was used to figure out if the larger number divided by the smaller number has a remainder.,A,C,D,C,5,5,4,4,5,4,4,3,4,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",5,4,"very much like me
+6",Sometimes True,Never True,Never True,Never True,Never True,Seldom True,Sometimes True,Sometimes True,Seldom True,Never True,Seldom True,2,2,2,2,2,2,2,2,2,2,4,2,2,"strongly disagree
+1",2,4,"strongly disagree
+1",2,2,4,Other,PHP,"Bachelor’s degree. Please list the name of your degree(s),Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,IT for Education BSc,Creative Media MA,Web Developer/Engineer,,Male,,White,,"In a positive way: GenAI can be used to quickly and efficiently present a solution to problems, perhaps in a way the user hasn't yet thought of.
+
+In a negative way: It is far too easy for people to rely on GenAI and stop training their brain.",
+2026-06-05 09:20:37,2026-06-05 09:44:22,IP Address,165.225.199.34,100,1425,True,2026-06-05 09:44:23,R_2ASgJ9bGXCjjIdE,,,,,53.4809,-2.2374,anonymous,EN,55a1321efdf99b6ec83c214e,35,Python,Closer to a senior programmer or software architect,120,0,0,120.007,0,5.005,134.624,180.017,11,"def main:
+    number1 = 20
+    number2 = 15
+    compute(number1, number2)
+def compute(number1, number2):
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number2 % number1
+        if temp != 0:
+            number1 = number2
+            number2 = temp",0,0,18.295,0,0.715,131.566,132.054,7,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number2",0,0,45.212,0,0.724,0.724,128.329,1,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2)
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number2",0,0,62.029,0,0.702,0.702,98.758,1,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute(number1, number2):
+   temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            number1 = number2
+            number2 = temp
+    return number2",0,0,49.069,0,0.643,158.444,160.014,3,"def main():
+    number1 = 20
+    number2 = 15
+    print(compute(number1, number2))
+def compute(number1, number2):
+    temp = number1
+    while temp != 0:
+        if number1 < number2:
+            temp = number1
+            number1 = number2
+            number2 = temp
+        temp = number1 % number2
+        if temp != 0:
+            temp = number1
+            number2 = temp
+    return number2",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"It was taking 2 numbers, if number1 couldn't be divided by number2 it was swapping their positions. Then it was dividing the bigger number by the smaller number until there was no remainder (it divided equally). It then returned the smaller number.",A,D,D,C,5,5,5,5,5,4,3,4,5,5,"very much like me
+6","very much like me
+6","very much like me
+6",5,5,5,Never True,Never True,Never True,Seldom True,Never True,Seldom True,Seldom True,Seldom True,Seldom True,Never True,Never True,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",3,2,"Not anxious
+1","Not anxious
+1","Not anxious
+1",2,"Not anxious
+1","strongly disagree
+1","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6",2,"strongly agree
+6",TypeScript,,"Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,MSc Software Development,Software Developer/Software Engineer,,Male,,White,,I am sick to death of hearing about GenAI and being forced to use it. I think it is making people very complacent and when the AI bubble bursts a lot of companies and software engineers are going to be struggling.,I am not a fan of GenAI professionally or personally.
+2026-06-05 15:00:04,2026-06-05 15:38:15,IP Address,38.92.215.210,100,2290,True,2026-06-05 15:38:16,R_61hkcX79HsJwYTE,,,,,37.7794,-122.4176,anonymous,EN,65b292c0dfaa776ac2075ef4,38,Python,Closer to a senior programmer or software architect,120,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,33.465,0,0.548,176.393,177.853,12,"return number2;
+int main() {
+ int number1 = number2;
+ int number2 = 20;
+ while(temp !=0) {
+   temp = number1;
+}
+if(number1<number){ 
+    compute(number1,number2)
+}
+int compute(int number1, int number2) {
+    number2=20;
+    temp = number1 % number2;
+    cout<<????
+}
+}",101.585,101.585,104.665,1,1.558,84.365,86.95,3,"return number2
+int main(number1, number2) {
+  int number1 = number2
+  while(temp !=0) {
+    temp = number1
+  }
+
+  int compute(number1, number2) {
+     temp = number1 % number2
+  }
+}",0,0,100.376,0,1.349,106.351,155.967,3,"return number2;
+int main() {
+   int number1 = number2;
+   int number2 = 20;
+   if(number1 < number2) {
+      while(temp !=0) {
+      }
+   }
+
+   int compute(int number1, int number2) {
+      number2 = 15;
+      temp = number1%number2;
+      cout<<compute(number1, number2);
+  }
+}",0,0,120.014,0,0.765,63.696,176.639,11,"return number2;
+int main() {
+int number1 = number2;
+int number2 = 15;
+if(number1 < number2) {
+while(temp !=0) {
+}
+}
+
+int compute(int number1, int number2) {
+   number2 = 20;
+   temp = number1 % number2;
+   cout<<compute(number1, number2) 
+}",49.913,49.913,89.142,1,1.834,154.652,161.277,9,"return number2;
+int main(int number1, int number2) {
+   number1 = 15;
+   if(number1 < number2) {
+      while(temp !=0) {
+           // ???
+      }
+   }
+
+    int compute(int number1, int number2) {
+       temp = number2 % number1;
+       cout << compute(number1, number2);
+    }
+    // ???
+}","I'm not sure this code would actually run, given the brace structure (but that might just have been the awkward indentation making it hard to follow) but it looks as though it would print out remainder of 2 integers divided by one another.",A,A,D,C,"very much like me
+6","very much like me
+6",5,5,"very much like me
+6","very much like me
+6",5,4,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",Sometimes True,Never True,Seldom True,Sometimes True,Sometimes True,Sometimes True,Seldom True,Sometimes True,Seldom True,Never True,Sometimes True,5,7,6,3,3,2,2,6,6,6,"Not anxious
+1",8,5,4,4,3,4,3,5,3,TypeScript,,High school diploma or GED,,,,Software Developer/Software Engineer,,Male,,White,,"Very positive in the workplace as it much improves time to delivery of features, and the level of completeness with which features can be shipped (in terms of overall documentation, testing etc)
+
+I imagine harmful in an education environment, as it's very confident even when it's wrong, and can often implement things inefficiently or ad-hoc in terms of the patterns and techniques it employs, which if you don't have the experience or knowledge to shepherd against can result in a disorganised mess over time.","The indentation on the code example was pretty off-putting, not sure if that's by design to make it harder to memorise or not, though!"
+2026-06-08 14:03:04,2026-06-08 14:23:37,IP Address,82.4.58.117,100,1232,True,2026-06-08 14:23:37,R_8VpmqafFMi3dYHL,,,,,51.7951,-0.1867,anonymous,EN,676577111a2aa70fbd942084,30,Python,Closer to the average or mid-level programmer,36,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,74.23,0,15.054,15.054,87.882,1,"return number =2;
+     int main():
+          number1 = 2
+          number2 = 3
+     number1 < number2
+    temp != 0
+",0,0,41.247,0,1.964,1.964,62.372,1,"return number2;
+    int main():
+        number1 = 15;
+    if (number1 > number 2):
+        temp != 0;
+  ",0,0,19.888,0,6.913,31.149,98.401,3,"return number 2;
+ int main(){
+              number1  = number2;
+    int number2 = 15;
+  if (number 1 > number2)
+ while(temp !=0)
+}",0,0,21.192,0,1.589,128.024,139.316,6,"     return number2;
+int main(){
+                number 1 = number 2;
+  if (number1 < number 2){
+       while(temp !=0){
+
+} 
+
+    int temp =0
+}
+
+
+}",0,0,63.619,0,13.557,123.792,125.059,5,"      return number2;
+     int main(){
+          number 2 = 15;
+    if(number1 < number2){
+       while(temp !=0){}
+ int temp =  number 1
+
+
+}
+}",Swapping or sorting of numbers while using temp file.,B,D,B,C,"very much like me
+6","very much like me
+6","very much like me
+6","very much like me
+6",5,"very much like me
+6",5,5,5,5,5,5,"very much like me
+6",5,5,"very much like me
+6",Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,Never True,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",2,2,2,2,2,3,3,3,2,5,"strongly agree
+6","strongly agree
+6","strongly disagree
+1",2,3,4,Python,,"Bachelor’s degree. Please list the name of your degree(s),Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS etc.) Please list the name of your degree(s).",,,,Back End Developer/Engineer,,Female,,Black or African American,,It helps to be more productive.,
+2026-06-09 15:09:45,2026-06-09 15:58:56,IP Address,5.133.47.233,100,2951,True,2026-06-09 15:58:56,R_22KLLODuDAP0sqE,,,,,54.5744,-1.2317,anonymous,EN,676f0ec8ea4254c4597b62ba,34,Python,Closer to the average or mid-level programmer,120,5.122,5.122,27.402,1,5.525,5.525,179.344,1,"def main[]:
+     number1 = 20
+      number2 = 15
+      print[compute[number1,number2]:
+      temp = number1
+      while temp!=0
+      if number1 < number2:
+      number1 = number2
+      number2 = temp
+      temp = number1 % number2",0,0,120.01,0,17.551,17.551,180.109,1,"def main[]
+     number1 = 20
+     number2 =15
+     print[compute[number1, number2]]
+def compute(number1, number2]:
+     temp = number1
+      while temp = 0:
+",44.291,44.291,120.009,1,9.641,9.641,179.374,1,"def main[]:
+     number1 =20
+number2 =15
+print[compute[number1,number2]]
+def compute[number1,number2]:
+temp = number1
+while temp != 0:
+if number1 < number1
+temp = number1
+number1 = number2
+number2 = temp
+temp = number1 % number2
+if temp!=0:
+number1",3.528,5.668,120.11,4,4.229,139.286,179.766,3,"def main[]:
+    number1 = 20
+    number2 = 15
+    print[compute[number1,number2]]
+    def compute[number1 number2]
+    temp = number1
+    while temp ! = 0:
+     if number1 < number2
+     temp = number1
+     number1 = number2
+     number2 = temp
+     temp =
+   ",11.241,11.241,17.802,1,4.067,4.067,178.971,1,"def main[]:
+    number1 = 20
+    number2 =15
+    print [compute[number1, number2]:
+def compute[number1.number2]:
+     temp = number1
+     number1 = number2
+     number2 = temp
+     temp = number1
+    ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,The code is finding the greatest common divisor of two numbers using the Euclidean algorithm.,A,D,C,B,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,Never True,Never True,Seldom True,Never True,Never True,Never True,Never True,Seldom True,Never True,Never True,Seldom True,"Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1","Not anxious
+1",2,"Not anxious
+1","Not anxious
+1",2,"strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6","strongly disagree
+1","strongly agree
+6",Python,,Prefer not to say,,,,Other,Lecturer Computer Science,Male,,Black or African American,,"I think Generative AI is helpful because it can improve productivity, support learning and help programmers solve problems faster. However people should not rely on it too much because it can sometimes give incorrect answers or reduce critical thinking skills. Overall I see it as a useful support tool rather than a replacement for human thinking.","The tasks were engaging and encourage logical thinking, pattern recognition, and problem solve. I also found the question about AI and education interesting because they explored both technical and practical perspectives."
+2026-06-10 05:19:13,2026-06-10 05:54:48,IP Address,91.150.217.118,100,2135,True,2026-06-10 05:54:49,R_2fupSgrrma57X7r,,,,,50.0537,19.9432,anonymous,EN,6017d3a6c1146da27427ca87,24,Python,Closer to someone in their first programming job (Entry-Level),68,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,25.537,0,0.689,0.689,250.475,1,return number 2,0,0,50.009,0,0.799,68.438,174.329,15,"return number2;
+int main() {
+number1 = number2;
+int number2 = 15;
+if (number1 > nurnber2) (
+while (temp == 0) {
+int temp = number1;
+temp = number1
+int compute(int number1, int number2) {
+number2 = temp;
+int number1 = 15;
+temp = number1% number2;
+number1 = number2;
+cout << compute(number1 number2);
+if (temp == 0)
+number2 = temp;",0,0,19.665,0,6.302,86.255,88.624,22,"return number2;
+int main() {
+number1 = number2;
+int number2 = 15;
+if (number1 < nurnber2) (
+while (temp = 0) {
+int temp = number1;
+temp = number1;
+int compute(int number1, int number2) {
+int number1 = 20;
+temp =;
+number1 = number2;
+cout << compute(number1, number2);
+",0,0,20.373,0,3.713,90.001,113.755,5,"return number 2
+int main() {
+number 1 = number 2
+int number 2 = 15
+if (number 2 > number1){
+while(){
+}
+}
+int = number 1
+number 1
+int compute{
+number 1 = 20
+cout << computer(number1, number2)
+}
+}",0,0,239.706,0,139.972,164.252,167.911,8,"return number2;
+int main() {
+numberl = number2;
+int number2 = 15;
+if (numberl < nurnber2) (
+while (temp O) {
+int temp = numberl;
+temp = numberl;
+int compute(int numberl, int number2) {
+number2 = temp;
+int number1 = 20;
+temp = number1 % number2;
+number1 = number2;
+cout << compute(number1, number2);
+if (temp O)
+number2 = temp;",biggest divider the euclides,A,A,D,B,4,5,5,4,"very much like me
+6",4,4,5,2,4,5,4,4,4,4,5,Often True,Sometimes True,Sometimes True,Often True,Often True,Sometimes True,Seldom True,Always True,Sometimes True,Often True,Seldom True,3,"Not anxious
+1",3,2,3,3,3,2,4,8,6,8,4,2,2,4,2,4,3,5,Python,,"Some high school or less,High school diploma or GED,Some college, but no degree,Associates or technical degree. Please list the name of your degree(s),Bachelor’s degree. Please list the name of your degree(s)",engineering degree,engineering degree,,Software Developer/Software Engineer,,Female,,White,,generative ai becomes an important tool in both computer science education and my workplace. in my opinion it has many benefits but also creates challenges that programmers need to be aware of. it can helps programmers work more efficiently but it's important to remember that you can't be too dependent on it,
