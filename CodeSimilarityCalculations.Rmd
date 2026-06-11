@@ -223,6 +223,7 @@ calculate_levdist <- function(stimCode, userCode)
   }
   print(mapping)
   print(ldList)
+  print("notmalLDList")
   print(normalLDList)
   print(matchedStimuli)
   print(matchedUserCode)
@@ -278,8 +279,126 @@ TopKLists::Spearman(javaRank, lev_val_num, length(javaRank), length(lev_val_num)
 
 
 
+TestCode = c("while (temp != 0) {",
+             "if (number1 < number2) {",
+             "temp = number1;",
+             "number1 = number2;",
+             "number2 = temp;",
+             "}")
+
+ParticCode = c("while (temp != 0) {",
+             "if (number1 > number2) {",
+             "number1 = number2;",
+             "temp = number1;",
+             "sum = 5 + 4",
+             "}")
+
+calculate_levdist(TestCode, ParticCode)
+
+
+
+
+test1 = stringdist("if (number1 < number2) {", "if (number1 > number2) {", method = "lv")
+print(test1)
+max_len <- pmax(nchar("if (number1 < number2) {"), nchar("if (number1 > number2) {"))
+test1 / max_len
+
+test2 = stringdist("while (temp != 0) {", "if (number1 < number2) {", method = "lv")
+print(test2)
+max_len2 <- pmax(nchar("while (temp != 0) {"), nchar("if (number1 < number2) {"))
+test2 / max_len2
+
+
+
+
+test2 = stringdist("while (temp != 0) {", "}", method = "lv")
+print(test2)
+max_len2 <- pmax(nchar("while (temp != 0) {"), nchar("}"))
+test2 / max_len2
+
+
+vec = c(1, 2, 3, 4, 5, 6)
+vec2 = c(1, 2, 4, 3, 7, 6)
+
+dist = Spearman(vec, vec2, 6, 6, 7)
+
+
+k1 <- length(vec)
+k2 <- length(vec2)
+n  <- length(union(vec,vec2))
+
+list1 <- 1:k1
+list2 <- rev(1:k2)
+
+
+D_max <- Spearman(list1, list2, k1, k2, n)
+
+normaldist = dist/D_max
+
+print(dist)
+print(D_max)
+print(normaldist) 
 
 
 ```
 
+```{r loop and calculate all the things }
+
+
+
+
+#extract into a vector
+    userCode = mckData[ 7, "X1_code.recall.control"]
+    parts <- strsplit(userCode, split = "\n")
+    userCodeVec = unlist(parts)
+    
+    if(mckData$LangChoice[7] == "Java"){
+      print("it is java")
+      lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
+      #mckData$X1_lev[7] = lev_dat[1];
+      #mckData$X1_mapping[7] = lev_dat[2];
+    }
+
+
+for(i in 1:length(mckData$X1_code.recall.control)) 
+{
+  if(is_empty(mckData$X1_code.recall.control[i])  == 0 )
+  {
+    
+    #extract into a vector
+    userCode = mckData[ i, "X1_code.recall.control"]
+    parts <- strsplit(userCode, split = "\n")
+    userCodeVec = unlist(parts)
+    
+    if(mckData$LangChoice[i] == "Java"){
+      
+      lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
+      mckData$X1_lev[i] = lev_dat[1];
+      mckData$X1_mapping[i] = lev_dat[2];
+    }
+    else if(mckData$LangChoice[i] == "Python"){
+      lev_dat = calculate_levdist(stimCode = pythonCode, userCode = userCodeVec)
+      mckData$X1_lev[i] = lev_dat[1];
+      mckData$X1_mapping[i] = lev_dat[2];
+    }
+    else if(mckData$LangChoice[i] == "C++"){
+      lev_dat = calculate_levdist(stimCode = cCode, userCode = userCodeVec)
+      mckData$X1_lev[i] = lev_dat[1];
+      mckData$X1_mapping[i] = lev_dat[2];
+    }
+    else
+    {
+      print("Error, no language choice detected")
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+```
 
