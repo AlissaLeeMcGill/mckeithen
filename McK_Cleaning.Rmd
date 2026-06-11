@@ -29,7 +29,7 @@ library(lavaan)
 ```{r Load the data }
 
 
-mckData = read.csv("Prolific - McKeithen et al 1981 Reproduction_May 27, 2026_10.09.csv")
+mckData = read.csv("Prolific - McKeithen et al 1981 Reproduction_June 10, 2026_18.43.csv")
 
 ```
 

@@ -27,7 +27,7 @@ library(TopKLists)
 ```{r Load the data }
 
 
-mckData = read.csv("Prolific - McKeithen et al 1981 Reproduction_May 27, 2026_10.09.csv")
+mckData = read.csv("Prolific - McKeithen et al 1981 Reproduction_June 10, 2026_18.43.csv")
 
 ```
 
@@ -351,20 +351,49 @@ print(normaldist)
     userCode = mckData[ 7, "X1_code.recall.control"]
     parts <- strsplit(userCode, split = "\n")
     userCodeVec = unlist(parts)
+    mckData$X1_lev = NA
     
     if(mckData$LangChoice[7] == "Java"){
       print("it is java")
       lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
-      #mckData$X1_lev[7] = lev_dat[1];
-      #mckData$X1_mapping[7] = lev_dat[2];
+
+      mckData$X1_lev[7] = lev_dat[[1]]
+      mckData$X1_mapping[7] = list(lev_dat[[2]])
+      print(mckData$X1_mapping[7])
+     
     }
 
+
+mckData$X1_lev = NA
+mckData$X1_mapping = NA
+mckData$X2_sfr = NA
+mckData$X2_total_acc = NA
+
+mckData$X2_lev = NA
+mckData$X2_mapping = NA
+mckData$X1_sfr = NA
+mckData$X1_total_acc = NA
+
+mckData$X3_lev = NA
+mckData$X3_mapping = NA
+mckData$X3_sfr = NA
+mckData$X3_total_acc = NA
+
+
+mckData$X4_lev = NA
+mckData$X4_mapping = NA
+mckData$X4_sfr = NA
+mckData$X4_total_acc = NA
+
+mckData$X5_lev = NA
+mckData$X5_mapping = NA
+mckData$X5_sfr = NA
+mckData$X5_total_acc = NA
 
 for(i in 1:length(mckData$X1_code.recall.control)) 
 {
   if(is_empty(mckData$X1_code.recall.control[i])  == 0 )
   {
-    
     #extract into a vector
     userCode = mckData[ i, "X1_code.recall.control"]
     parts <- strsplit(userCode, split = "\n")
@@ -373,18 +402,18 @@ for(i in 1:length(mckData$X1_code.recall.control))
     if(mckData$LangChoice[i] == "Java"){
       
       lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
-      mckData$X1_lev[i] = lev_dat[1];
-      mckData$X1_mapping[i] = lev_dat[2];
+      mckData$X1_lev[i] = lev_dat[[1]]
+      mckData$X1_mapping[i] = list(lev_dat[2])
     }
     else if(mckData$LangChoice[i] == "Python"){
       lev_dat = calculate_levdist(stimCode = pythonCode, userCode = userCodeVec)
-      mckData$X1_lev[i] = lev_dat[1];
-      mckData$X1_mapping[i] = lev_dat[2];
+      mckData$X1_lev[i] = lev_dat[[1]]
+      mckData$X1_mapping[i] = list(lev_dat[2])
     }
     else if(mckData$LangChoice[i] == "C++"){
       lev_dat = calculate_levdist(stimCode = cCode, userCode = userCodeVec)
-      mckData$X1_lev[i] = lev_dat[1];
-      mckData$X1_mapping[i] = lev_dat[2];
+      mckData$X1_lev[i] = lev_dat[[1]]
+      mckData$X1_mapping[i] = list(lev_dat[2])
     }
     else
     {
@@ -393,9 +422,6 @@ for(i in 1:length(mckData$X1_code.recall.control))
     
   }
 }
-
-
-
 
 
 
