@@ -70,6 +70,9 @@ mckData <- tibble::rowid_to_column(mckData, "ID")
   mckData[(mckData == "strongly agree\n6")] = as.numeric(6)
   mckData[(mckData == "strongly disagree\n1")] = as.numeric(1)
   
+  #make sure all of them are numeric
+  mckData <- mckData %>% mutate(across(CPSES_1:Growth.Mindset_7,~ as.numeric()))
+  
  
 ##################################### REMEMBER TO RE CODE THE GROWTH MINDSET ITEMS ##############################
   
@@ -78,7 +81,9 @@ mckData <- tibble::rowid_to_column(mckData, "ID")
  # reversed = 6+1 - original 
  # find them reverse coded Q's  
   
- 
+  class(mckData$Growth.Mindset_3)
+
+mckData <- mckData %>% mutate(Growth.Mindset_3 = 7- Growth.Mindset_3)
 
 ```
 
