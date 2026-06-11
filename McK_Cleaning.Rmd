@@ -71,20 +71,23 @@ mckData <- tibble::rowid_to_column(mckData, "ID")
   mckData[(mckData == "strongly disagree\n1")] = as.numeric(1)
   
   #make sure all of them are numeric
-  mckData <- mckData %>% mutate(across(CPSES_1:Growth.Mindset_7,~ as.numeric()))
-  
  
-##################################### REMEMBER TO RE CODE THE GROWTH MINDSET ITEMS ##############################
+  start_column = which(colnames(mckData) == "CPSES_1")
+  end_column = which(colnames(mckData) == "Growth.Mindset_7")
   
-  
-## reversed = (max+min) - original
- # reversed = 6+1 - original 
- # find them reverse coded Q's  
-  
+
+  mckData <- mckData %>% mutate_at(c(start_column:end_column), as.numeric)
   class(mckData$Growth.Mindset_3)
+ 
 
-mckData <- mckData %>% mutate(Growth.Mindset_3 = 7- Growth.Mindset_3)
-
+  ## reverse code mindset items that need it  
+  ## reversed = (max+min) - original
+  # reversed = 6+1 - original  so 7 - original
+ 
+  mckData$Growth.Mindset_3 = 7 - mckData$Growth.Mindset_3
+  mckData$Growth.Mindset_5 = 7 - mckData$Growth.Mindset_5
+  mckData$Growth.Mindset_7 = 7 - mckData$Growth.Mindset_7
+  
 ```
 
 ```{r Composite Variable calculation function}
@@ -133,6 +136,14 @@ mckData = calculate_composite_mean(mckData,"PAS.YILDIRIM.OZDENER_1","PAS.YILDIRI
 mckData = calculate_composite_mean(mckData,"Math.Anxiety_2","Math.Anxiety_12", "MA_COMP")
 
 mckData = calculate_composite_mean(mckData,"Growth.Mindset_1","Growth.Mindset_7", "MIND_COMP")
+
+
+
+```
+
+```{r calculate the relational reasoning}
+
+
 
 
 
