@@ -225,25 +225,32 @@ calculate_levdist <- function(stimCode, userCode)
         else
         {
           smallestIndex = smallestIndexes[k]
-          print("smallestIndex final")
-          print(smallestIndex)
+          #print("smallestIndex final")
+          #print(smallestIndex)
           break
         }
       }
       
     
-      mapping[i] = smallestIndex #have an issue here where we still are using first instance
+      mapping[i] = smallestIndex 
       final_LDs[smallestIndex] = compare_temp[smallestIndex]
       max_len <- pmax(nchar(stimCode[i]), nchar(userCode[j]))
       normalfinal_LDs[smallestIndex] = final_LDs[smallestIndex] / max_len  
       
       matchedStimuli[i] = 1
+      matchedUserCode[smallestIndex] = 1
       skip_list = append(skip_list, smallestIndex)
       
+      #reset variable
       smallestIndex= 0
       
    
   }
+   
+  
+   final_LDs[is.na(final_LDs)] <- 0
+   normalfinal_LDs[is.na(normalfinal_LDs)] <- 0
+  
    print("mapping")
    print(mapping)
    print("final_LDs")
@@ -254,7 +261,7 @@ calculate_levdist <- function(stimCode, userCode)
    print(matchedUserCode)
   
    
-
+  
    
   missinglines = sum(matchedStimuli == 0 )
   extralines = sum(matchedUserCode == 0 )
@@ -287,24 +294,43 @@ calculate_levdist <- function(stimCode, userCode)
 
 ```{r Formula to Calculate Spearman's Footrule for line order }
 
+calculate_sfr <- function(stimRank, userRank)
+{
 
-# print(javaRank)
-# print(lev_val[2])
-# 
-# class(javaRank)
-# class(lev_val[2])
-# 
-# lev_val_num = as.numeric(unlist(lev_val[2]))
-# class(lev_val_num)
-# 
-# TopKLists::Spearman(javaRank, lev_val_num, length(javaRank), length(lev_val_num), union(javaRank, lev_val_num))
+   sfr = TopKLists::Spearman(stimRank, userRank, length(stimRank), length(userRank), union(stimRank, userRank))
   
-
+   k1 <- length(stimRank)
+   k2 <- length(userRank)
+   n  <- length(union(stimRank,userRank))
+ 
+   #worst case scenario
+   list1 <- 1:k1
+   list2 <- rev(1:k2)
+ 
+ 
+   D_max <- Spearman(list1, list2, k1, k2, n)
+ 
+   normaldist = sfr/D_max
+ 
+   print("sfr")
+   print(sfr)
+   print("D_max")
+   print(D_max)
+   print(normaldist)
+   print("normaldist")
+ 
+   return (normaldist)
+  
+}
 
 ```
 
 ```{r code }
-# 
+#
+
+
+ 
+   
 # 
 # 
 # TestCode = c("while (temp != 0) {",
@@ -375,22 +401,6 @@ calculate_levdist <- function(stimCode, userCode)
 ```{r loop and calculate all the things }
 
 
-# #extract into a vector
-#     userCode = mckData[ 1, "X1_code.recall.control"]
-#     parts <- strsplit(userCode, split = "\n")
-#     userCodeVec = unlist(parts)
-#     mckData$X1_lev = NA
-#     
-#     if(mckData$LangChoice[7] == "Java"){
-#       print("it is java")
-#       lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
-# 
-#       mckData$X1_lev[7] = lev_dat[[1]]
-#       mckData$X1_mapping[7] = list(lev_dat[[2]])
-#       print(mckData$X1_mapping[7])
-#      
-#     }
-
 
 mckData$X1_lev = NA
 mckData$X1_mapping = NA
@@ -418,6 +428,8 @@ mckData$X5_mapping = NA
 mckData$X5_sfr = NA
 mckData$X5_total_acc = NA
 
+
+##timepoint 1
 for(i in 1:length(mckData$X1_code.recall.control)) 
 {
   print("loop number:")
@@ -435,16 +447,237 @@ for(i in 1:length(mckData$X1_code.recall.control))
       lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
       mckData$X1_lev[i] = lev_dat[[1]]
       mckData$X1_mapping[i] = list(lev_dat[2])
+      #convert list to vector
+      vecMapping = unlist(mckData$X1_mapping[i])
+      mckData$X1_sfr[i] = calculate_sfr(javaRank, vecMapping)
+      mckData$X1_total_acc[i] = (mckData$X1_lev[i] +  mckData$X1_sfr[i]) /2
+  
     }
     else if(mckData$LangChoice[i] == "Python"){
       lev_dat = calculate_levdist(stimCode = pythonCode, userCode = userCodeVec)
       mckData$X1_lev[i] = lev_dat[[1]]
       mckData$X1_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X1_mapping[i])
+      mckData$X1_sfr[i] = calculate_sfr(pythonRank , vecMapping)
+      mckData$X1_total_acc[i] = (mckData$X1_lev[i] +  mckData$X1_sfr[i]) /2
     }
     else if(mckData$LangChoice[i] == "C++"){
       lev_dat = calculate_levdist(stimCode = cCode, userCode = userCodeVec)
       mckData$X1_lev[i] = lev_dat[[1]]
       mckData$X1_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X1_mapping[i])
+      mckData$X1_sfr[i] = calculate_sfr(cRank , vecMapping)
+      mckData$X1_total_acc[i] = (mckData$X1_lev[i] +  mckData$X1_sfr[i]) /2
+    }
+    else
+    {
+      print("Error, no language choice detected")
+    }
+    
+  }
+}
+
+##timepoint 2
+for(i in 1:length(mckData$X2_code.recall.control)) 
+{
+  print("loop number:")
+  print(i)
+  if(mckData$X2_code.recall.control[i] != "" &&  !is.na(mckData$X2_code.recall.control[i]))
+  {
+    print("not empty!")
+    #extract into a vector
+    userCode = mckData[ i, "X2_code.recall.control"]
+    parts <- strsplit(userCode, split = "\n")
+    userCodeVec = unlist(parts)
+    
+    if(mckData$LangChoice[i] == "Java"){
+      
+      lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
+      mckData$X2_lev[i] = lev_dat[[1]]
+      mckData$X2_mapping[i] = list(lev_dat[2])
+      #convert list to vector
+      vecMapping = unlist(mckData$X2_mapping[i])
+      mckData$X2_sfr[i] = calculate_sfr(javaRank, vecMapping)
+      mckData$X2_total_acc[i] = (mckData$X2_lev[i] +  mckData$X2_sfr[i]) /2
+  
+    }
+    else if(mckData$LangChoice[i] == "Python"){
+      lev_dat = calculate_levdist(stimCode = pythonCode, userCode = userCodeVec)
+      mckData$X2_lev[i] = lev_dat[[1]]
+      mckData$X2_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X2_mapping[i])
+      mckData$X2_sfr[i] = calculate_sfr(pythonRank , vecMapping)
+      mckData$X2_total_acc[i] = (mckData$X2_lev[i] +  mckData$X2_sfr[i]) /2
+    }
+    else if(mckData$LangChoice[i] == "C++"){
+      lev_dat = calculate_levdist(stimCode = cCode, userCode = userCodeVec)
+      mckData$X2_lev[i] = lev_dat[[1]]
+      mckData$X2_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X2_mapping[i])
+      mckData$X2_sfr[i] = calculate_sfr(cRank , vecMapping)
+      mckData$X2_total_acc[i] = (mckData$X2_lev[i] +  mckData$X2_sfr[i]) /2
+    }
+    else
+    {
+      print("Error, no language choice detected")
+    }
+    
+  }
+}
+
+##timepoint 3
+for(i in 1:length(mckData$X3_code.recall.control)) 
+{
+  print("loop number:")
+  print(i)
+  if(mckData$X3_code.recall.control[i] != "" &&  !is.na(mckData$X3_code.recall.control[i]))
+  {
+    print("not empty!")
+    #extract into a vector
+    userCode = mckData[ i, "X3_code.recall.control"]
+    parts <- strsplit(userCode, split = "\n")
+    userCodeVec = unlist(parts)
+    
+    if(mckData$LangChoice[i] == "Java"){
+      
+      lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
+      mckData$X3_lev[i] = lev_dat[[1]]
+      mckData$X3_mapping[i] = list(lev_dat[2])
+      #convert list to vector
+      vecMapping = unlist(mckData$X3_mapping[i])
+      mckData$X3_sfr[i] = calculate_sfr(javaRank, vecMapping)
+      mckData$X3_total_acc[i] = (mckData$X3_lev[i] +  mckData$X3_sfr[i]) /2
+  
+    }
+    else if(mckData$LangChoice[i] == "Python"){
+      lev_dat = calculate_levdist(stimCode = pythonCode, userCode = userCodeVec)
+      mckData$X3_lev[i] = lev_dat[[1]]
+      mckData$X3_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X3_mapping[i])
+      mckData$X3_sfr[i] = calculate_sfr(pythonRank , vecMapping)
+      mckData$X3_total_acc[i] = (mckData$X3_lev[i] +  mckData$X3_sfr[i]) /2
+    }
+    else if(mckData$LangChoice[i] == "C++"){
+      lev_dat = calculate_levdist(stimCode = cCode, userCode = userCodeVec)
+      mckData$X3_lev[i] = lev_dat[[1]]
+      mckData$X3_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X3_mapping[i])
+      mckData$X3_sfr[i] = calculate_sfr(cRank , vecMapping)
+      mckData$X3_total_acc[i] = (mckData$X3_lev[i] +  mckData$X3_sfr[i]) /2
+    }
+    else
+    {
+      print("Error, no language choice detected")
+    }
+    
+  }
+}
+##timepoint 4
+for(i in 1:length(mckData$X4_code.recall.control)) 
+{
+  print("loop number:")
+  print(i)
+  if(mckData$X4_code.recall.control[i] != "" &&  !is.na(mckData$X4_code.recall.control[i]))
+  {
+    print("not empty!")
+    #extract into a vector
+    userCode = mckData[ i, "X4_code.recall.control"]
+    parts <- strsplit(userCode, split = "\n")
+    userCodeVec = unlist(parts)
+    
+    if(mckData$LangChoice[i] == "Java"){
+      
+      lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
+      mckData$X4_lev[i] = lev_dat[[1]]
+      mckData$X4_mapping[i] = list(lev_dat[2])
+      #convert list to vector
+      vecMapping = unlist(mckData$X4_mapping[i])
+      mckData$X4_sfr[i] = calculate_sfr(javaRank, vecMapping)
+      mckData$X4_total_acc[i] = (mckData$X4_lev[i] +  mckData$X4_sfr[i]) /2
+  
+    }
+    else if(mckData$LangChoice[i] == "Python"){
+      lev_dat = calculate_levdist(stimCode = pythonCode, userCode = userCodeVec)
+      mckData$X4_lev[i] = lev_dat[[1]]
+      mckData$X4_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X4_mapping[i])
+      mckData$X4_sfr[i] = calculate_sfr(pythonRank , vecMapping)
+      mckData$X4_total_acc[i] = (mckData$X4_lev[i] +  mckData$X4_sfr[i]) /2
+    }
+    else if(mckData$LangChoice[i] == "C++"){
+      lev_dat = calculate_levdist(stimCode = cCode, userCode = userCodeVec)
+      mckData$X4_lev[i] = lev_dat[[1]]
+      mckData$X4_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X4_mapping[i])
+      mckData$X4_sfr[i] = calculate_sfr(cRank , vecMapping)
+      mckData$X4_total_acc[i] = (mckData$X4_lev[i] +  mckData$X4_sfr[i]) /2
+    }
+    else
+    {
+      print("Error, no language choice detected")
+    }
+    
+  }
+}
+##timepoint 5
+for(i in 1:length(mckData$X5_code.recall.control)) 
+{
+  print("loop number:")
+  print(i)
+  if(mckData$X5_code.recall.control[i] != "" &&  !is.na(mckData$X5_code.recall.control[i]))
+  {
+    print("not empty!")
+    #extract into a vector
+    userCode = mckData[ i, "X5_code.recall.control"]
+    parts <- strsplit(userCode, split = "\n")
+    userCodeVec = unlist(parts)
+    
+    if(mckData$LangChoice[i] == "Java"){
+      
+      lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
+      mckData$X5_lev[i] = lev_dat[[1]]
+      mckData$X5_mapping[i] = list(lev_dat[2])
+      #convert list to vector
+      vecMapping = unlist(mckData$X5_mapping[i])
+      mckData$X5_sfr[i] = calculate_sfr(javaRank, vecMapping)
+      mckData$X5_total_acc[i] = (mckData$X5_lev[i] +  mckData$X5_sfr[i]) /2
+  
+    }
+    else if(mckData$LangChoice[i] == "Python"){
+      lev_dat = calculate_levdist(stimCode = pythonCode, userCode = userCodeVec)
+      mckData$X5_lev[i] = lev_dat[[1]]
+      mckData$X5_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X5_mapping[i])
+      mckData$X5_sfr[i] = calculate_sfr(pythonRank , vecMapping)
+      mckData$X5_total_acc[i] = (mckData$X5_lev[i] +  mckData$X5_sfr[i]) /2
+    }
+    else if(mckData$LangChoice[i] == "C++"){
+      lev_dat = calculate_levdist(stimCode = cCode, userCode = userCodeVec)
+      mckData$X5_lev[i] = lev_dat[[1]]
+      mckData$X5_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X5_mapping[i])
+      mckData$X5_sfr[i] = calculate_sfr(cRank , vecMapping)
+      mckData$X5_total_acc[i] = (mckData$X5_lev[i] +  mckData$X5_sfr[i]) /2
     }
     else
     {
@@ -456,73 +689,401 @@ for(i in 1:length(mckData$X1_code.recall.control))
 
 
 
+###################################Experimental##################
 
+##timepoint 1
+for(i in 1:length(mckData$X1_Code.Recall.Exp.)) 
+{
+  print("loop number:")
+  print(i)
+  if(mckData$X1_Code.Recall.Exp.[i] != "" &&  !is.na(mckData$X1_Code.Recall.Exp.[i]))
+  {
+    print("not empty!")
+    #extract into a vector
+    userCode = mckData[ i, "X1_Code.Recall.Exp."]
+    parts <- strsplit(userCode, split = "\n")
+    userCodeVec = unlist(parts)
+    
+    if(mckData$LangChoice[i] == "Java"){
+      
+      lev_dat = calculate_levdist(stimCode = javaScramble, userCode = userCodeVec)
+      mckData$X1_lev[i] = lev_dat[[1]]
+      mckData$X1_mapping[i] = list(lev_dat[2])
+      #convert list to vector
+      vecMapping = unlist(mckData$X1_mapping[i])
+      mckData$X1_sfr[i] = calculate_sfr(javaRank, vecMapping)
+      mckData$X1_total_acc[i] = (mckData$X1_lev[i] +  mckData$X1_sfr[i]) /2
+  
+    }
+    else if(mckData$LangChoice[i] == "Python"){
+      lev_dat = calculate_levdist(stimCode = pythonScramble, userCode = userCodeVec)
+      mckData$X1_lev[i] = lev_dat[[1]]
+      mckData$X1_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X1_mapping[i])
+      mckData$X1_sfr[i] = calculate_sfr(pythonRank , vecMapping)
+      mckData$X1_total_acc[i] = (mckData$X1_lev[i] +  mckData$X1_sfr[i]) /2
+    }
+    else if(mckData$LangChoice[i] == "C++"){
+      lev_dat = calculate_levdist(stimCode = cScramble, userCode = userCodeVec)
+      mckData$X1_lev[i] = lev_dat[[1]]
+      mckData$X1_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X1_mapping[i])
+      mckData$X1_sfr[i] = calculate_sfr(cRank , vecMapping)
+      mckData$X1_total_acc[i] = (mckData$X1_lev[i] +  mckData$X1_sfr[i]) /2
+    }
+    else
+    {
+      print("Error, no language choice detected")
+    }
+    
+  }
+}
+
+
+##timepoint 2
+for(i in 1:length(mckData$X2_Code.Recall.Exp.)) 
+{
+  print("loop number:")
+  print(i)
+  if(mckData$X2_Code.Recall.Exp.[i] != "" &&  !is.na(mckData$X2_Code.Recall.Exp.[i]))
+  {
+    print("not empty!")
+    #extract into a vector
+    userCode = mckData[ i, "X2_Code.Recall.Exp."]
+    parts <- strsplit(userCode, split = "\n")
+    userCodeVec = unlist(parts)
+    
+    if(mckData$LangChoice[i] == "Java"){
+      
+      lev_dat = calculate_levdist(stimCode = javaScramble, userCode = userCodeVec)
+      mckData$X2_lev[i] = lev_dat[[1]]
+      mckData$X2_mapping[i] = list(lev_dat[2])
+      #convert list to vector
+      vecMapping = unlist(mckData$X2_mapping[i])
+      mckData$X2_sfr[i] = calculate_sfr(javaRank, vecMapping)
+      mckData$X2_total_acc[i] = (mckData$X2_lev[i] +  mckData$X2_sfr[i]) /2
+  
+    }
+    else if(mckData$LangChoice[i] == "Python"){
+      lev_dat = calculate_levdist(stimCode = pythonScramble, userCode = userCodeVec)
+      mckData$X2_lev[i] = lev_dat[[1]]
+      mckData$X2_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X2_mapping[i])
+      mckData$X2_sfr[i] = calculate_sfr(pythonRank , vecMapping)
+      mckData$X2_total_acc[i] = (mckData$X2_lev[i] +  mckData$X2_sfr[i]) /2
+    }
+    else if(mckData$LangChoice[i] == "C++"){
+      lev_dat = calculate_levdist(stimCode = cScramble, userCode = userCodeVec)
+      mckData$X2_lev[i] = lev_dat[[1]]
+      mckData$X2_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X2_mapping[i])
+      mckData$X2_sfr[i] = calculate_sfr(cRank , vecMapping)
+      mckData$X2_total_acc[i] = (mckData$X2_lev[i] +  mckData$X2_sfr[i]) /2
+    }
+    else
+    {
+      print("Error, no language choice detected")
+    }
+    
+  }
+}
+
+##timepoint 3
+for(i in 1:length(mckData$X3_Code.Recall.Exp.)) 
+{
+  print("loop number:")
+  print(i)
+  if(mckData$X3_Code.Recall.Exp.[i] != "" &&  !is.na(mckData$X3_Code.Recall.Exp.[i]))
+  {
+    print("not empty!")
+    #extract into a vector
+    userCode = mckData[ i, "X3_Code.Recall.Exp."]
+    parts <- strsplit(userCode, split = "\n")
+    userCodeVec = unlist(parts)
+    
+    if(mckData$LangChoice[i] == "Java"){
+      
+      lev_dat = calculate_levdist(stimCode = javaScramble, userCode = userCodeVec)
+      mckData$X3_lev[i] = lev_dat[[1]]
+      mckData$X3_mapping[i] = list(lev_dat[2])
+      #convert list to vector
+      vecMapping = unlist(mckData$X3_mapping[i])
+      mckData$X3_sfr[i] = calculate_sfr(javaRank, vecMapping)
+      mckData$X3_total_acc[i] = (mckData$X3_lev[i] +  mckData$X3_sfr[i]) /2
+  
+    }
+    else if(mckData$LangChoice[i] == "Python"){
+      lev_dat = calculate_levdist(stimCode = pythonScramble, userCode = userCodeVec)
+      mckData$X3_lev[i] = lev_dat[[1]]
+      mckData$X3_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X3_mapping[i])
+      mckData$X3_sfr[i] = calculate_sfr(pythonRank , vecMapping)
+      mckData$X3_total_acc[i] = (mckData$X3_lev[i] +  mckData$X3_sfr[i]) /2
+    }
+    else if(mckData$LangChoice[i] == "C++"){
+      lev_dat = calculate_levdist(stimCode = cScramble, userCode = userCodeVec)
+      mckData$X3_lev[i] = lev_dat[[1]]
+      mckData$X3_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X3_mapping[i])
+      mckData$X3_sfr[i] = calculate_sfr(cRank , vecMapping)
+      mckData$X3_total_acc[i] = (mckData$X3_lev[i] +  mckData$X3_sfr[i]) /2
+    }
+    else
+    {
+      print("Error, no language choice detected")
+    }
+    
+  }
+}
+
+
+##timepoint 4
+for(i in 1:length(mckData$X4_Code.Recall.Exp.)) 
+{
+  print("loop number:")
+  print(i)
+  if(mckData$X4_Code.Recall.Exp.[i] != "" &&  !is.na(mckData$X4_Code.Recall.Exp.[i]))
+  {
+    print("not empty!")
+    #extract into a vector
+    userCode = mckData[ i, "X4_Code.Recall.Exp."]
+    parts <- strsplit(userCode, split = "\n")
+    userCodeVec = unlist(parts)
+    
+    if(mckData$LangChoice[i] == "Java"){
+      
+      lev_dat = calculate_levdist(stimCode = javaScramble, userCode = userCodeVec)
+      mckData$X4_lev[i] = lev_dat[[1]]
+      mckData$X4_mapping[i] = list(lev_dat[2])
+      #convert list to vector
+      vecMapping = unlist(mckData$X4_mapping[i])
+      mckData$X4_sfr[i] = calculate_sfr(javaRank, vecMapping)
+      mckData$X4_total_acc[i] = (mckData$X4_lev[i] +  mckData$X4_sfr[i]) /2
+  
+    }
+    else if(mckData$LangChoice[i] == "Python"){
+      lev_dat = calculate_levdist(stimCode = pythonScramble, userCode = userCodeVec)
+      mckData$X4_lev[i] = lev_dat[[1]]
+      mckData$X4_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X4_mapping[i])
+      mckData$X4_sfr[i] = calculate_sfr(pythonRank , vecMapping)
+      mckData$X4_total_acc[i] = (mckData$X4_lev[i] +  mckData$X4_sfr[i]) /2
+    }
+    else if(mckData$LangChoice[i] == "C++"){
+      lev_dat = calculate_levdist(stimCode = cScramble, userCode = userCodeVec)
+      mckData$X4_lev[i] = lev_dat[[1]]
+      mckData$X4_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X4_mapping[i])
+      mckData$X4_sfr[i] = calculate_sfr(cRank , vecMapping)
+      mckData$X4_total_acc[i] = (mckData$X4_lev[i] +  mckData$X4_sfr[i]) /2
+    }
+    else
+    {
+      print("Error, no language choice detected")
+    }
+    
+  }
+}
+
+##timepoint 5
+for(i in 1:length(mckData$X5_Code.Recall.Exp.)) 
+{
+  print("loop number:")
+  print(i)
+  if(mckData$X5_Code.Recall.Exp.[i] != "" &&  !is.na(mckData$X5_Code.Recall.Exp.[i]))
+  {
+    print("not empty!")
+    #extract into a vector
+    userCode = mckData[ i, "X5_Code.Recall.Exp."]
+    parts <- strsplit(userCode, split = "\n")
+    userCodeVec = unlist(parts)
+    
+    if(mckData$LangChoice[i] == "Java"){
+      
+      lev_dat = calculate_levdist(stimCode = javaScramble, userCode = userCodeVec)
+      mckData$X5_lev[i] = lev_dat[[1]]
+      mckData$X5_mapping[i] = list(lev_dat[2])
+      #convert list to vector
+      vecMapping = unlist(mckData$X5_mapping[i])
+      mckData$X5_sfr[i] = calculate_sfr(javaRank, vecMapping)
+      mckData$X5_total_acc[i] = (mckData$X5_lev[i] +  mckData$X5_sfr[i]) /2
+  
+    }
+    else if(mckData$LangChoice[i] == "Python"){
+      lev_dat = calculate_levdist(stimCode = pythonScramble, userCode = userCodeVec)
+      mckData$X5_lev[i] = lev_dat[[1]]
+      mckData$X5_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X5_mapping[i])
+      mckData$X5_sfr[i] = calculate_sfr(pythonRank , vecMapping)
+      mckData$X5_total_acc[i] = (mckData$X5_lev[i] +  mckData$X5_sfr[i]) /2
+    }
+    else if(mckData$LangChoice[i] == "C++"){
+      lev_dat = calculate_levdist(stimCode = cScramble, userCode = userCodeVec)
+      mckData$X5_lev[i] = lev_dat[[1]]
+      mckData$X5_mapping[i] = list(lev_dat[2])
+      
+      #convert list to vector
+      vecMapping = unlist(mckData$X5_mapping[i])
+      mckData$X5_sfr[i] = calculate_sfr(cRank , vecMapping)
+      mckData$X5_total_acc[i] = (mckData$X5_lev[i] +  mckData$X5_sfr[i]) /2
+    }
+    else
+    {
+      print("Error, no language choice detected")
+    }
+    
+  }
+}
+
+```
+```{r Average performance}
+
+#avg lv dist over 5 trials
+mckData$overall_lev = (mckData$X1_lev + mckData$X2_lev + mckData$X3_lev + mckData$X4_lev +mckData$X5_lev) / 5
+
+#avg footrule over 5 trials
+mckData$overall_sfr = (mckData$X1_sfr + mckData$X2_sfr + mckData$X3_sfr + mckData$X4_sfr +mckData$X5_sfr) / 5
+
+#average total acc over 5 trials
+
+mckData$overall_total_acc = (mckData$X1_total_acc + mckData$X2_total_acc + mckData$X3_total_acc + mckData$X4_total_acc +mckData$X5_total_acc) / 5
+
+
+```
+
+```{r control or experimental condition }
+
+mckData$Condition <- NA
+
+mckData$Condition[!is.na(mckData$X1_Code.Recall.Exp.) &mckData$X1_Code.Recall.Exp. != ""] <- "Experimental"
+
+mckData$Condition[!is.na(mckData$X1_code.recall.control) &mckData$X1_code.recall.control != ""] <- "Control"
 ```
 
 ```{r Descriptives }
 
 
-# #pull out items we want descriptive statistics for
-# mckData$gender = as.factor(mckData$gender)
-# mckData$race.eth = as.factor(mckData$race.eth)
-# mckData$Expertise = as.factor(mckData$Expertise)
-# 
-# 
-# descriptives =  subset(mckData, select = c(gender,
-#                                            race.eth,
-#                                            age,
-#                                            Experience.months,
-#                                            Expertise,
-#                                            LangChoice,
-#                                            Primary.Language,
-#                                            self_exp_num,
-#                                            CPSES_COMP,
-#                                            PAS_COMP,
-#                                            MA_COMP,
-#                                            MIND_COMP,
-#                                            torr_sum))
-# descriptives$race.eth = as.factor(descriptives$race.eth)
-# 
-# descriptives = drop_na(descriptives)
-# 
-# Hmisc::describe(descriptives)
-#  
-# descriptivesforSD =  subset(mckData, select = c(CPSES_COMP,
-#                                                  PAS_COMP,
-#                                                  MA_COMP,
-#                                                  MIND_COMP,
-#                                                  torr_sum))
-# 
-# 
-# table(descriptives$race.eth)
-#  
-# prop.table(table(descriptives$race.eth))  # For proportions
-# 
-# psych::describe(descriptivesforSD)
-#   
-# 
-# 
-# ```
-# ```{r Correlations }
-# 
-# #grab only the things we want to correlate
-# correlation_variables <- subset(mckData, select = c(Experience.months, 
-#                                                     self_exp_num,
-#                                                     CPSES_COMP,
-#                                                     PAS_COMP,
-#                                                     MA_COMP,
-#                                                     MIND_COMP,
-#                                                     torr_sum)) 
-#                                                     #Add levdist, footrule, combined
-# 
-# #remove rows with one or more N/As
-# ###correlation_variables <- correlation_variables[complete.cases(correlation_variables), ]
-# #nrow(correlation_variables)
-# 
-# rcorr(as.matrix(correlation_variables), type = "pearson")
-# 
-#   
+#pull out items we want descriptive statistics for
+mckData$gender = as.factor(mckData$gender)
+mckData$race.eth = as.factor(mckData$race.eth)
+mckData$Expertise = as.factor(mckData$Expertise)
 
+
+descriptives =  subset(mckData, select = c(gender,
+                                           race.eth,
+                                           age,
+                                           Experience.months,
+                                           Expertise,
+                                           LangChoice,
+                                           Primary.Language,
+                                           self_exp_num,
+                                           CPSES_COMP,
+                                           PAS_COMP,
+                                           MA_COMP,
+                                           MIND_COMP,
+                                           torr_sum,
+                                           overall_lev, 
+                                           overall_sfr,
+                                           overall_total_acc))
+
+descriptives$race.eth = as.factor(descriptives$race.eth)
+
+#descriptives = drop_na(descriptives)
+
+Hmisc::describe(descriptives)
+
+descriptivesforSD =  subset(mckData, select = c(self_exp_num,
+                                                Experience.months,
+                                                 CPSES_COMP,
+                                                 PAS_COMP,
+                                                 MA_COMP,
+                                                 MIND_COMP,
+                                                 torr_sum,
+                                                 overall_lev, 
+                                                 overall_sfr,
+                                                 overall_total_acc))
+
+table(descriptives$race.eth)
+
+prop.table(table(descriptives$race.eth))  # For proportions
+
+psych::describe(descriptivesforSD)
+
+
+
+```
+```{r Correlations }
+
+#grab only the things we want to correlate
+correlation_variables <- subset(mckData, select = c(Experience.months,
+                                                    self_exp_num,
+                                                    CPSES_COMP,
+                                                    PAS_COMP,
+                                                    MA_COMP,
+                                                    MIND_COMP,
+                                                    torr_sum,
+                                                    overall_lev, 
+                                                    overall_sfr,
+                                                    overall_total_acc))
+                                                    
+
+#remove rows with one or more N/As
+###correlation_variables <- correlation_variables[complete.cases(correlation_variables), ]
+#nrow(correlation_variables)
+
+rcorr(as.matrix(correlation_variables), type = "pearson")
+
+
+
+
+```
+
+```{r plotting}
+# Control condition
+ggplot(
+  filter(mckData, Condition == "Control"),
+  aes(x = Experience.months, y = overall_total_acc)
+) +
+  geom_point(alpha = .7) +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(
+    title = "Control Condition",
+    x = "Programming Experience (Months)",
+    y = "Total Accuracy"
+  ) +
+  theme_minimal()
+
+# Experimental condition
+ggplot(
+  filter(mckData, Condition == "Experimental"),
+  aes(x = Experience.months, y = overall_total_acc)
+) +
+  geom_point(alpha = .7) +
+  geom_smooth(method = "lm", se = TRUE) +
+  labs(
+    title = "Experimental Condition",
+    x = "Programming Experience (Months)",
+    y = "Total Accuracy"
+  ) +
+  theme_minimal()
 
 ```
 
