@@ -142,9 +142,45 @@ mckData = calculate_composite_mean(mckData,"Growth.Mindset_1","Growth.Mindset_7"
 ```
 
 ```{r calculate the relational reasoning}
+# Tests of Relational Reasoning (1 = a; 2 =b... 4=d) #adapted From Mieleki et al 2023
+
+mckData  <- mckData  %>% mutate(torr_1 = case_when(Q50 == "A" ~ 1,
+                                           T ~ 0),
+                    torr_2 = case_when(Q52 == "D" ~ 1,
+                                           T ~ 0),
+                    torr_3 = case_when(Q54 == "D" ~ 1,
+                                           T ~ 0),
+                    torr_4 = case_when(Q56 == "C" ~ 1,
+                                           T ~ 0))
+    
+mckData  <- mckData  %>% mutate(torr_sum = apply(dplyr::select(., torr_1:torr_4), 1, sum, na.rm=T))
 
 
 
 
+
+```
+
+```{r numerical self report expertise}
+
+
+mckData <- mckData %>%
+  mutate(
+    self_exp_num = case_when(
+      Expertise == "Closer to someone still in school or learning to program" ~ 1,
+      Expertise == "Closer to someone in their first programming job (Entry-Level)" ~ 2,
+      Expertise == "Closer to the average or mid-level programmer" ~ 3,
+      Expertise == "Closer to a senior programmer or software architect" ~ 4,
+      TRUE ~ NA_real_
+    )
+  )
+
+
+```
+
+
+```{r Export clean CSV}
+
+  write.csv(mckData,"mcKData_June10_2026.csv", row.names = FALSE)
 
 ```

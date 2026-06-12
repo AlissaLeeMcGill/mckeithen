@@ -27,7 +27,7 @@ library(TopKLists)
 ```{r Load the data }
 
 
-mckData = read.csv("Prolific - McKeithen et al 1981 Reproduction_June 10, 2026_18.43.csv")
+mckData = read.csv("mcKData_June10_2026.csv")
 
 ```
 
@@ -157,10 +157,6 @@ pythonScramble = c("return number2",
                    "if temp != 0:",
                    "number2 = temp")
 
-userCode = mckData[ 7, "X1_code.recall.control"]
-parts <- strsplit(userCode, split = "\n")
-userCodeVec = unlist(parts)
-
 ```
 
 ```{r Stimuli rank vectors }
@@ -183,51 +179,83 @@ pythonRank = c(1:length(pythonCode))
 calculate_levdist <- function(stimCode, userCode)
 {
  
-  ldArray = array(dim = length(stimCode)) # array for inner loop
   mapping = array(dim = length(stimCode))
-  ldList = array(dim = length(stimCode))
-  normalLDList = array(dim = length(stimCode))
-  matchedStimuli =array(0, dim = length(stimCode))
-  matchedUserCode =array(0, dim = length(userCode))
+  matchedStimuli = array(0, dim = length(stimCode))
+  matchedUserCode = array(0, dim = length(userCode))
+  
+  final_LDs = array(dim = length(stimCode))
+  normalfinal_LDs = array(dim = length(stimCode))
+  skip_list =list()
+  
+  compare_temp = array(dim = length(stimCode)) # array for inner loop
   
   #for each line in the java code
   for(i in seq_along(stimCode))
   {
-  
+    compare_temp[] <- 0
     # for each line in the user code
     for(j in seq_along(userCode))
     {
-      if(matchedUserCode[j] == 0)
-      {
         # compare the line of java code to the user line and store in array using LD 
         #(smallest number means more similar)
-        ldArray[j] = stringdist(stimCode[i], userCode[j], method = "lv")
-      }
-      else
-      {
-        #if we already used this line of code, set to infinity so it never is picked again
-        ldArray[j] = Inf
-      }
+        compare_temp[j] = stringdist(stimCode[i], userCode[j], method = "lv")
     }
     #the user code line with the smallest LD
   
-      mapping[i] = which.min(ldArray)
-      ldList[i] = ldArray[mapping[i]]
+    #print("compare_temp")  
+    #print(compare_temp)
+      
+      smallestIndexes = which(compare_temp == min(compare_temp))
+     # print("smallestIndexes")
+      #print(smallestIndexes)
+      
+      for(k in seq_along(smallestIndexes))
+      {
+        #print("smallestIndexes[k]")
+        #print(smallestIndexes[k]) 
+        #print("skip_list")
+        #print(skip_list)
+        
+        #print("k")
+        #print(k)
+        if(smallestIndexes[k] %in% skip_list )
+        {
+          next
+        }
+        else
+        {
+          smallestIndex = smallestIndexes[k]
+          print("smallestIndex final")
+          print(smallestIndex)
+          break
+        }
+      }
+      
+    
+      mapping[i] = smallestIndex #have an issue here where we still are using first instance
+      final_LDs[smallestIndex] = compare_temp[smallestIndex]
       max_len <- pmax(nchar(stimCode[i]), nchar(userCode[j]))
-      normalLDList[i] = ldList[i] / max_len  
+      normalfinal_LDs[smallestIndex] = final_LDs[smallestIndex] / max_len  
       
       matchedStimuli[i] = 1
-      matchedUserCode[i] = 1 
-    
+      skip_list = append(skip_list, smallestIndex)
+      
+      smallestIndex= 0
+      
    
   }
-  print(mapping)
-  print(ldList)
-  print("notmalLDList")
-  print(normalLDList)
-  print(matchedStimuli)
-  print(matchedUserCode)
+   print("mapping")
+   print(mapping)
+   print("final_LDs")
+   print(final_LDs)
+   print("normalfinal_LDs")
+   print(normalfinal_LDs)
+   print(matchedStimuli)
+   print(matchedUserCode)
   
+   
+
+   
   missinglines = sum(matchedStimuli == 0 )
   extralines = sum(matchedUserCode == 0 )
   
@@ -238,130 +266,130 @@ calculate_levdist <- function(stimCode, userCode)
   
   if(errorlines > 0)
   {
-    normalLDList = c(normalLDList, rep(1, errorlines)) 
+    normalfinal_LDs = c(normalfinal_LDs, rep(1, errorlines)) 
   }
   #calculate the LD average
   
-  LDAvg = mean(normalLDList)
+  LDAvg = mean(normalfinal_LDs)
+  print("LDAvg")
+  print(LDAvg)
   
   output = list(LDAvg, mapping)
+  print("output")
+  print(output)
 
   return(output) 
 }
 
-lev_val = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
 
-print(lev_val[1])
-
-print(lev_val[2])
 
 ```
 
 ```{r Formula to Calculate Spearman's Footrule for line order }
 
 
-print(javaRank)
-print(lev_val[2])
-
-class(javaRank)
-class(lev_val[2])
-
-lev_val_num = as.numeric(unlist(lev_val[2]))
-class(lev_val_num)
-
-TopKLists::Spearman(javaRank, lev_val_num, length(javaRank), length(lev_val_num), union(javaRank, lev_val_num))
+# print(javaRank)
+# print(lev_val[2])
+# 
+# class(javaRank)
+# class(lev_val[2])
+# 
+# lev_val_num = as.numeric(unlist(lev_val[2]))
+# class(lev_val_num)
+# 
+# TopKLists::Spearman(javaRank, lev_val_num, length(javaRank), length(lev_val_num), union(javaRank, lev_val_num))
   
 
 
 ```
 
 ```{r code }
+# 
+# 
+# 
+# TestCode = c("while (temp != 0) {",
+#              "if (number1 < number2) {",
+#              "temp = number1;",
+#              "number1 = number2;",
+#              "number2 = temp;",
+#              "}")
+# 
+# ParticCode = c("while (temp != 0) {",
+#              "if (number1 > number2) {",
+#              "number1 = number2;",
+#              "temp = number1;",
+#              "sum = 5 + 4",
+#              "}")
+# 
+# calculate_levdist(TestCode, ParticCode)
+# 
+# 
+# 
+# 
+# test1 = stringdist("if (number1 < number2) {", "if (number1 > number2) {", method = "lv")
+# print(test1)
+# max_len <- pmax(nchar("if (number1 < number2) {"), nchar("if (number1 > number2) {"))
+# test1 / max_len
+# 
+# test2 = stringdist("while (temp != 0) {", "if (number1 < number2) {", method = "lv")
+# print(test2)
+# max_len2 <- pmax(nchar("while (temp != 0) {"), nchar("if (number1 < number2) {"))
+# test2 / max_len2
+# 
+# 
+# 
+# 
+# test2 = stringdist("while (temp != 0) {", "}", method = "lv")
+# print(test2)
+# max_len2 <- pmax(nchar("while (temp != 0) {"), nchar("}"))
+# test2 / max_len2
+# 
+# 
+# vec = c(1, 2, 3, 4, 5, 6)
+# vec2 = c(1, 2, 4, 3, 7, 6)
+# 
+# dist = Spearman(vec, vec2, 6, 6, 7)
+# 
+# 
+# k1 <- length(vec)
+# k2 <- length(vec2)
+# n  <- length(union(vec,vec2))
+# 
+# list1 <- 1:k1
+# list2 <- rev(1:k2)
+# 
+# 
+# D_max <- Spearman(list1, list2, k1, k2, n)
+# 
+# normaldist = dist/D_max
+# 
+# print(dist)
+# print(D_max)
+# print(normaldist) 
 
 
-
-TestCode = c("while (temp != 0) {",
-             "if (number1 < number2) {",
-             "temp = number1;",
-             "number1 = number2;",
-             "number2 = temp;",
-             "}")
-
-ParticCode = c("while (temp != 0) {",
-             "if (number1 > number2) {",
-             "number1 = number2;",
-             "temp = number1;",
-             "sum = 5 + 4",
-             "}")
-
-calculate_levdist(TestCode, ParticCode)
-
-
-
-
-test1 = stringdist("if (number1 < number2) {", "if (number1 > number2) {", method = "lv")
-print(test1)
-max_len <- pmax(nchar("if (number1 < number2) {"), nchar("if (number1 > number2) {"))
-test1 / max_len
-
-test2 = stringdist("while (temp != 0) {", "if (number1 < number2) {", method = "lv")
-print(test2)
-max_len2 <- pmax(nchar("while (temp != 0) {"), nchar("if (number1 < number2) {"))
-test2 / max_len2
-
-
-
-
-test2 = stringdist("while (temp != 0) {", "}", method = "lv")
-print(test2)
-max_len2 <- pmax(nchar("while (temp != 0) {"), nchar("}"))
-test2 / max_len2
-
-
-vec = c(1, 2, 3, 4, 5, 6)
-vec2 = c(1, 2, 4, 3, 7, 6)
-
-dist = Spearman(vec, vec2, 6, 6, 7)
-
-
-k1 <- length(vec)
-k2 <- length(vec2)
-n  <- length(union(vec,vec2))
-
-list1 <- 1:k1
-list2 <- rev(1:k2)
-
-
-D_max <- Spearman(list1, list2, k1, k2, n)
-
-normaldist = dist/D_max
-
-print(dist)
-print(D_max)
-print(normaldist) 
-
+# 
 
 ```
 
 ```{r loop and calculate all the things }
 
 
-
-
-#extract into a vector
-    userCode = mckData[ 7, "X1_code.recall.control"]
-    parts <- strsplit(userCode, split = "\n")
-    userCodeVec = unlist(parts)
-    mckData$X1_lev = NA
-    
-    if(mckData$LangChoice[7] == "Java"){
-      print("it is java")
-      lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
-
-      mckData$X1_lev[7] = lev_dat[[1]]
-      mckData$X1_mapping[7] = list(lev_dat[[2]])
-      print(mckData$X1_mapping[7])
-     
-    }
+# #extract into a vector
+#     userCode = mckData[ 1, "X1_code.recall.control"]
+#     parts <- strsplit(userCode, split = "\n")
+#     userCodeVec = unlist(parts)
+#     mckData$X1_lev = NA
+#     
+#     if(mckData$LangChoice[7] == "Java"){
+#       print("it is java")
+#       lev_dat = calculate_levdist(stimCode = javaCode, userCode = userCodeVec)
+# 
+#       mckData$X1_lev[7] = lev_dat[[1]]
+#       mckData$X1_mapping[7] = list(lev_dat[[2]])
+#       print(mckData$X1_mapping[7])
+#      
+#     }
 
 
 mckData$X1_lev = NA
@@ -392,8 +420,11 @@ mckData$X5_total_acc = NA
 
 for(i in 1:length(mckData$X1_code.recall.control)) 
 {
-  if(is_empty(mckData$X1_code.recall.control[i])  == 0 )
+  print("loop number:")
+  print(i)
+  if(mckData$X1_code.recall.control[i] != "" &&  !is.na(mckData$X1_code.recall.control[i]))
   {
+    print("not empty!")
     #extract into a vector
     userCode = mckData[ i, "X1_code.recall.control"]
     parts <- strsplit(userCode, split = "\n")
@@ -427,4 +458,72 @@ for(i in 1:length(mckData$X1_code.recall.control))
 
 
 ```
+
+```{r Descriptives }
+
+
+# #pull out items we want descriptive statistics for
+# mckData$gender = as.factor(mckData$gender)
+# mckData$race.eth = as.factor(mckData$race.eth)
+# mckData$Expertise = as.factor(mckData$Expertise)
+# 
+# 
+# descriptives =  subset(mckData, select = c(gender,
+#                                            race.eth,
+#                                            age,
+#                                            Experience.months,
+#                                            Expertise,
+#                                            LangChoice,
+#                                            Primary.Language,
+#                                            self_exp_num,
+#                                            CPSES_COMP,
+#                                            PAS_COMP,
+#                                            MA_COMP,
+#                                            MIND_COMP,
+#                                            torr_sum))
+# descriptives$race.eth = as.factor(descriptives$race.eth)
+# 
+# descriptives = drop_na(descriptives)
+# 
+# Hmisc::describe(descriptives)
+#  
+# descriptivesforSD =  subset(mckData, select = c(CPSES_COMP,
+#                                                  PAS_COMP,
+#                                                  MA_COMP,
+#                                                  MIND_COMP,
+#                                                  torr_sum))
+# 
+# 
+# table(descriptives$race.eth)
+#  
+# prop.table(table(descriptives$race.eth))  # For proportions
+# 
+# psych::describe(descriptivesforSD)
+#   
+# 
+# 
+# ```
+# ```{r Correlations }
+# 
+# #grab only the things we want to correlate
+# correlation_variables <- subset(mckData, select = c(Experience.months, 
+#                                                     self_exp_num,
+#                                                     CPSES_COMP,
+#                                                     PAS_COMP,
+#                                                     MA_COMP,
+#                                                     MIND_COMP,
+#                                                     torr_sum)) 
+#                                                     #Add levdist, footrule, combined
+# 
+# #remove rows with one or more N/As
+# ###correlation_variables <- correlation_variables[complete.cases(correlation_variables), ]
+# #nrow(correlation_variables)
+# 
+# rcorr(as.matrix(correlation_variables), type = "pearson")
+# 
+#   
+
+
+```
+
 
